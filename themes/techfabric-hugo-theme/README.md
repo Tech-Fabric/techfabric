@@ -1,1 +1,0 @@
-theme = "techfabric-hugo-theme" 
