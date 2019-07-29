@@ -1,0 +1,39 @@
+/*
+  You can use import statements to include partials:
+ */
+@import 'imports/reset.css';
+
+/*
+  Or add your statements here:
+ */
+body {
+  font-size: calc(10px + 1vmin);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #080808;
+  background: -moz-linear-gradient(top, #080808 0%, #3c3c3c 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #080808), color-stop(100%, #3c3c3c));
+  background: -webkit-linear-gradient(top, #080808 0%, #3c3c3c 100%);
+  background: -o-linear-gradient(top, #080808 0%, #3c3c3c 100%);
+  background: -ms-linear-gradient(top, #080808 0%, #3c3c3c 100%);
+  background: linear-gradient(to bottom, #080808 0%, #3c3c3c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#080808', endColorstr='#3c3c3c', GradientType=0 );
+  color: white;
+}
+
+a {
+  color: pink;
+  text-decoration: none;
+}
+
+.content {
+  padding: 0 32px;
+}
