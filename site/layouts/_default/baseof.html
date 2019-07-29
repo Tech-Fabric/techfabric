@@ -15,6 +15,7 @@
 
 <body>
 
+<div class="container">
   {{ block "header" . }}{{ partial "header" . }}{{end}}
 
   {{ block "main" . }}{{end}}
@@ -23,8 +24,10 @@
 
   {{ $script := .Site.Data.webpack.main }}
   {{ with $script.js }}
-    <script src="{{ relURL . }}"></script>
+  <script src="{{ relURL . }}"></script>
   {{ end }}
+</div>
+
 </body>
 
 </html>
