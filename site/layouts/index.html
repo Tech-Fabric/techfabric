@@ -1,9 +1,64 @@
 {{ define "main" }}
 
-<h1>Hugo with Webpack, Sass, and PostCSS</h1>
+<div class="home-page">
+    <h1 class="text-center">We build reliable, scalable and secure web/mobile apps and APIs</h1>
 
-<h3>Hooray 🎉 - you've built this with <a href="https://github.com/netlify/victor-hugo">Victor-Hugo</a>!</h3>
+    <div class="hero-block home-page__call-to-action">
+        <div class="hero-block__title">
+            <span class="text-brand-secondary">
+                 We strive to provide technology solutions to empower enterprises through
+            </span>
+            <b>
+                amazing user experiences
+            </b>
+        </div>
 
-<a href="{{ "/tech" | relURL }}">Check out the tech</a>
+        <div class="hero-block__subtitle">
+            We use the latest cloud-native technologies to provide world class development & consulting services.
+        </div>
+
+        <div>
+            <button class="btn btn-primary">Get In Touch</button>
+            <button class="btn btn-text">See Our New Whitepaper <span></span></button>
+        </div>
+    </div>
+
+    <div class="home-page__solutions">
+        <h3>Our solutions include</h3>
+
+        <ul class="brand-list">
+            <li>
+                <a class="brand-list__item" href="/">
+                    Microservices & APIs
+                    <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a class="brand-list__item" href="/">
+                    Cloud-native WEb & Mobil e Apps
+                    <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a class="brand-list__item" href="/">
+                    Machine Learning, AI, & IoT
+                    <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a class="brand-list__item" href="/">
+                    Human Centered Design
+                    <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a class="brand-list__item" href="/">
+                    DevOps & Infrastructure
+                    <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
 
 {{ end }}

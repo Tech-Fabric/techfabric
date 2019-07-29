@@ -452,7 +452,7 @@
 						});
 
 				})
-				.on('reset', function(event) {
+				.on('reset.scss.dcss', function(event) {
 
 					event.preventDefault();
 
@@ -470,7 +470,7 @@
 							switch (this.type) {
 
 								case 'submit':
-								case 'reset':
+								case 'reset.scss.dcss':
 									break;
 
 								case 'password':
