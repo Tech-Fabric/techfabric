@@ -1,0 +1,47 @@
+.home-page {
+  min-height: 860px;
+  position: relative;
+
+  &__call-to-action {
+    width: 520px;
+    position: absolute;
+    left: 6px;
+    top: 200px;
+  }
+
+  &__solutions {
+    width: 312px;
+    position: absolute;
+    right: 132px;
+    top: 204px;
+  }
+
+  &__animation {
+    position: absolute;
+    top: -23px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  &__technologies {
+    position: absolute;
+    list-style: none;
+    top: 765px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    width: 750px;
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+    }
+  }
+}

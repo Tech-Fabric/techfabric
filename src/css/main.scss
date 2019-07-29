@@ -6,7 +6,7 @@
 @import "variables";
 @import "buttons";
 
-@import "pages/home-page";
+@import "componnets/components";
 
 /*
   Or add your statements here:
@@ -27,7 +27,12 @@ body {
   background: linear-gradient(to bottom, #080808 0%, #3c3c3c 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#080808', endColorstr='#3c3c3c', GradientType=0 );
   color: white;
+}
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 a {
@@ -46,14 +51,16 @@ a {
 }
 
 .header {
-  min-height: 124px;
+  min-height: 128px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   &__logo {
-    width: 237px;
-    margin: 3px -4px;
+    width: 238px;
+    margin: 0 -4px;
+    top: 6px;
+    position: relative;
   }
 
   &__menu {
@@ -66,7 +73,7 @@ a {
 
     &-item {
       font-size: 24px;
-      padding: 0 34px;
+      padding: 0 30px;
       color: $brandPrimary;
       font-weight: 600;
     }

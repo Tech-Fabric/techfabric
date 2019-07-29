@@ -5,6 +5,9 @@
   border: none;
   padding: 15px 32px;
   border-radius: 5px;
+  display: flex;
+  align-items: center;
+  float: left;
 
   &-primary {
     color: #fff;
