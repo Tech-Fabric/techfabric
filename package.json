@@ -1,0 +1,22 @@
+{
+  "name": "techfabric",
+  "version": "1.0.0",
+  "description": "TechFabric website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yaroslav0507/techfabric.git"
+  },
+  "keywords": [
+    "techfabric"
+  ],
+  "author": "Yaroslav Zaklynskyi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yaroslav0507/techfabric/issues"
+  },
+  "homepage": "https://github.com/yaroslav0507/techfabric#readme"
+}
