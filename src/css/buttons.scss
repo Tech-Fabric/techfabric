@@ -9,7 +9,11 @@
   align-items: center;
   float: left;
 
-  &-primary {
+  &:hover {
+    color: #fff;
+  }
+
+  &-prim {
     color: #fff;
     background-color: $brandPrimary;
   }
@@ -18,5 +22,9 @@
     color: $brandSecondary;
     background: transparent;
     font-size: 16px;
+
+    &_thin {
+      padding: 0;
+    }
   }
 }

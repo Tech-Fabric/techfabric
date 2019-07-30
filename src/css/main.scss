@@ -39,6 +39,12 @@ body {
 a {
   color: $brandSecondary;
   text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    opacity: .85;
+    color: $brandSecondary;
+  }
 }
 
 .content {
@@ -48,7 +54,7 @@ a {
 .container {
   position: relative;
   max-width: 100%;
-  width: 1650px;
+  width: 1640px;
   margin: 0 auto;
 }
 
@@ -60,23 +66,17 @@ h1 {
 }
 
 h3 {
-  font-family: "Roboto Light", sans-serif;
   font-size: 32px;
   margin: 0;
 }
 
-.text {
-  &-light {
-    font-weight: 200;
-  }
-
-  &-center {
-    text-align: center;
-  }
-
-  &-brand-secondary {
-    color: $brandSecondary;
-  }
+h4 {
+  font-family: "Roboto Bold", "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  opacity: .7;
 }
 
 .brand-list {
@@ -85,6 +85,11 @@ h3 {
   margin: 24px 0 0 0;
   padding: 0;
 
+  &_centered {
+    display: flex;
+    justify-content: center;
+  }
+
   &__item {
     display: flex;
     align-items: center;
@@ -92,6 +97,7 @@ h3 {
     padding-left: 20px;
     font-size: 16px;
     font-weight: 500;
+    color: #fff;
 
     &:before {
       content: '';
@@ -114,6 +120,20 @@ h3 {
   }
 }
 
+.text {
+  &-weight-light {
+    font-weight: 200;
+  }
+
+  &-center {
+    text-align: center;
+  }
+
+  &-brand-secondary {
+    color: $brandSecondary;
+  }
+}
+
 .brand-block {
   padding: 60px 0;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#670100+0,05abe0+100 */
@@ -125,5 +145,68 @@ h3 {
 
   &_spaced {
     margin-bottom: 120px;
+  }
+}
+
+.page-header {
+  margin-bottom: 46px;
+}
+
+.entity-card {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1d1d1d+0,161616+100 */
+  background: rgb(29,29,29); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(29,29,29,1) 0%, rgba(22,22,22,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(29,29,29,1) 0%,rgba(22,22,22,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(29,29,29,1) 0%,rgba(22,22,22,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d1d1d', endColorstr='#161616',GradientType=0 ); /* IE6-9 */
+  padding: 32px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.29) 0 20px 20px;
+  margin-bottom: 15px;
+
+  &:before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#dc3130+0,0db1ce+100 */
+    background: rgb(220,49,48); /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  rgba(220,49,48,1) 0%, rgba(13,177,206,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  rgba(220,49,48,1) 0%,rgba(13,177,206,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  rgba(220,49,48,1) 0%,rgba(13,177,206,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dc3130', endColorstr='#0db1ce',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  }
+
+  &__title {
+    margin-bottom: 32px;
+    max-width: 280px;
+  }
+
+  &__description {
+    font-size: 16px;
+    margin-bottom: 32px;
+    font-weight: 300;
+  }
+
+  &__list {
+    margin-bottom: 32px;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.quote {
+  text-align: center;
+
+  &__text {
+    color: $brandSecondary;
+    max-width: 1220px;
+    font-weight: 200;
+    margin: auto;
   }
 }
