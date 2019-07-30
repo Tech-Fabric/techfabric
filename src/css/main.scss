@@ -45,12 +45,11 @@ a {
 }
 
 .container {
+  position: relative;
   max-width: 100%;
   width: 1650px;
   margin: 0 auto;
 }
-
-
 
 h1 {
   font-size: 42px;
@@ -60,11 +59,16 @@ h1 {
 }
 
 h3 {
+  font-family: "Roboto Light", sans-serif;
   font-size: 32px;
   margin: 0;
 }
 
 .text {
+  &-light {
+    font-weight: 200;
+  }
+
   &-center {
     text-align: center;
   }
@@ -107,4 +111,14 @@ h3 {
     width: 24px;
     margin-left: 5px;
   }
+}
+
+.brand-block {
+  padding: 60px 0;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#670100+0,05abe0+100 */
+  background: rgb(103,1,0); /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  rgba(103,1,0,1) 0%, rgba(5,171,224,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg,  rgba(103,1,0,1) 0%,rgba(5,171,224,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg,  rgba(103,1,0,1) 0%,rgba(5,171,224,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#670100', endColorstr='#05abe0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }

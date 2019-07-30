@@ -1,90 +1,119 @@
 {{ define "main" }}
 
 <div class="home-page">
-    <h1 class="text-center">We build reliable, scalable and secure web/mobile apps and APIs</h1>
+    <div class="container">
+        <h1 class="text-center">We build reliable, scalable and secure web/mobile apps and APIs</h1>
 
-    <div class="hero-block home-page__call-to-action">
-        <div class="hero-block__title">
+        <div class="hero-block home-page__call-to-action">
+            <div class="hero-block__title">
             <span class="text-brand-secondary">
                  We strive to provide technology solutions to empower enterprises through
             </span>
-            <b>
-                amazing user experiences
-            </b>
+                <b>
+                    amazing user experiences
+                </b>
+            </div>
+
+            <div class="hero-block__subtitle">
+                We use the latest cloud-native technologies to provide world class development & consulting services.
+            </div>
+
+            <div>
+                <button class="btn btn-primary">Get In Touch</button>
+                <button class="btn btn-text">
+                    See Our New Whitepaper
+                    <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg" alt="">
+                </button>
+            </div>
         </div>
 
-        <div class="hero-block__subtitle">
-            We use the latest cloud-native technologies to provide world class development & consulting services.
+        <img class="home-page__animation" src="./images/TF_CloudAnimation.png" alt="">
+
+        <div class="home-page__glow"></div>
+
+        <div class="home-page__solutions">
+            <h3>Our solutions include</h3>
+
+            <ul class="brand-list">
+                <li>
+                    <a class="brand-list__item" href="/">
+                        Microservices & APIs
+                        <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a class="brand-list__item" href="/">
+                        Cloud-native WEb & Mobil e Apps
+                        <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a class="brand-list__item" href="/">
+                        Machine Learning, AI, & IoT
+                        <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a class="brand-list__item" href="/">
+                        Human Centered Design
+                        <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a class="brand-list__item" href="/">
+                        DevOps & Infrastructure
+                        <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg" alt="">
+                    </a>
+                </li>
+            </ul>
         </div>
 
-        <div>
-            <button class="btn btn-primary">Get In Touch</button>
-            <button class="btn btn-text">
-                See Our New Whitepaper
+        <div class="home-page__technologies">
+            <a href="/">
+                <img src="./svg/MSPartner_Logo.svg" alt="">
+            </a>
+            <a href="/">
+                <img src="./svg/azure_white.svg" alt="">
+            </a>
+            <a href="/">
+                <img src="./svg/CSharp_white.svg" alt="">
+            </a>
+            <a href="/">
+                <img src="./svg/Javascript_Logo.svg" alt="">
+            </a>
+            <a href="/">
+                <img src="./svg/Typescript_Logo.svg" alt="">
+            </a>
+            <a href="/">
+                <img src="./svg/React_Logo.svg" alt="">
+            </a>
+            <a href="/">
+                Any Language
                 <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg" alt="">
-            </button>
+            </a>
         </div>
     </div>
+</div>
 
-    <img class="home-page__animation" src="./images/TF_CloudAnimation.png" alt="">
+<div class="brand-block">
+    <div class="container">
+        <h3 class="text-center text-brand-secondary text-light">Companies innovating with TechFabric</h3>
 
-    <div class="home-page__solutions">
-        <h3>Our solutions include</h3>
-
-        <ul class="brand-list">
-            <li>
-                <a class="brand-list__item" href="/">
-                    Microservices & APIs
-                    <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg" alt="">
-                </a>
-            </li>
-            <li>
-                <a class="brand-list__item" href="/">
-                    Cloud-native WEb & Mobil e Apps
-                    <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg" alt="">
-                </a>
-            </li>
-            <li>
-                <a class="brand-list__item" href="/">
-                    Machine Learning, AI, & IoT
-                    <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg" alt="">
-                </a>
-            </li>
-            <li>
-                <a class="brand-list__item" href="/">
-                    Human Centered Design
-                    <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg" alt="">
-                </a>
-            </li>
-            <li>
-                <a class="brand-list__item" href="/">
-                    DevOps & Infrastructure
-                    <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg" alt="">
-                </a>
-            </li>
-        </ul>
-    </div>
-
-    <div class="home-page__technologies">
-        <a href="/">
-            <img src="./svg/azure_white.svg" alt="">
-        </a>
-        <a href="/">
-            <img src="./svg/CSharp_white.svg" alt="">
-        </a>
-        <a href="/">
-            <img src="./svg/Javascript_Logo.svg" alt="">
-        </a>
-        <a href="/">
-            <img src="./svg/Typescript_Logo.svg" alt="">
-        </a>
-        <a href="/">
-            <img src="./svg/React_Logo.svg" alt="">
-        </a>
-        <a href="/">
-            Any Language
-            <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg" alt="">
-        </a>
+        <div class="home-page__innovating-companies">
+            <a href="/">
+                <img width="151px" src="./svg/ApproveLogo.svg" alt="">
+            </a>
+            <a href="/">
+                <img src="./svg/MSPartner_Logo.svg" alt="">
+            </a>
+            <a href="/">
+                <img src="./svg/K&L_Logo.svg" alt="">
+            </a>
+            <a href="/">
+                See Case Studies
+                <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg" alt="">
+            </a>
+        </div>
     </div>
 </div>
 

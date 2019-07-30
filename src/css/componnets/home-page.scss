@@ -22,6 +22,7 @@
     left: 0;
     right: 0;
     margin: auto;
+    z-index: 1;
   }
 
   &__technologies {
@@ -43,5 +44,36 @@
       align-items: center;
       font-size: 16px;
     }
+  }
+
+  &__innovating-companies {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 38px auto 0;
+    width: 1000px;
+    max-width: 100%;
+
+    a {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+    }
+  }
+
+  &__glow {
+    width: 1200px;
+    height: 720px;
+    position: absolute;
+    top: 234px;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#898989+1,000000+100&1+0,0.79+18,0.5+38,0.3+50,0+65,0+100 */
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(137,137,137,1) 0%, rgba(137,137,137,0.99) 1%, rgba(113,113,113,0.79) 18%, rgba(85,85,85,0.5) 38%, rgba(69,69,69,0.3) 50%, rgba(48,48,48,0) 65%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(137,137,137,1) 0%,rgba(137,137,137,0.99) 1%,rgba(113,113,113,0.79) 18%,rgba(85,85,85,0.5) 38%,rgba(69,69,69,0.3) 50%,rgba(48,48,48,0) 65%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center,  rgba(137,137,137,1) 0%,rgba(137,137,137,0.99) 1%,rgba(113,113,113,0.79) 18%,rgba(85,85,85,0.5) 38%,rgba(69,69,69,0.3) 50%,rgba(48,48,48,0) 65%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#898989', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   }
 }
