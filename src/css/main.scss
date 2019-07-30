@@ -1,6 +1,7 @@
 /*
   You can use import statements to include partials:
  */
+@import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 @import 'imports/reset';
 @import 'imports/hero-block';
 @import "variables";
@@ -121,4 +122,8 @@ h3 {
   background: -webkit-linear-gradient(-45deg,  rgba(103,1,0,1) 0%,rgba(5,171,224,1) 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(135deg,  rgba(103,1,0,1) 0%,rgba(5,171,224,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#670100', endColorstr='#05abe0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  &_spaced {
+    margin-bottom: 120px;
+  }
 }
