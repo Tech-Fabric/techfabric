@@ -1,26 +1,30 @@
 .home-page {
-  min-height: 860px;
+  min-height: 952px;
   position: relative;
+  padding-top: 33px;
 
+  &__quote {
+    margin-bottom: 94px;
+  }
   &__call-to-action {
     width: 520px;
     position: absolute;
-    left: 6px;
-    top: 200px;
+    left: 15px;
+    top: 194px;
     z-index: 2;
   }
 
   &__solutions {
     width: 312px;
     position: absolute;
-    right: 132px;
-    top: 204px;
+    right: 143px;
+    top: 202px;
     z-index: 2;
   }
 
   &__animation {
     position: absolute;
-    top: -23px;
+    top: 0;
     left: 0;
     right: 0;
     margin: auto;
@@ -30,13 +34,13 @@
   &__technologies {
     position: absolute;
     list-style: none;
-    top: 765px;
+    top: 786px;
     left: 0;
     right: 0;
     margin: auto;
     padding: 0;
     display: flex;
-    width: 750px;
+    width: 808px;
     max-width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -64,7 +68,7 @@
   }
 
   &__qualities {
-    margin-bottom: 100px;
+    margin-bottom: 96px;
   }
 
   &__glow {
