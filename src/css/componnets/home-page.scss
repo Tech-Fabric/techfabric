@@ -1,54 +1,155 @@
 .home-page {
   min-height: 952px;
   position: relative;
-  padding-top: 33px;
+
+  @include breakpoints-up-lg {
+    padding-top: 33px;
+  }
 
   &__quote {
     margin-bottom: 94px;
   }
+
   &__call-to-action {
-    width: 520px;
-    position: absolute;
-    left: 15px;
-    top: 194px;
-    z-index: 2;
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    //min-width: 310px;
+    margin-top: 18px;
+    z-index: 1;
+
+    @include breakpoints-up-sm {
+      flex-direction: column;
+      margin-top: 0;
+      margin-bottom: 20px;
+      float: left;
+      width: 50%;
+    }
+
+    @include breakpoints-up-lg {
+      position: absolute;
+      flex-direction: column;
+      left: 15px;
+      top: 194px;
+      width: 520px;
+      margin-top: 0;
+    }
+
+    &-body {
+      text-align: center;
+      margin-top: 24px;
+
+      @include breakpoints-up-sm {
+        text-align: left;
+        margin: 0;
+      }
+    }
+
+    &-footer {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      padding: 0 10px;
+      z-index: 1;
+
+      @include breakpoints-up-sm {
+        padding: 0;
+      }
+
+      @include breakpoints-up-md {
+        display: block;
+      }
+    }
+
+    &-btn {
+      width: 100%;
+      justify-content: center;
+      margin-bottom: 7px;
+
+      @include breakpoints-up-sm {
+        width: auto;
+      }
+    }
+  }
+
+  &__text-blocks {
+    width: 100%;
+
+    @include breakpoints-up-md {
+      display: flex;
+      align-items: center;
+    }
   }
 
   &__solutions {
-    width: 312px;
-    position: absolute;
-    right: 143px;
-    top: 202px;
+    position: relative;
+    margin-top: -40px;
+    margin-left: 9px;
     z-index: 2;
+
+    @include breakpoints-up-sm {
+      margin: 0 0 25px;
+      padding-right: 20px;
+      float: left;
+      width: 50%;
+    }
+
+    @include breakpoints-up-lg {
+      position: absolute;
+      margin-top: 268px;
+      right: 143px;
+      top: -75px;
+      width: auto;
+    }
   }
 
   &__animation {
-    position: absolute;
-    top: 0;
+    position: relative;
     left: 0;
     right: 0;
-    margin: auto;
-    z-index: 1;
+    max-width: 600px;
+    max-height: 500px;
+    display: flex;
+    margin: -30px auto 20px;
+    align-items: center;
+
+    &-img {
+      position: relative;
+      max-width: 100%;
+      max-height: 100%;
+      z-index: 2;
+    }
+
+    @include breakpoints-up-md {
+      max-width: 780px;
+      max-height: 600px;
+    }
+
+    @include breakpoints-up-lg {
+      margin: auto;
+      max-height: 760px;
+    }
   }
 
   &__technologies {
-    position: absolute;
     list-style: none;
-    top: 786px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    padding: 0;
     display: flex;
-    width: 808px;
     max-width: 100%;
-    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+
+    @include breakpoints-up-sm {
+      width: 100%;
+    }
 
     a {
       display: flex;
       align-items: center;
       font-size: 16px;
+      margin: 0 15px 28px;
     }
   }
 
@@ -72,18 +173,38 @@
   }
 
   &__glow {
+    max-width: 100%;
     width: 1200px;
     height: 720px;
+    max-height: 370px;
     position: absolute;
-    top: 234px;
+    top: 15%;
     left: 0;
     right: 0;
     margin: auto;
+    z-index: 0;
 
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#898989+1,000000+100&1+0,0.79+18,0.5+38,0.3+50,0+65,0+100 */
     background: -moz-radial-gradient(center, ellipse cover,  rgba(137,137,137,1) 0%, rgba(137,137,137,0.99) 1%, rgba(113,113,113,0.79) 18%, rgba(85,85,85,0.5) 38%, rgba(69,69,69,0.3) 50%, rgba(48,48,48,0) 65%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
     background: -webkit-radial-gradient(center, ellipse cover,  rgba(137,137,137,1) 0%,rgba(137,137,137,0.99) 1%,rgba(113,113,113,0.79) 18%,rgba(85,85,85,0.5) 38%,rgba(69,69,69,0.3) 50%,rgba(48,48,48,0) 65%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
     background: radial-gradient(ellipse at center,  rgba(137,137,137,1) 0%,rgba(137,137,137,0.99) 1%,rgba(113,113,113,0.79) 18%,rgba(85,85,85,0.5) 38%,rgba(69,69,69,0.3) 50%,rgba(48,48,48,0) 65%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#898989', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    @include breakpoints-up-sm {
+      top: 28%;
+    }
+
+    @include breakpoints-up-md {
+      top: 35%;
+    }
+
+    @include breakpoints-up-lg {
+      max-width: 100%;
+      max-height: initial;
+    }
   }
+}
+
+.klwines-block {
+  height: calc(100% - 30px);
 }

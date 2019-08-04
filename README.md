@@ -1,10 +1,10 @@
-# Victor Hugo
+# TechFabric
 
 **A Hugo boilerplate for creating truly epic websites**
 
 This is a boilerplate for using [Hugo](https://gohugo.io/) as a static site generator and [Webpack](https://webpack.js.org/) as your asset pipeline.
 
-Victor Hugo setup to use [PostCSS](http://postcss.org/) and [Babel](https://babeljs.io/) for CSS and JavaScript compiling/transpiling.
+TechFabric setup to use [PostCSS](http://postcss.org/) and [Babel](https://babeljs.io/) for CSS and JavaScript compiling/transpiling.
 
 This project is released under the [MIT license](LICENSE). Please make sure you understand its implications and guarantees.
 
@@ -12,7 +12,7 @@ This project is released under the [MIT license](LICENSE). Please make sure you 
 
 ### :exclamation: Prerequisites
 
-You need to have the latest/LTS [node](https://nodejs.org/en/download/) and [npm](https://www.npmjs.com/get-npm) versions installed in order to use Victor Hugo.
+You need to have the latest/LTS [node](https://nodejs.org/en/download/) and [npm](https://www.npmjs.com/get-npm) versions installed in order to use TechFabric.
 
 Next step, clone this repository and run:
 
@@ -20,7 +20,7 @@ Next step, clone this repository and run:
 npm install
 ```
 
-This will take some time and will install all packages necessary to run Victor Hugo and its tasks.
+This will take some time and will install all packages necessary to run TechFabric and its tasks.
 
 ### :construction_worker: Development
 
@@ -111,6 +111,6 @@ Now Netlify will build and deploy your site whenever you push to git.
 
 You can also click this button:
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify/victor-hugo)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify/techfabric)
 
 ## Enjoy!! 😸
