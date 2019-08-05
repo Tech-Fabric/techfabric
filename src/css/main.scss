@@ -91,8 +91,7 @@ h4 {
   font-weight: 400;
   font-size: 16px;
   text-transform: uppercase;
-  color: #FFFFFF;
-  opacity: .7;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .brand-list {
@@ -161,12 +160,12 @@ h4 {
 }
 
 .brand-block {
-  padding: 23px 8px;
+  padding: 33px 8px;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#670100+0,05abe0+100 */
   background: rgb(103,1,0); /* Old browsers */
-  background: -moz-linear-gradient(-45deg,  rgba(103,1,0,1) 0%, rgba(5,171,224,1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg,  rgba(103,1,0,1) 0%,rgba(5,171,224,1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg,  rgba(103,1,0,1) 0%,rgba(5,171,224,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-linear-gradient(-45deg,  rgba(103,1,0,1) 0%, rgb(0, 80, 93) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg,  rgba(103,1,0,1) 0%,rgb(0, 80, 93) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg,  rgba(103,1,0,1) 0%,rgb(0, 80, 93) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#670100', endColorstr='#05abe0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
   @include breakpoints-up-sm {
@@ -213,11 +212,40 @@ h4 {
     padding: 35px 32px 65px;
   }
 
-  &-image {
-    width: 100%;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  &__time {
+    text-transform: uppercase;
+    opacity: .5;
+  }
+
+  &__category {
+    opacity: 1;
+  }
+
+  &__image {
+    width: calc(100% + 46px);
+    margin-left: -23px;
+    margin-bottom: 25px;
 
     @include breakpoints-up-sm {
       margin-bottom: 10px;
+    }
+
+    &-wrapper {
+      max-height: 260px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: calc(100% + 64px);
+      margin-left: -32px;
+      margin-bottom: 20px;
     }
   }
 
@@ -299,6 +327,7 @@ h4 {
   border-radius: 12px;
   padding: 33px 0 0 ;
   margin-bottom: 30px;
+  box-shadow: rgba(0, 0, 0, 0.29) 0 20px 20px;
 
   &__description {
     display: flex;
@@ -340,5 +369,70 @@ h4 {
 
   @include breakpoints-up-sm {
     text-transform: none;
+  }
+}
+
+.response {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  @include breakpoints-up-sm {
+    flex-direction: row;
+  }
+
+  &__body {
+    text-align: center;
+
+    @include breakpoints-up-sm {
+      text-align: left;
+    }
+  }
+
+  &__image {
+    width: 76px;
+    height: 76px;
+    min-width: 76px;
+    min-height: 76px;
+    margin-right: 28px;
+    margin-bottom: 20px;
+    border-radius: 100%;
+    overflow: hidden;
+
+    @include breakpoints-up-sm {
+      margin-bottom: 0;
+    }
+
+    img {
+      position: relative;
+      width: 200%;
+      height: 200%;
+      left: -42%;
+      top: -42%;
+    }
+  }
+
+  &__title {
+    font-size: 16px;
+  }
+
+  &__author {
+    font-size: 16px;
+    margin-top: 30px;
+    padding: 0 10px;
+
+    @include breakpoints-up-sm {
+      margin-top: 5px;
+      padding: 0;
+    }
+  }
+
+  &-block {
+    margin-bottom: 30px;
+
+    @include breakpoints-up-lg {
+      margin-bottom: 0;
+    }
   }
 }

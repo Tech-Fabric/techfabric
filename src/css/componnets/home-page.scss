@@ -203,7 +203,7 @@
 
   &__qualities {
     margin-bottom: 24px;
-    padding: 0 9px;
+    //padding: 0 9px;
 
     @include breakpoints-up-sm {
       padding: 0;
@@ -246,4 +246,20 @@
 
 .klwines-block {
   height: calc(100% - 30px);
+}
+
+.container {
+  &.featured-case-studies {
+    margin-bottom: 90px;
+  }
+}
+
+.response-block {
+  &__quote {
+    margin-bottom: 30px;
+  }
+}
+
+.news-ideas {
+  margin-bottom: 46px;
 }
