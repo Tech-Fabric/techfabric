@@ -6,7 +6,7 @@
     margin-bottom: 15px;
     font-weight: 200;
 
-    @include breakpoints-up-lg {
+    @include breakpoints-up-xl {
       font-size: 32px;
       margin-bottom: 32px;
     }

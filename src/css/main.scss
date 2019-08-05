@@ -68,7 +68,6 @@ h1 {
   font-size: 27px;
   line-height: 35px;
   font-family: "Roboto Light", sans-serif;
-  text-transform: capitalize;
   font-weight: 400;
 
   @include breakpoints-up-sm {
@@ -100,10 +99,10 @@ h4 {
 .brand-list {
   list-style: none;
   line-height: 40px;
-  margin: 30px 0 0 0;
+  margin: 13px 0 0 0;
 
   @include breakpoints-up-sm {
-    margin: 15px 0 0 0;
+    margin: 30px 0 0 0;
     line-height: 44px;
   }
 
@@ -120,8 +119,12 @@ h4 {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5em;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
     color: #fff;
+
+    @include breakpoints-up-sm {
+      margin-bottom: 18px;
+    }
 
     &:before {
       content: '';
@@ -159,7 +162,7 @@ h4 {
 }
 
 .brand-block {
-  padding: 67px 0;
+  padding: 23px 8px;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#670100+0,05abe0+100 */
   background: rgb(103,1,0); /* Old browsers */
   background: -moz-linear-gradient(-45deg,  rgba(103,1,0,1) 0%, rgba(5,171,224,1) 100%); /* FF3.6-15 */
@@ -167,16 +170,34 @@ h4 {
   background: linear-gradient(135deg,  rgba(103,1,0,1) 0%,rgba(5,171,224,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#670100', endColorstr='#05abe0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
+  @include breakpoints-up-sm {
+    padding: 60px 0;
+  }
+
   &_spaced {
-    margin-bottom: 125px;
+    margin-bottom: 45px;
+
+    @include breakpoints-up-lg {
+      margin-bottom: 125px;
+    }
   }
 }
 
 .page-header {
-  margin-bottom: 52px;
+  margin-bottom: 19px;
+  padding: 0 9px;
+
+  @include breakpoints-up-sm {
+    padding: 0;
+    margin-bottom: 52px;
+  }
 
   &__title {
-    margin-bottom: 27px;
+    margin-bottom: 14px;
+
+    @include breakpoints-up-sm {
+      margin-bottom: 27px;
+    }
   }
 
   &_single {
@@ -185,12 +206,20 @@ h4 {
 }
 
 .entity-card {
-  padding: 35px 32px;
+  height: calc(100% - 25px);
+  padding: 25px 23px 65px;
   position: relative;
+
+  @include breakpoints-up-sm {
+    padding: 35px 32px;
+  }
 
   &-image {
     width: 100%;
-    margin-bottom: 10px;
+
+    @include breakpoints-up-sm {
+      margin-bottom: 10px;
+    }
   }
 
   &_bg {
@@ -219,17 +248,24 @@ h4 {
   }
 
   &__title {
-    margin-bottom: 34px;
+    margin-bottom: 13px;
     max-width: 280px;
-
     line-height: 42px;
+
+    @include breakpoints-up-sm {
+      margin-bottom: 34px;
+    }
   }
 
   &__description {
     font-size: 16px;
     font-weight: 300;
     line-height: 24px;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
+
+    @include breakpoints-up-sm {
+      margin-bottom: 22px;
+    }
   }
 
   &__list {
@@ -238,8 +274,9 @@ h4 {
 
   &__footer {
     display: flex;
-    justify-content: flex-end;
-    margin-top: 22px;
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
   }
 }
 
@@ -250,8 +287,12 @@ h4 {
     color: $brandSecondary;
     max-width: 1220px;
     font-weight: 200;
-    margin: auto;
-    line-height: 48px;
+    margin: auto auto 15px;
+    line-height: 30px;
+
+    @include breakpoints-up-sm {
+      line-height: 48px;
+    }
   }
 }
 
@@ -268,22 +309,36 @@ h4 {
   }
 
   &__screenshots {
-    width: 60%;
+    width: 100%;
     float: left;
+
+    @include breakpoints-up-lg {
+      width: 60%;
+    }
   }
 
   &__screenshot {
-    width: 113%;
-    margin: -47px -12%;
+    width: 100%;
+
+    @include breakpoints-up-lg {
+      margin: -47px auto 10px;
+      max-width: 620px;
+    }
   }
 
   &__img-bottom-left {
-    margin-top: 68px;
+    max-width: 300px;
+    margin: 30px auto 0;
+
+    @include breakpoints-up-lg {
+      margin-top: 68px;
+    }
   }
 }
 
 .mobile-capitalized {
   text-transform: capitalize;
+
   @include breakpoints-up-sm {
     text-transform: none;
   }

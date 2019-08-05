@@ -1,15 +1,15 @@
 @mixin breakpoints-up-xs {
-  @media (max-width: 599px) { @content; }
+  @media (max-width: 576px) { @content; }
 }
 @mixin breakpoints-up-sm {
-  @media (min-width: 600px) { @content; }
+  @media (min-width: 576px) { @content; }
 }
 @mixin breakpoints-up-md {
-  @media (min-width: 960px) { @content; }
+  @media (min-width: 768px) { @content; }
 }
 @mixin breakpoints-up-lg {
-  @media (min-width: 1280px) { @content; }
+  @media (min-width: 992px) { @content; }
 }
 @mixin breakpoints-up-xl {
-  @media (min-width: 1920px) { @content; }
+  @media (min-width: 1200px) { @content; }
 }

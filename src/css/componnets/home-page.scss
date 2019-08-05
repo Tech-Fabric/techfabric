@@ -7,15 +7,18 @@
   }
 
   &__quote {
-    margin-bottom: 94px;
+    margin-bottom: 28px;
+
+    @include breakpoints-up-sm {
+      margin-bottom: 84px;
+    }
   }
 
   &__call-to-action {
     display: flex;
     flex-direction: column-reverse;
     position: relative;
-    //min-width: 310px;
-    margin-top: 18px;
+    margin-top: 28px;
     z-index: 1;
 
     @include breakpoints-up-sm {
@@ -26,9 +29,8 @@
       width: 50%;
     }
 
-    @include breakpoints-up-lg {
+    @include breakpoints-up-xl {
       position: absolute;
-      flex-direction: column;
       left: 15px;
       top: 194px;
       width: 520px;
@@ -37,7 +39,7 @@
 
     &-body {
       text-align: center;
-      margin-top: 24px;
+      margin-top: 20px;
 
       @include breakpoints-up-sm {
         text-align: left;
@@ -83,7 +85,6 @@
 
   &__solutions {
     position: relative;
-    margin-top: -40px;
     margin-left: 9px;
     z-index: 2;
 
@@ -94,10 +95,10 @@
       width: 50%;
     }
 
-    @include breakpoints-up-lg {
+    @include breakpoints-up-xl {
       position: absolute;
       margin-top: 268px;
-      right: 143px;
+      right: 130px;
       top: -75px;
       width: auto;
     }
@@ -108,9 +109,9 @@
     left: 0;
     right: 0;
     max-width: 600px;
-    max-height: 500px;
+    max-height: 600px;
     display: flex;
-    margin: -30px auto 20px;
+    margin: -70px auto -34px;
     align-items: center;
 
     &-img {
@@ -120,14 +121,14 @@
       z-index: 2;
     }
 
-    @include breakpoints-up-md {
-      max-width: 780px;
-      max-height: 600px;
+    @include breakpoints-up-lg {
+      margin: -60px auto -80px;
+      max-width: 540px;
     }
 
-    @include breakpoints-up-lg {
-      margin: auto;
-      max-height: 760px;
+    @include breakpoints-up-xl {
+      margin: 60px auto 0;
+      max-width: 50%;
     }
   }
 
@@ -145,31 +146,69 @@
       width: 100%;
     }
 
+    @include breakpoints-up-lg {
+      margin-top: 85px;
+    }
+
     a {
       display: flex;
       align-items: center;
       font-size: 16px;
-      margin: 0 15px 28px;
+      margin: 0 15px 38px;
     }
   }
 
   &__innovating-companies {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-    margin: 38px auto 0;
+    justify-content: center;
+    margin: 18px auto 0;
     width: 1000px;
     max-width: 100%;
+
+    @include breakpoints-up-sm {
+      margin: 38px auto 0;
+      width: auto;
+    }
 
     a {
       display: flex;
       align-items: center;
       font-size: 16px;
+      padding: 0 15px 38px;
+      justify-content: center;
+      max-width: 50%;
+
+      @include breakpoints-up-lg {
+        padding-bottom: 0;
+      }
+
+      &:last-child {
+        width: 100%;
+        max-width: 100%;
+        padding-bottom: 16px;
+
+        @include breakpoints-up-lg {
+          width: auto;
+          padding-bottom: 0;
+        }
+      }
+
+      img {
+        max-width: 100%;
+      }
     }
   }
 
   &__qualities {
-    margin-bottom: 96px;
+    margin-bottom: 24px;
+    padding: 0 9px;
+
+    @include breakpoints-up-sm {
+      padding: 0;
+      margin-bottom: 74px;
+    }
   }
 
   &__glow {
@@ -178,7 +217,7 @@
     height: 720px;
     max-height: 370px;
     position: absolute;
-    top: 15%;
+    top: 10%;
     left: 0;
     right: 0;
     margin: auto;
@@ -195,10 +234,10 @@
     }
 
     @include breakpoints-up-md {
-      top: 35%;
+      top: 28%;
     }
 
-    @include breakpoints-up-lg {
+    @include breakpoints-up-xl {
       max-width: 100%;
       max-height: initial;
     }

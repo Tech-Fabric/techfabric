@@ -29,10 +29,17 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    margin-right: -28px;
 
     @include breakpoints-up-sm {
       display: flex;
+    }
+
+    li {
+      &:last-child {
+        a {
+          padding-right: 5px;
+        }
+      }
     }
 
     &-item {
