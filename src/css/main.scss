@@ -211,7 +211,7 @@ h4 {
   position: relative;
 
   @include breakpoints-up-sm {
-    padding: 35px 32px;
+    padding: 35px 32px 65px;
   }
 
   &-image {
