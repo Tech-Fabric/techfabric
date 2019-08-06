@@ -55,6 +55,10 @@ b {
   font-weight: 600;
 }
 
+.text-regular {
+  color: #fff;
+}
+
 .content {
   padding: 0 32px;
 }
@@ -346,6 +350,7 @@ h4 {
   padding: 33px 0 0 ;
   margin-bottom: 30px;
   box-shadow: rgba(0, 0, 0, 0.29) 0 20px 20px;
+  @include brand-gradient-45;
 
   &__description {
     display: flex;
