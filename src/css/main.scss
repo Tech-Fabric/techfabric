@@ -31,10 +31,10 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f0f0f', endColorstr='#0f0f0f',GradientType=0 ); /* IE6-9 */
   background-size: 100% 47%;
   color: white;
-  //padding-top: 100px;
+  padding-top: 100px;
 
   @include breakpoints-up-sm {
-    padding-top: 160px;
+    padding-top: 120px;
   }
 
   @include breakpoints-up-lg {

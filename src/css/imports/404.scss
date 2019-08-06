@@ -94,7 +94,18 @@ html {
     padding: 25px;
     text-transform: uppercase;
     top: 0;
-    padding-top: 10rem;
+    padding-top: 90px;
+    font-size: 15px;
+    line-height: 1.3em;
+
+    @include breakpoints-up-sm {
+      font-size: 20px;
+    }
+
+    @include breakpoints-up-lg {
+      padding-top: 10rem;
+      font-size: 26px;
+    }
   }
 
   .output {
