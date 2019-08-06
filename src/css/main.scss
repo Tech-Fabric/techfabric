@@ -204,12 +204,19 @@ h4 {
 }
 
 .entity-card {
-  height: calc(100% - 25px);
-  padding: 25px 23px 65px;
+  height: 100%;
+  padding: 25px 23px;
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  &-wrapper {
+    margin-bottom: 25px;
+  }
 
   @include breakpoints-up-sm {
-    padding: 35px 32px 65px;
+    padding: 35px 32px;
   }
 
   &__header {
@@ -229,23 +236,27 @@ h4 {
   }
 
   &__image {
-    width: calc(100% + 46px);
-    margin-left: -23px;
     margin-bottom: 25px;
+    width: 100%;
 
     @include breakpoints-up-sm {
       margin-bottom: 10px;
     }
 
     &-wrapper {
-      max-height: 260px;
+      min-height: 230px;
+      max-height: 230px;
       overflow: hidden;
       display: flex;
       align-items: center;
       justify-content: center;
-      width: calc(100% + 64px);
-      margin-left: -32px;
-      margin-bottom: 20px;
+      width: calc(100% + 46px);
+      margin-left: -23px;
+
+      @include breakpoints-up-sm {
+        padding: 35px 32px;
+        margin-bottom: 20px;
+      }
     }
   }
 
@@ -276,11 +287,12 @@ h4 {
 
   &__title {
     margin-bottom: 13px;
-    max-width: 280px;
-    line-height: 42px;
+    font-size: 22px;
 
-    @include breakpoints-up-sm {
+    @include breakpoints-up-xl {
       margin-bottom: 34px;
+      line-height: 42px;
+      font-size: 32px;
     }
   }
 
@@ -288,11 +300,8 @@ h4 {
     font-size: 16px;
     font-weight: 300;
     line-height: 24px;
-    margin-bottom: 20px;
-
-    @include breakpoints-up-sm {
-      margin-bottom: 22px;
-    }
+    margin-bottom: 22px;
+    margin-top: 10px;
   }
 
   &__list {
@@ -301,9 +310,8 @@ h4 {
 
   &__footer {
     display: flex;
-    position: absolute;
-    bottom: 20px;
-    right: 30px;
+    justify-content: flex-end;
+    margin-top: 20px;
   }
 }
 
@@ -355,11 +363,16 @@ h4 {
   }
 
   &__img-bottom-left {
-    max-width: 300px;
+    max-width: 100%;
     margin: 30px auto 0;
+
+    img {
+      width: 100%;
+    }
 
     @include breakpoints-up-lg {
       margin-top: 68px;
+      max-width: 300px;
     }
   }
 }
@@ -434,5 +447,13 @@ h4 {
     @include breakpoints-up-lg {
       margin-bottom: 0;
     }
+  }
+}
+
+.section {
+  margin-bottom: 24px;
+
+  @include breakpoints-up-lg {
+    margin-bottom: 90px;
   }
 }
