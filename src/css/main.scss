@@ -38,6 +38,8 @@ body {
 }
 
 a {
+  display: flex;
+  align-items: center;
   color: $brandSecondary;
   text-decoration: none;
   transition: opacity .1s ease;
@@ -146,20 +148,6 @@ h4 {
   }
 }
 
-.text {
-  &-weight-light {
-    font-weight: 200;
-  }
-
-  &-center {
-    text-align: center;
-  }
-
-  &-brand-secondary {
-    color: $brandSecondary;
-  }
-}
-
 .brand-block {
   padding: 33px 8px;
   @include brand-gradient;
@@ -174,6 +162,32 @@ h4 {
     @include breakpoints-up-lg {
       margin-bottom: 125px;
     }
+  }
+}
+
+.brand-subheader {
+  color: $brandPrimary;
+  font-size: 18px;
+  margin: 21px 0 25px;
+  line-height: 1.45em;
+  text-transform: none;
+}
+
+.text {
+  &-weight-light {
+    font-weight: 200;
+  }
+
+  &-center {
+    text-align: center;
+  }
+
+  &-brand-primary {
+    color: $brandPrimary;
+  }
+
+  &-brand-secondary {
+    color: $brandSecondary;
   }
 }
 
@@ -210,7 +224,7 @@ h4 {
 
 .entity-card {
   height: 100%;
-  padding: 25px 23px;
+  padding: 40px 23px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -262,7 +276,6 @@ h4 {
       }
 
       a {
-        display: flex;
         justify-content: center;
       }
     }
@@ -298,8 +311,8 @@ h4 {
     font-size: 15px;
     font-weight: 300;
     line-height: 24px;
-    margin-bottom: 22px;
-    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-top: 0;
   }
 
   &__list {
@@ -309,7 +322,6 @@ h4 {
   &__footer {
     display: flex;
     justify-content: flex-end;
-    margin-top: 20px;
   }
 }
 
@@ -417,10 +429,10 @@ h4 {
 
     img {
       position: relative;
-      width: 200%;
-      height: 200%;
-      left: -42%;
-      top: -42%;
+      width: 170%;
+      height: 170%;
+      left: -28%;
+      top: -28%;
     }
   }
 
@@ -453,5 +465,42 @@ h4 {
 
   @include breakpoints-up-lg {
     margin-bottom: 90px;
+  }
+}
+
+.contact-information {
+  font-size: 16px;
+  padding: 0 10px;
+  margin-top: 23px;
+
+  &__phone {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.8em;
+    margin-bottom: 17px;
+  }
+}
+
+.info-banner {
+  @include contrast-gradient;
+  border-radius: 26px;
+  padding: 2px;
+  margin-bottom: 40px;
+
+  &__content {
+    background-color: #1A1A1A;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: .1px;
+    padding: 23px 20px 21px;
+    line-height: 1.5em;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a {
+      display: inline-flex;
+    }
   }
 }
