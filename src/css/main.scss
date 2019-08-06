@@ -243,7 +243,6 @@ h4 {
 
 .entity-card {
   @extend .clearfix;
-  height: 100%;
   padding: 40px 23px 25px;
   position: relative;
   display: flex;
@@ -252,6 +251,10 @@ h4 {
 
   &-wrapper {
     margin-bottom: 25px;
+  }
+
+  @include breakpoints-up-lg {
+    height: 100%;
   }
 
   @include breakpoints-up-sm {
