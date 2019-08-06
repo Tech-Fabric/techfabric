@@ -1,11 +1,18 @@
-<div class="header container">
-    <div class="header__logo">
-        <img src="./images/TF-logo.svg" alt="">
-    </div>
+<div class="header">
+    <div class="container header__content">
+        <a href="/" class="header__logo">
+            <img src="./images/TF-logo.svg" alt="">
+        </a>
 
-    <ul class="header__menu">
-        <li><a class="header__menu-item" href="/industries">Industries</a></li>
-        <li><a class="header__menu-item" href="/solutions">Solutions</a></li>
-        <li><a class="header__menu-item" href="/resources">Resources</a></li>
-    </ul>
+        <input type="checkbox" id="drawer-toggle" name="drawer-toggle"/>
+        <label for="drawer-toggle" id="drawer-toggle-label"></label>
+
+        <nav id="drawer">
+            <ul class="header__menu">
+                <li><a class="header__menu-item" href="/industries">Industries</a></li>
+                <li><a class="header__menu-item" href="/solutions">Solutions</a></li>
+                <li><a class="header__menu-item" href="/resources">Resources</a></li>
+            </ul>
+        </nav>
+    </div>
 </div>

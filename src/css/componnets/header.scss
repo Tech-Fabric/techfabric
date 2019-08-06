@@ -3,20 +3,44 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: #080808e3;
+  position: fixed;
+  padding: 0;
+  top: 0;
+  z-index: 9;
 
-  @include breakpoints-up-sm {
-    min-height: 128px;
+  @include breakpoints-up-lg {
+    min-height: 125px;
+    background: transparent;
+    position: relative;
+  }
+
+  @include breakpoints-up-md {
+    min-height: 75px;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   &__logo {
     width: 113px;
-    margin: 20px 5px;
+    margin: 20px 0;
     position: relative;
+    display: block;
+    z-index: 999;
 
-    @include breakpoints-up-sm {
+    @include breakpoints-up-lg {
+      width: 175px;
+      margin: 20px 5px;
+    }
+
+    @include breakpoints-up-xl {
       width: 238px;
       margin: 20px -10px;
     }
@@ -30,8 +54,9 @@
     padding: 0;
     margin: 0;
 
-    @include breakpoints-up-sm {
+    @include breakpoints-up-md {
       display: flex;
+      transform: translateX(0);
     }
 
     li {
@@ -43,10 +68,14 @@
     }
 
     &-item {
-      font-size: 24px;
+      font-size: 20px;
       padding: 0 32px;
       color: $brandPrimary;
       font-weight: 400;
+
+      @include breakpoints-up-lg {
+        font-size: 24px;
+      }
 
       &:hover {
         color: $brandPrimary;

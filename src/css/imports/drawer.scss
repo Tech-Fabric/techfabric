@@ -1,0 +1,166 @@
+#drawer-toggle {
+  position: absolute;
+  opacity: 0;
+  transition: opacity .1s ease;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+#drawer-toggle-label {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 15px;
+  height: 50px;
+  width: 50px;
+  display: block;
+  position: absolute;
+  z-index: 1;
+
+  @include breakpoints-up-md {
+    display: none;
+  }
+}
+
+/* adds our "hamburger" menu icon */
+
+#drawer-toggle-label:before {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 24px;
+  background: $brandPrimary;
+  left: 13px;
+  top: 18px;
+  box-shadow: 0 6px 0 $brandPrimary, 0 12px 0 $brandPrimary;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  background: #efefef;
+  padding: 10px 10px 10px 50px;
+  font-size: 30px;
+  line-height: 30px;
+  z-index: 0;
+}
+
+/* drawer menu pane - note the  width */
+
+#drawer {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  height: 100%;
+  width: 100%;
+  background: #080808;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 100px 0 20px;
+  -webkit-overflow-scrolling: touch;
+  transition: transform .3s ease;
+
+  @include breakpoints-up-md {
+    flex-direction: row;
+    position: relative;
+    left: auto;
+    padding: 0;
+    background: transparent;
+    width: auto;
+    top: auto;
+    overflow: hidden;
+    transform: translateX(0);
+  }
+}
+
+/* actual page content pane */
+
+#page-content {
+  margin-left: 0;
+  margin-top: 50px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  padding: 20px;
+}
+
+/* checked styles (menu open state) */
+
+#drawer-toggle:checked ~ #drawer-toggle-label {
+  //background: rgba(255,255,255,.8);
+}
+
+#drawer-toggle:checked {
+  @media (max-width: 768px) {
+    & ~ #drawer-toggle-label,
+    & ~ header {
+      z-index: 11;
+    }
+
+    & ~ #drawer {
+      transform: translateX(0);
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        li {
+          width: 100%;
+        }
+      }
+
+      .header__menu-item {
+        padding: 10px 19px;
+        font-size: 18px;
+        font-weight: 500;
+
+        &:hover {
+          font-weight: 600;
+          background: #3c3c3c73;
+        }
+      }
+    }
+  }
+}
+
+#drawer-toggle:checked ~ #page-content {
+  margin-left: 300px;
+}
+
+/* Menu item styles */
+
+@media all and (max-width: 350px) {
+
+  #drawer-toggle:checked ~ #drawer-toggle-label {
+    height: 100%;
+    width: 50px;
+  }
+
+  #drawer-toggle:checked ~ #drawer-toggle-label,
+  #drawer-toggle:checked ~ header {
+    left: calc(100% - 50px);
+  }
+
+  #drawer-toggle:checked ~ #drawer {
+    width: calc(100% - 50px);
+    padding: 20px;
+  }
+
+  #drawer-toggle:checked ~ #page-content {
+    margin-left: calc(100% - 50px);
+  }
+
+}
