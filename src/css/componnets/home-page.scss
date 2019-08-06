@@ -6,14 +6,6 @@
     padding-top: 33px;
   }
 
-  &__quote {
-    margin-bottom: 28px;
-
-    @include breakpoints-up-sm {
-      margin-bottom: 84px;
-    }
-  }
-
   &__call-to-action {
     display: flex;
     flex-direction: column-reverse;
