@@ -242,8 +242,9 @@ h4 {
 }
 
 .entity-card {
+  @extend .clearfix;
   height: 100%;
-  padding: 40px 23px;
+  padding: 40px 23px 25px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -317,6 +318,7 @@ h4 {
   }
 
   &__title {
+    @extend .clearfix;
     margin-bottom: 13px;
     font-size: 22px;
 
@@ -328,6 +330,7 @@ h4 {
   }
 
   &__description {
+    @extend .clearfix;
     font-size: 15px;
     font-weight: 300;
     line-height: 24px;
