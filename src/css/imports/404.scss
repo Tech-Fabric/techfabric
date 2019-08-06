@@ -98,6 +98,10 @@ html {
     font-size: 15px;
     line-height: 1.3em;
 
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      z-index: 99999;
+    }
+
     @include breakpoints-up-sm {
       font-size: 20px;
     }

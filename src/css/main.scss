@@ -372,7 +372,11 @@ h4 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    float: left;
+
+    .client-logo {
+      width: 100px;
+      margin: auto;
+    }
   }
 
   &__screenshots {
