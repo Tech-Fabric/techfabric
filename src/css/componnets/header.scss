@@ -57,6 +57,7 @@
     @include breakpoints-up-md {
       display: flex;
       transform: translateX(0);
+      opacity: 1;
     }
 
     li {

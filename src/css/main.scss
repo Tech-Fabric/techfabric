@@ -7,6 +7,7 @@
 @import 'imports/reset';
 @import 'imports/hero-block';
 @import 'imports/drawer';
+@import 'imports/404';
 @import "buttons";
 
 @import "componnets/components";
@@ -30,7 +31,7 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f0f0f', endColorstr='#0f0f0f',GradientType=0 ); /* IE6-9 */
   background-size: 100% 47%;
   color: white;
-  padding-top: 100px;
+  //padding-top: 100px;
 
   @include breakpoints-up-sm {
     padding-top: 160px;
@@ -242,6 +243,7 @@ h4 {
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 
   &-wrapper {
     margin-bottom: 25px;

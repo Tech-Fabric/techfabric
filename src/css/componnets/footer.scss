@@ -4,6 +4,11 @@
   font-size: 16px;
   line-height: 1.5em;
   text-align: center;
+  width: 100%;
+
+  @include breakpoints-up-lg {
+    padding: 70px 10px;
+  }
 
   &__logo {
     width: 135px;
