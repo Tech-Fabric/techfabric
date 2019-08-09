@@ -1,12 +1,7 @@
-# TechFabric
+# TechFabric Website
 
-**A Hugo boilerplate for creating truly epic websites**
+[![Netlify Status](https://api.netlify.com/api/v1/badges/835fc8f9-7725-4c11-87d5-6a026b964353/deploy-status)](https://app.netlify.com/sites/techfabric/deploys)
 
-This is a boilerplate for using [Hugo](https://gohugo.io/) as a static site generator and [Webpack](https://webpack.js.org/) as your asset pipeline.
-
-TechFabric setup to use [PostCSS](http://postcss.org/) and [Babel](https://babeljs.io/) for CSS and JavaScript compiling/transpiling.
-
-This project is released under the [MIT license](LICENSE). Please make sure you understand its implications and guarantees.
 
 ## Usage
 
