@@ -15,7 +15,7 @@ Next step, clone this repository and run:
 npm install
 ```
 
-This will take some time and will install all packages necessary to run TechFabric and its tasks.
+This will take some time and will install all packages necessary to run TechFabric website and its tasks.
 
 ### :construction_worker: Development
 
