@@ -61,7 +61,6 @@ a {
 
   &:hover {
     text-decoration: none;
-    opacity: .9;
     color: $brandSecondary;
   }
 }
@@ -167,6 +166,22 @@ h4 {
   }
 }
 
+.display {
+  display: block;
+}
+
+.bordered-link {
+  border: 2px solid #474747;
+  border-radius: 40px;
+  padding: 10px;
+  color: #fff;
+  font-weight: 400;
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 .brand-block {
   padding: 33px 8px;
   @include brand-gradient;
@@ -238,6 +253,16 @@ h4 {
   &:hover {
     @include brand-gradient;
     padding: 3px;
+  }
+}
+
+.pull {
+  &-left {
+    float: left;
+  }
+
+  &-right {
+    float: right;
   }
 }
 

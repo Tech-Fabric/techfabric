@@ -7,32 +7,85 @@
         <input type="checkbox" id="drawer-toggle" name="drawer-toggle"/>
         <label for="drawer-toggle" id="drawer-toggle-label"></label>
 
-        <nav id="drawer">
-            <ul class="header__menu">
-                {{ $currentPage := . }}
-                {{ range .Site.Menus.main }}
-                    {{ if .HasChildren }}
-                        <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
-                            <a class="header__menu-item" href="#">
-                                <span>{{ .Name }}</span>
-                            </a>
-                        </li>
-                        <ul class="sub-menu">
-                            {{ range .Children }}
-                            <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
-                                <a class="header__menu-item" href="{{ .URL }}">{{ .Name }}</a>
-                            </li>
-                            {{ end }}
-                        </ul>
-                        {{ else }}
-                        <li>
-                            <a class="header__menu-item" href="{{ .URL }}">
-                                <span>{{ .Name }}</span>
-                            </a>
-                        </li>
-                    {{ end }}
-                {{ end }}
-            </ul>
-        </nav>
+        <div id="drawer">
+            <div class="header__menu">
+                <div class="header__menu-item" data-menu-open="industries">
+                    Industries
+                </div>
+                <div class="header__menu-item">
+                    Solutions
+                </div>
+                <div class="header__menu-item">
+                    Resources
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header__brand-menu" data-menu-id="industries">
+        <div class="container">
+            <h3 class="header__menu-title">We bring industry expertise to the table.</h3>
+
+            <div class="row">
+                <div class="col-xs-12 col-md-4">
+                    <div class="header__menu-section">
+                        <div>
+                            <h4 class="header__menu-section-title">Automotive</h4>
+                            <p class="header__menu-section-description">
+                                We’ve partnered with industry leading auto finance,
+                                re-finance, and re-marketing organizations to implement
+                                and guide them through their digital transformation journeys.
+                            </p>
+
+                            <div class="bordered-link">
+                                The Automotive Technology Sphere
+                            </div>
+                        </div>
+
+                        <a href="/" class="btn btn-text btn-text_thin pull-right">
+                            Learn More
+                            <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-md-4">
+                    <div class="header__menu-section">
+                        <div>
+                            <h4 class="header__menu-section-title">eCommerce</h4>
+                            <p class="header__menu-section-description">
+                                Our seasoned experts have produced tremendous results for our online retail clients.
+                                We harness the power of cloud-native technologies to empower lean eCommerce processes,
+                                omni-channel efforts, and analytics that continue to drive sales.
+                            </p>
+                        </div>
+
+                        <a href="/" class="btn btn-text btn-text_thin pull-right">
+                            Learn More
+                            <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-md-4">
+                    <div class="header__menu-section header__menu-section_last">
+                        <div>
+                            <h4 class="header__menu-section-title">Medical</h4>
+                            <p class="header__menu-section-description">
+                                Need HIPAA compliant solutions? We’ve got it covered.
+                                Our team understands the complexities that come with clinical,
+                                medical practice, and record management.
+                                We help medical companies move to the cloud through paperless processing.
+                            </p>
+                        </div>
+
+                        <a href="/" class="btn btn-text btn-text_thin pull-right">
+                            Learn More
+                            <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
