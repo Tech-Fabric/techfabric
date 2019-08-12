@@ -7,3 +7,21 @@ title = "Custom Software Development | Tech Fabric"
 # See configuration options for more details:
 # https://gohugo.io/getting-started/configuration/#toml-configuration
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+
+[menu]
+
+  [[menu.main]]
+    identifier = "Industries"
+    name = "Industries"
+    url = "/industries/"
+    weight = -110
+
+  [[menu.main]]
+    name = "Solutions"
+    url = "/solutions/"
+    weight = -100
+
+  [[menu.main]]
+    name = "Resources"
+    url = "/resources/"
+    weight = -100
