@@ -21,27 +21,16 @@
   right: 5px;
   height: 50px;
   width: 50px;
-  display: block;
+  display: flex;
   position: absolute;
-  z-index: 1;
+  z-index: 11;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
   @include breakpoints-up-md {
     display: none;
   }
-}
-
-/* adds our "hamburger" menu icon */
-
-#drawer-toggle-label:before {
-  content: '';
-  display: block;
-  position: absolute;
-  height: 2px;
-  width: 24px;
-  background: $brandPrimary;
-  left: 13px;
-  top: 18px;
-  box-shadow: 0 6px 0 $brandPrimary, 0 12px 0 $brandPrimary;
 }
 
 header {
@@ -71,6 +60,17 @@ header {
   opacity: 1;
   transition: transform .3s ease, opacity .3s ease;
 
+  .header__menu-item {
+    padding: 10px 19px;
+    font-size: 18px;
+    font-weight: 500;
+
+    &:hover {
+      font-weight: 600;
+      background: #3c3c3c73;
+    }
+  }
+
   @include breakpoints-up-md {
     flex-direction: row;
     position: relative;
@@ -82,38 +82,9 @@ header {
     transform: translateX(0);
     opacity: 1;
   }
-}
 
-/* actual page content pane */
-
-#page-content {
-  margin-left: 0;
-  margin-top: 50px;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
-  padding: 20px;
-}
-
-/* checked styles (menu open state) */
-
-#drawer-toggle:checked ~ #drawer-toggle-label {
-  //background: rgba(255,255,255,.8);
-}
-
-#drawer-toggle:checked {
-  @media (max-width: 768px) {
-    & ~ #drawer-toggle-label,
-    & ~ header {
-      z-index: 11;
-    }
-
-    & ~ #drawer-toggle-label {
-      width: 50px;
-      height: 50px;
-    }
-
-    & ~ #drawer {
+  &.visible {
+    @media (max-width: 768px) {
       transform: translateX(0);
       opacity: 1;
 
@@ -126,40 +97,21 @@ header {
           width: 100%;
         }
       }
+    }
 
-      .header__menu-item {
-        padding: 10px 19px;
-        font-size: 18px;
-        font-weight: 500;
-
-        &:hover {
-          font-weight: 600;
-          background: #3c3c3c73;
-        }
-      }
+    @media all and (max-width: 350px) {
+      width: 100%;
     }
   }
 }
 
-#drawer-toggle:checked ~ #page-content {
-  margin-left: 300px;
-}
+/* actual page content pane */
 
-/* Menu item styles */
-
-@media all and (max-width: 350px) {
-
-  #drawer-toggle:checked ~ #drawer-toggle-label {
-    height: 50px;
-    width: 50px;
-  }
-
-  #drawer-toggle:checked ~ #drawer {
-    width: 100%;
-  }
-
-  #drawer-toggle:checked ~ #page-content {
-    margin-left: 100%;
-  }
-
+#page-content {
+  margin-left: 0;
+  margin-top: 50px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  padding: 20px;
 }

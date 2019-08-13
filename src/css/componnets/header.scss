@@ -198,6 +198,8 @@
     padding: 7px;
     position: fixed;
     z-index: 11;
+    overflow: auto;
+    height: calc(100% - 55px);
 
     @include breakpoints-up-sm {
       height: auto;
@@ -222,4 +224,37 @@
     line-height: 1.7em;
     margin: 17px 0;
   }
+}
+
+.hamburger-icon {
+  margin: 0 3px;
+  width: 24px;
+
+  &:after,
+  &:before,
+  & span {
+    background-color: $brandPrimary;
+    border-radius: 0;
+    content: '';
+    display: block;
+    height: 2px;
+    width: 24px;
+    margin: 2px 0;
+    transition: all .2s ease-in-out;
+  }
+
+  &_close {
+    &:before {
+      transform: translateY(6px) rotate(135deg);
+    }
+
+    &:after {
+      transform: translateY(-6px) rotate(-135deg);
+    }
+
+    span {
+      transform: scale(0);
+    }
+  }
+
 }

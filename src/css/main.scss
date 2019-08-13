@@ -32,6 +32,7 @@ body {
   background-size: 100% 47%;
   color: white;
   padding-top: 70px;
+  position: relative;
 
   @include breakpoints-up-sm {
     padding-top: 100px;
@@ -40,6 +41,10 @@ body {
   @include breakpoints-up-lg {
     padding-top: 0;
   }
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 .clearfix::after {

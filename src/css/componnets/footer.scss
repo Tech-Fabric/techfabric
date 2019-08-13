@@ -41,8 +41,12 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0 50px;
+    padding: 0 10px;
     margin-bottom: 50px;
+
+    @include breakpoints-up-lg {
+      padding: 0 50px;
+    }
   }
 
   &__social-networks {
