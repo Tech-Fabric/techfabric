@@ -73,22 +73,29 @@
 
     &-item {
       display: block;
-      font-size: 20px;
-      padding: 0 32px;
+      font-size: 18px;
+      padding: 10px 19px;
       color: $brandPrimary;
       font-weight: 400;
+
+      @include breakpoints-up-md {
+        padding: 0 32px;
+        font-size: 20px;
+      }
 
       @include breakpoints-up-lg {
         font-size: 24px;
         padding: 44px 32px;
       }
 
-      &:hover {
-        cursor: pointer;
-        color: $brandPrimary;
+      &:last-child {
+        padding-right: 0;
       }
 
       &:hover {
+        cursor: pointer;
+        color: $brandPrimary;
+
         .header__brand-menu {
           display: block;
         }
@@ -103,7 +110,7 @@
 
       @include breakpoints-up-md {
         font-size: 24px;
-        margin-bottom: 27px;
+        margin-bottom: 36px;
       }
     }
 
@@ -117,16 +124,17 @@
         height: 100%;
         margin-bottom: 0;
         padding-bottom: 0;
+        padding-top: 13px;
         padding-right: 30px;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-        align-items: flex-end;
       }
 
       @include breakpoints-up-lg {
-        margin-bottom: 10px;
-        padding-bottom: 30px;
+        margin-bottom: 0;
+        padding-bottom: 32px;
+        padding-right: 50px;
       }
 
       &:after {
@@ -156,6 +164,7 @@
 
         @include breakpoints-up-md {
           font-size: 24px;
+          margin-bottom: 14px;
         }
       }
 
@@ -167,7 +176,11 @@
         margin-bottom: 38px;
 
         @include breakpoints-up-md {
-          margin-bottom: 35px;
+          margin-bottom: 43px;
+        }
+
+        @include breakpoints-up-xl {
+          margin-bottom: 56px;
         }
       }
 
@@ -181,8 +194,16 @@
     }
 
     &-contacts-block {
+      line-height: 1.2em;
+
+      h3 {
+        @include breakpoints-up-md {
+          margin-bottom: 32px;
+        }
+      }
+
       p {
-        margin-top: 20px;
+        margin-top: 25px;
       }
 
       @include breakpoints-up-md {
@@ -224,7 +245,7 @@
   &__culture {
     font-size: 16px;
     line-height: 1.7em;
-    margin: 17px 0;
+    margin: 17px 0 0;
   }
 }
 

@@ -60,17 +60,6 @@ header {
   opacity: 1;
   transition: transform .3s ease, opacity .3s ease;
 
-  .header__menu-item {
-    padding: 10px 19px;
-    font-size: 18px;
-    font-weight: 500;
-
-    &:hover {
-      font-weight: 600;
-      background: #3c3c3c73;
-    }
-  }
-
   @include breakpoints-up-md {
     flex-direction: row;
     position: relative;
