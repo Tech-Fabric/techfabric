@@ -172,6 +172,8 @@
       }
 
       &_last {
+        margin-bottom: 0;
+
         &:after {
           background: none;
         }
@@ -190,16 +192,16 @@
   }
 
   &__brand-menu {
-    display: none;
     left: 0;
     top: 55px;
     width: 100%;
-    background-color: #080808;
-    padding: 7px;
-    position: fixed;
     z-index: 11;
+    padding: 7px 7px 40px;
+    display: none;
     overflow: auto;
+    position: fixed;
     height: calc(100% - 55px);
+    background-color: #080808;
 
     @include breakpoints-up-sm {
       height: auto;
@@ -256,5 +258,4 @@
       transform: scale(0);
     }
   }
-
 }
