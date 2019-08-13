@@ -95,6 +95,11 @@
       &:hover {
         cursor: pointer;
         color: $brandPrimary;
+        background-color: rgba(60, 60, 60, 0.45);
+
+        @include breakpoints-up-md {
+          background-color: transparent;
+        }
 
         .header__brand-menu {
           display: block;

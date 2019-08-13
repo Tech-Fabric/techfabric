@@ -25,6 +25,17 @@ const whenDocumentLoaded = function() {
 
     const callback = (event) => {
       menu.classList.toggle("display");
+
+      setTimeout(() => {
+        const drawer = document.getElementsByClassName("header__brand-menu display")[0];
+
+        if (drawer) {
+          drawer.ontouchmove = (e) => {
+            e.stopPropagation();
+            e.stopImmediatePropagation();
+          };
+        }
+      });
     };
 
     const eventName = isMobile ? "click" : "mouseenter";
@@ -40,6 +51,7 @@ const whenDocumentLoaded = function() {
     if (!isMobile) {
       menu.addEventListener("mouseleave", callback);
     }
+
   }
 };
 
