@@ -1,65 +1,68 @@
 // JS Goes here - ES6 supported
 
-import "./css/main.scss";
+import './css/main.scss';
+import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+
+const getVisibleMenu = () => {
+  return document.getElementsByClassName('header__brand-menu display')[0];
+};
 
 const whenDocumentLoaded = function() {
-  const menuButtons = document.querySelectorAll("[data-menu-open]");
-  const menuToggle = document.getElementById("drawer-toggle");
-  const menuBodies = document.querySelectorAll("[data-menu-id]");
+  const menuButtons = document.querySelectorAll('[data-menu-open]');
+  const menuToggle = document.getElementById('drawer-toggle');
+  const menuBodies = document.querySelectorAll('[data-menu-id]');
 
   const isMobile = window.innerWidth <= 756;
 
-  menuToggle.addEventListener("click", () => {
-    document.body.classList.toggle("no-scroll");
-    document.getElementById("drawer").classList.toggle("visible");
-    document.getElementById("drawer-toggle-label").classList.toggle("hamburger-icon_close");
+  menuToggle.addEventListener('click', () => {
+    const drawer = document.getElementById('drawer');
+    const drawerButton = document.getElementById('drawer-toggle-label');
+    const isOpened = drawer.classList.contains('visible');
+
+    if (isOpened) {
+      const drawerMenu = getVisibleMenu();
+      clearAllBodyScrollLocks(drawerMenu);
+    } else {
+      disableBodyScroll(drawer);
+    }
+
+    drawer.classList.toggle('visible');
+    drawerButton.classList.toggle('hamburger-icon_close');
 
     for (const menu of menuBodies) {
-      menu.classList.remove("display");
+      menu.classList.remove('display');
     }
   });
 
   for (const button of menuButtons) {
     const value = button.dataset.menuOpen;
-    const menu = document.querySelector("[data-menu-id=" + value + "]");
+    const menu = document.querySelector('[data-menu-id=' + value + ']');
 
     const callback = (event) => {
-      menu.classList.toggle("display");
-
-      setTimeout(() => {
-        const drawer = document.getElementsByClassName("header__brand-menu display")[0];
-
-        if (drawer) {
-          drawer.ontouchmove = (e) => {
-            e.stopPropagation();
-            e.stopImmediatePropagation();
-          };
-        }
-      });
+      menu.classList.toggle('display');
     };
 
-    const eventName = isMobile ? "click" : "mouseenter";
+    const eventName = isMobile ? 'click' : 'mouseenter';
 
     button.addEventListener(eventName, callback);
 
     if (!isMobile) {
-      button.addEventListener("mouseleave", callback);
+      button.addEventListener('mouseleave', callback);
     }
 
     menu.addEventListener(eventName, callback);
 
     if (!isMobile) {
-      menu.addEventListener("mouseleave", callback);
+      menu.addEventListener('mouseleave', callback);
     }
-
   }
 };
 
 if (
-  document.readyState === "complete" ||
-  (document.readyState !== "loading" && !document.documentElement.doScroll)
+  document.readyState === 'complete' ||
+  (document.readyState !== 'loading' && !document.documentElement.doScroll)
 ) {
   whenDocumentLoaded();
 } else {
-  document.addEventListener("DOMContentLoaded", whenDocumentLoaded);
+  document.addEventListener('DOMContentLoaded', whenDocumentLoaded);
 }
