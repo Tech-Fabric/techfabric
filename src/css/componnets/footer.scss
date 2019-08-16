@@ -12,6 +12,10 @@
 
   li {
     line-height: 3em;
+
+    a {
+      line-height: 1.5em;
+    }
   }
 
   @include breakpoints-up-lg {
