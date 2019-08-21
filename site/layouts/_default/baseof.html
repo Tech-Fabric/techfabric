@@ -17,7 +17,9 @@
 
 {{ block "header" . }}{{ partial "header" . }}{{end}}
 
-{{ block "main" . }}{{end}}
+<div class="body">
+  {{ block "main" . }}{{end}}
+</div>
 
 {{ block "footer" . }}{{ partial "footer" . }}{{end}}
 

@@ -1,0 +1,21 @@
+{{ define "main" }}
+
+<div class="container">
+    <div>
+        <h5 class="text-uppercase">{{ .Title }}</h5>
+
+        {{ with .Params.subtitle }}
+        <h2 class="text-weight-light case-study__subtitle">{{.}}</h2>
+        {{ end }}
+
+        {{ .Page.Content }}
+    </div>
+
+    <div class="row">
+        {{ range .Pages }}
+            {{ .Render "summary" }}
+        {{ end }}
+    </div>
+</div>
+
+{{ end }}

@@ -8,6 +8,7 @@
 @import 'imports/hero-block';
 @import 'imports/drawer';
 @import 'imports/404';
+@import 'layouts/case-studies';
 @import "buttons";
 
 @import "componnets/components";
@@ -112,9 +113,14 @@ h1 {
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 29px;
   font-weight: 500;
   margin-bottom: 38px;
+
+  @include breakpoints-up-sm {
+    font-size: 32px;
+    font-weight: 500;
+  }
 }
 
 h3 {
@@ -134,6 +140,12 @@ h4 {
   font-size: 16px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.5);
+}
+
+h5 {
+  font-size: 12px;
+  margin-bottom: 10px;
+  opacity: .5;
 }
 
 .brand-list {
@@ -302,7 +314,7 @@ h4 {
 
 .entity-card {
   @extend .clearfix;
-  padding: 40px 23px 25px;
+  padding: 33px 0 0;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -428,7 +440,7 @@ h4 {
 
 .case-study {
   border-radius: 12px;
-  padding: 33px 0 0 ;
+  padding: 33px;
   margin-bottom: 30px;
   box-shadow: rgba(0, 0, 0, 0.29) 0 20px 20px;
   @include brand-gradient-45;
