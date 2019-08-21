@@ -1,7 +1,6 @@
 ---
-title: 'Simonmed'
-category: 'Medical'
-date: 2019-08-21T15:55:40+03:00
+title: Simonmed
 draft: false
+thumbnailImage: /images/uploads/Cloud Fabric_Logo.png
 ---
 
