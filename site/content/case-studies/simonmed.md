@@ -1,6 +1,6 @@
 ---
 title: Simonmed
-category: Medicine
+category: Medical
 draft: false
 thumbnailImage: /images/uploads/simonmed-logo.svg
 ---
