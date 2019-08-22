@@ -1,8 +1,8 @@
 ---
-title: 'K&L Wine Merchants'
-category: 'e-Commerce'
+title: K&L Wine Merchants
+category: e-Commerce
 date: 2019-07-29T15:29:21+03:00
-thumbnailImage: 'K&L-logo.svg'
+thumbnailImage: /images/uploads/K&L-logo.svg
 draft: false
 ---
 K&L Wine Merchants (KLWines) is one of the largest online wine and spirits retailers in the United States. 

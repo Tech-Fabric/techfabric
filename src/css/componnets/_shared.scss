@@ -83,14 +83,6 @@
     margin-bottom: 52px;
   }
 
-  &__title {
-    margin-bottom: 14px;
-
-    @include breakpoints-up-sm {
-      margin-bottom: 27px;
-    }
-  }
-
   &_single {
     margin-bottom: 32px;
   }

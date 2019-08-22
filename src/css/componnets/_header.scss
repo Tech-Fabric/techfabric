@@ -55,7 +55,7 @@
     justify-content: space-between;
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0 -32px 0 0;
 
     @include breakpoints-up-md {
       display: flex;
@@ -88,17 +88,12 @@
         padding: 44px 32px;
       }
 
-      &:last-child {
-        padding-right: 0;
-      }
-
       &:hover {
         cursor: pointer;
-        color: $brandPrimary;
         background-color: rgba(60, 60, 60, 0.45);
 
         @include breakpoints-up-md {
-          background-color: transparent;
+          background-color: #ffffff03;
         }
 
         .header__brand-menu {

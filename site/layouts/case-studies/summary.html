@@ -1,17 +1,22 @@
-<div class="col-md-6 col-lg-4">
-    <div class="case-study brand-block clearfix">
-        {{ if .Params.image }}
-            {{ $original := print "/images/uploads/" (path.Base .Params.image) }}
-                {{ printf `<img src="%s" alt="%s">` $original .Title | safeHTML }}
+<div class="col-md-6 col-lg-4 case-study-wrapper">
+    <div class="case-study brand-block entity-card clearfix">
+        {{ if .Params.thumbnailImage }}
+        <div class="case-study__image">
+            {{ printf `<img src="%s" alt="%s">` .Params.thumbnailImage .Title | safeHTML }}
+        </div>
         {{end}}
 
-        <h5>{{.Params.category}}</h5>
-        <h3>{{.Title}}</h3>
+        <h5 class="text-uppercase">{{.Params.category}}</h5>
+        <h3 class="mb-1">{{.Title}}</h3>
 
-        <span>
-            {{ substr .Content 0 228 | safeHTML }}
-        </span>
+        <div class="entity-card__description">
+            {{ if .Content }}
+            {{ substr .Content 0 201 | safeHTML }}...
+            {{ end }}
+        </div>
 
-        <a href="{{.Permalink}}" class="pull-right">See Case Story <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg" alt=""></a>
+        <a href="{{.Permalink}}" class="btn btn-text btn-text_thin flex-end">
+            See Case Story <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg">
+        </a>
     </div>
 </div>
