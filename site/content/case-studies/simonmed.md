@@ -1,6 +1,7 @@
 ---
 title: Simonmed
+category: Medicine
 draft: false
-thumbnailImage: /images/uploads/Cloud Fabric_Logo.png
+thumbnailImage: /images/uploads/simonmed-logo.svg
 ---
 
