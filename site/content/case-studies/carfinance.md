@@ -1,8 +1,8 @@
 ---
-title: 'Carfinance'
-category: 'Automotive'
-date: 2019-07-29T15:29:21+03:00
+title: Carfinance
+category: Automotive
 draft: false
+thumbnailImage: /images/uploads/carfinance-logo.svg
 ---
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
