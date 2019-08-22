@@ -18,6 +18,27 @@
     margin-bottom: 32px;
   }
 
+  &-page {
+    padding-top: 17px;
+
+    &__header {
+      display: flex;
+      clear: both;
+      margin: 20px 0;
+      line-height: 2em;
+      align-items: center;
+
+      @include breakpoints-up-md {
+        margin-bottom: 0;
+      }
+    }
+
+    h1 {
+      line-height: 1.4em;
+      margin-bottom: 53px;
+    }
+  }
+
   &__image {
     display: flex;
     justify-content: center;
@@ -152,4 +173,14 @@
 
 .primary-case-study-block {
   height: calc(100% - 30px);
+}
+
+
+.header-image {
+  height: 110px;
+  margin: 32px 40px 32px 0;
+
+  img {
+    height: 100%;
+  }
 }
