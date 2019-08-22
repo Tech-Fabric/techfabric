@@ -18,6 +18,10 @@ collections:
         name: "title"
         widget: "string"
 
+      - label: "Subtitle"
+        name: "subtitle"
+        widget: "string"
+
       - label: "Category"
         name: "category"
         widget: "string"
