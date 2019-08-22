@@ -1,10 +1,15 @@
 <div class="col-md-6 col-lg-4">
     <div class="case-study brand-block clearfix">
+        {{ if .Params.image }}
+            {{ $original := print "/images/uploads/" (path.Base .Params.image) }}
+                {{ printf `<img src="%s" alt="%s">` $original .Title | safeHTML }}
+        {{end}}
+
         <h5>{{.Params.category}}</h5>
         <h3>{{.Title}}</h3>
 
         <span>
-            {{.Params.body}}
+            {{ substr .Content 0 228 | safeHTML }}
         </span>
 
         <a href="{{.Permalink}}" class="pull-right">See Case Story <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg" alt=""></a>
