@@ -1,0 +1,46 @@
+.flex-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.content {
+  padding: 0 32px;
+}
+
+.container {
+  position: relative;
+  max-width: 100%;
+  width: 1670px;
+  margin: 0 auto;
+}
+
+.flex {
+  &-start {
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+  }
+
+  &-end {
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+  }
+
+  &-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

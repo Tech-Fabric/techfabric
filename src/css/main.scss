@@ -1,26 +1,19 @@
-/*
-  You can use import statements to include partials:
- */
 @import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 @import "variables";
 @import "mixins";
-@import 'imports/reset';
-@import 'imports/hero-block';
-@import 'imports/drawer';
-@import 'imports/404';
-@import 'layouts/case-studies';
-@import "buttons";
+@import 'imports/index';
+@import "componnets/index";
+@import 'layouts/index';
 
-@import "componnets/components";
-
-html {
-  background: rgb(15,15,15);
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
-/*
-  Or add your statements here:
- */
 body {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   font-size: 16px;
   font-family: "Roboto", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
@@ -29,11 +22,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0f0f0f+0,3c3c3c+50,0f0f0f+100 */
-  background: rgb(15,15,15); /* Old browsers */
-  background: -moz-linear-gradient(top,  rgba(15,15,15,1) 0%, rgba(60,60,60,1) 50%, rgba(15,15,15,1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  rgba(15,15,15,1) 0%,rgba(60,60,60,1) 50%,rgba(15,15,15,1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  rgba(15,15,15,1) 0%,rgba(60,60,60,1) 50%,rgba(15,15,15,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f0f0f', endColorstr='#0f0f0f',GradientType=0 ); /* IE6-9 */
+  background: rgb(15, 15, 15); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(15, 15, 15, 1) 0%, rgba(60, 60, 60, 1) 50%, rgba(15, 15, 15, 1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(15, 15, 15, 1) 0%, rgba(60, 60, 60, 1) 50%, rgba(15, 15, 15, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(15, 15, 15, 1) 0%, rgba(60, 60, 60, 1) 50%, rgba(15, 15, 15, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0f0f0f', endColorstr='#0f0f0f', GradientType=0); /* IE6-9 */
   background-size: 100% 47%;
   color: white;
   padding-top: 70px;
@@ -48,167 +41,21 @@ body {
   }
 }
 
-.flex-centered {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.body {
+  flex-grow: 1;
 }
 
-.no-scroll {
-  overflow: hidden;
-}
-
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.full-width {
-  width: 100%;
-}
-
-a {
-  display: inline-flex;
-  align-items: center;
-  color: $brandSecondary;
-  text-decoration: none;
-  transition: opacity .1s ease;
+.image-hover {
+  transition: padding .1s ease;
 
   &:hover {
-    text-decoration: none;
-    color: $brandSecondary;
-  }
-}
-
-b {
-  font-weight: 600;
-}
-
-.text-regular {
-  color: #fff;
-}
-
-.content {
-  padding: 0 32px;
-}
-
-.container {
-  position: relative;
-  max-width: 100%;
-  width: 1670px;
-  margin: 0 auto;
-}
-
-h1 {
-  font-size: 27px;
-  line-height: 35px;
-  font-family: "Roboto Light", sans-serif;
-  font-weight: 400;
-
-  @include breakpoints-up-sm {
-    font-size: 42px;
-    line-height: 1em;
-  }
-}
-
-h2 {
-  font-size: 29px;
-  font-weight: 500;
-  margin-bottom: 38px;
-
-  @include breakpoints-up-sm {
-    font-size: 32px;
-    font-weight: 500;
-  }
-}
-
-h3 {
-  font-size: 20px;
-  font-weight: 500;
-  margin: 0;
-  line-height: 1.5em;
-
-  @include breakpoints-up-sm {
-    font-size: 32px;
-  }
-}
-
-h4 {
-  font-family: "Roboto Bold", "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-h5 {
-  font-size: 12px;
-  margin-bottom: 10px;
-  opacity: .5;
-}
-
-.brand-list {
-  list-style: none;
-  line-height: 40px;
-  margin: 13px 0 0 0;
-
-  @include breakpoints-up-sm {
-    margin: 30px 0 0 0;
-    line-height: 44px;
-  }
-
-  &_centered {
-    display: flex;
-    justify-content: center;
-  }
-
-  &__item {
-    display: flex;
-    align-items: center;
-    position: relative;
-    padding-left: 20px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5em;
-    margin-bottom: 16px;
-    color: #fff;
-
-    @include breakpoints-up-sm {
-      margin-bottom: 18px;
-    }
-
-    &:before {
-      content: '';
-      left: 0;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-      position: absolute;
-      display: block;
-      width: 10px;
-      height: 2px;
-      background-color: $brandPrimary;
-    }
-  }
-
-  &__icon {
-    height: 24px;
-    width: 24px;
-    margin-left: 5px;
+    @include brand-gradient;
+    padding: 3px;
   }
 }
 
 .display {
   display: block;
-}
-
-.flex {
- &-end {
-   display: flex;
-   align-self: flex-end;
-   align-items: flex-end;
- }
 }
 
 .bordered-link {
@@ -225,340 +72,6 @@ h5 {
   @include breakpoints-up-md {
     font-size: 20px;
     font-weight: 500;
-  }
-}
-
-.brand-block {
-  padding: 33px 8px;
-  @include brand-gradient;
-
-  @include breakpoints-up-sm {
-    padding: 60px 0;
-  }
-
-  &_spaced {
-    margin-bottom: 45px;
-
-    @include breakpoints-up-lg {
-      margin-bottom: 125px;
-    }
-  }
-}
-
-.brand-subheader {
-  color: $brandPrimary;
-  font-size: 18px;
-  margin: 21px 0 25px;
-  line-height: 1.45em;
-  text-transform: none;
-}
-
-.text {
-  &-weight-light {
-    font-weight: 200;
-  }
-
-  &-center {
-    text-align: center;
-  }
-
-  &-brand-primary {
-    color: $brandPrimary;
-  }
-
-  &-brand-secondary {
-    color: $brandSecondary;
-  }
-}
-
-.page-header {
-  margin-bottom: 19px;
-  padding: 0 9px;
-
-  @include breakpoints-up-sm {
-    padding: 0;
-    margin-bottom: 52px;
-  }
-
-  &__title {
-    margin-bottom: 14px;
-
-    @include breakpoints-up-sm {
-      margin-bottom: 27px;
-    }
-  }
-
-  &_single {
-    margin-bottom: 32px;
-  }
-}
-
-.image-hover {
-  transition: padding .1s ease;
-
-  &:hover {
-    @include brand-gradient;
-    padding: 3px;
-  }
-}
-
-.pull {
-  &-left {
-    float: left;
-  }
-
-  &-right {
-    float: right;
-  }
-}
-
-.entity-card {
-  @extend .clearfix;
-  padding: 33px 0 0;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  &-wrapper {
-    margin-bottom: 25px;
-  }
-
-  @include breakpoints-up-lg {
-    height: 100%;
-  }
-
-  @include breakpoints-up-sm {
-    padding: 35px 32px;
-  }
-
-  &__header {
-    display: flex;
-    justify-content: space-between;
-    font-size: 12px;
-    margin-bottom: 20px;
-  }
-
-  &__time {
-    text-transform: uppercase;
-    opacity: .5;
-  }
-
-  &__category {
-    opacity: 1;
-  }
-
-  &__image {
-    width: 100%;
-
-    &-wrapper {
-      position: relative;
-      min-height: 230px;
-      max-height: 230px;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: calc(100% + 46px);
-      margin-left: -23px;
-
-      @extend .image-hover;
-
-      @include breakpoints-up-sm {
-        margin-bottom: 20px;
-        width: calc(100% + 64px);
-        margin-left: -32px;
-      }
-
-      a {
-        justify-content: center;
-      }
-    }
-  }
-
-  &_bg {
-    @include dark-bg;
-    box-shadow: rgba(0, 0, 0, 0.29) 0 20px 20px;
-
-    &:before {
-      content: '';
-      width: 100%;
-      height: 2px;
-      position: absolute;
-      top: 0;
-      left: 0;
-      @include contrast-gradient;
-    }
-  }
-
-  &__title {
-    @extend .clearfix;
-    margin-bottom: 13px;
-    font-size: 22px;
-
-    @include breakpoints-up-xl {
-      margin-bottom: 34px;
-      line-height: 42px;
-      font-size: 32px;
-    }
-  }
-
-  &__description {
-    @extend .clearfix;
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 24px;
-    margin-bottom: 15px;
-    margin-top: 0;
-  }
-
-  &__list {
-    margin: 3px 0 0 0;
-  }
-
-  &__footer {
-    display: flex;
-    justify-content: flex-end;
-  }
-}
-
-.quote {
-  text-align: center;
-
-  &__text {
-    color: $brandSecondary;
-    max-width: 1220px;
-    font-weight: 200;
-    margin: auto auto 15px;
-    line-height: 30px;
-
-    @include breakpoints-up-sm {
-      line-height: 48px;
-    }
-  }
-}
-
-.case-study {
-  border-radius: 12px;
-  padding: 33px;
-  margin-bottom: 30px;
-  box-shadow: rgba(0, 0, 0, 0.29) 0 20px 20px;
-  @include brand-gradient-45;
-
-  &__description {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-
-    .client-logo {
-      width: 100px;
-      margin: auto;
-    }
-  }
-
-  &__screenshots {
-    width: 100%;
-    float: left;
-
-    @include breakpoints-up-lg {
-      width: 60%;
-    }
-  }
-
-  &__screenshot {
-    width: 100%;
-
-    @include breakpoints-up-lg {
-      margin: -47px auto 10px;
-      max-width: 620px;
-    }
-  }
-
-  &__img-bottom-left {
-    max-width: 100%;
-    margin: 30px auto 0;
-
-    img {
-      width: 100%;
-    }
-
-    @include breakpoints-up-lg {
-      margin-top: 68px;
-      max-width: 300px;
-    }
-  }
-}
-
-.mobile-capitalized {
-  text-transform: capitalize;
-
-  @include breakpoints-up-sm {
-    text-transform: none;
-  }
-}
-
-.response {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-
-  @include breakpoints-up-sm {
-    flex-direction: row;
-  }
-
-  &__body {
-    text-align: center;
-
-    @include breakpoints-up-sm {
-      text-align: left;
-    }
-  }
-
-  &__image {
-    width: 76px;
-    height: 76px;
-    min-width: 76px;
-    min-height: 76px;
-    margin-right: 28px;
-    margin-bottom: 20px;
-    border-radius: 100%;
-    overflow: hidden;
-
-    @include breakpoints-up-sm {
-      margin-bottom: 0;
-    }
-
-    img {
-      position: relative;
-      width: 170%;
-      height: 170%;
-      left: -28%;
-      top: -28%;
-    }
-  }
-
-  &__title {
-    font-size: 16px;
-  }
-
-  &__author {
-    font-size: 16px;
-    margin-top: 30px;
-    padding: 0 10px;
-
-    @include breakpoints-up-sm {
-      margin-top: 5px;
-      padding: 0;
-    }
-  }
-
-  &-block {
-    margin-bottom: 30px;
-
-    @include breakpoints-up-lg {
-      margin-bottom: 0;
-    }
   }
 }
 
@@ -610,10 +123,6 @@ h5 {
   }
 }
 
-.asterisk {
-  color: $brandPrimary;
-}
-
 .brand-control {
   &-label {
     margin-bottom: 15px;
@@ -636,11 +145,6 @@ h5 {
       padding: 15px;
     }
   }
-}
-
-.form-footer {
-  display: flex;
-  align-items: center;
 }
 
 .form-terms-and-conditions {

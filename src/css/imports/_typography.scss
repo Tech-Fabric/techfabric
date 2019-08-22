@@ -1,0 +1,86 @@
+a {
+  display: inline-flex;
+  align-items: center;
+  color: $brandSecondary;
+  text-decoration: none;
+  transition: opacity .1s ease;
+
+  &:hover {
+    text-decoration: none;
+    color: $brandSecondary;
+  }
+}
+
+b {
+  font-weight: 600;
+}
+
+.text-regular {
+  color: #fff;
+}
+
+h1 {
+  font-size: 27px;
+  line-height: 35px;
+  font-family: "Roboto Light", sans-serif;
+  font-weight: 400;
+
+  @include breakpoints-up-sm {
+    font-size: 42px;
+    line-height: 1em;
+  }
+}
+
+h2 {
+  font-size: 29px;
+  font-weight: 500;
+  margin-bottom: 38px;
+
+  @include breakpoints-up-sm {
+    font-size: 32px;
+    font-weight: 500;
+  }
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.5em;
+
+  @include breakpoints-up-sm {
+    font-size: 32px;
+  }
+}
+
+h4 {
+  font-family: "Roboto Bold", "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+h5 {
+  font-size: 12px;
+  margin-bottom: 10px;
+  opacity: .5;
+}
+
+.text {
+  &-weight-light {
+    font-weight: 200;
+  }
+
+  &-center {
+    text-align: center;
+  }
+
+  &-brand-primary {
+    color: $brandPrimary;
+  }
+
+  &-brand-secondary {
+    color: $brandSecondary;
+  }
+}
