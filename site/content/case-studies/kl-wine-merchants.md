@@ -1,5 +1,6 @@
 ---
 title: K&L Wine Merchants
+subtitle: Subtitle
 category: e-Commerce
 draft: false
 thumbnailImage: /images/uploads/K&L-logo.svg
@@ -30,3 +31,12 @@ expect from modern eCommerce applications. As a result, KLWines embarked on a di
 as their development partner to build Open APIs that automate business processes and expose functionality through clearly 
 defined microservice contracts.
 
+#### Solution
+
+### From Monolith to Event-Driven Microservices
+
+TechFabric proposed breaking down the legacy monolithic web application into a set of event driven, reactive microservices. Each of these microservices was responsible for automating business processes that drive the KLWines eCommerce engine. 
+
+The microservices were designed to be loosely coupled and reactive. Many subscribe to events happening in the system, process them and broadcast any state changes to the Azure Service Bus for other interested microservices to subscribe to them. This dramatically improved the KL Wines system’s ability to react to changes happening in the system. 
+
+Moreover, the new microservices were containerized and deployed to a Service Fabric Cluster. Containerization of microservices made it possible to achieve an order-of-magnitude increase in density, thereby making it possible to deploy many more microservices to the same nodes, achieving dramatic cost savings.
