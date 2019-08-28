@@ -72,6 +72,8 @@ TechFabric built a robust notifications system using Azure Service Bus and expos
 
 The notification API drops the messages on to Azure Service Bus which are picked up by Azure Functions and Logic Apps to send the notifications. Many of the legacy systems that had their own notifications logic were refactored to use the notifications API to have a single, centralized and consistent message format.
 
+![](/images/uploads/cork-borg-app-infographic.svg)
+
 ### “Cork Borg” Internal Mobile App increases Staff Productivity by 50%
 
 Changes happen to a customer’s order as it goes through various stages of order processing, and customers expect an order status update with each stage. KL Wines’ eCommerce system sends hundreds of thousands of notifications each day. Various internal systems had their own implementation, and there was an immediate need to build a centralized notifications system to send consistent messages to customers. 
