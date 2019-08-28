@@ -1,13 +1,13 @@
 ---
 title: K&L Wine Merchants
 description: >-
-  K&L Wine Merchants (KLWines) is one of the largest online wine and spirits
-  retailers in the United States. They operate three physical locations, an
-  eCommerce portal and at any given point in time have several thousand bottles
-  in its inventory. Although, KLWines had a very impressive stack of
-  applications to help with their internal processes and external sales, many of
-  the applications were developed over a period of time and were ripe for
-  modernization.
+  Although, KLWines had a very impressive stack of applications to help with
+  their internal processes and external sales, many of the applications were
+  developed over a period of time and were ripe for modernization. Azure
+  technologies provided the perfect fit of solutions to achieve their goal of
+  creating an internal web application with multiple modules for mitigating the
+  inventory management concerns while also speeding up search capabilities for
+  an improved customer experience.
 subtitle: Subtitle
 category: e-Commerce
 draft: false
