@@ -88,7 +88,7 @@ The notification API drops the messages on to Azure Service Bus which are picked
 
 The overall visual treatment and visual design of the mobile application followed functional methodologies versus elaborate custom visuals, and included integration with Local Delivery for fast shipments; a barcode scanner; Auction Bin Locating; advanced search, filter, and sorting options; and more making it easy for staff to learn and use.
 
-\#### Results
+#### Results
 
 The KL Wines and TechFabric collaboration proved to be a formula for success. Together they were able to streamline their workflow and modernize their systems to increase sales not only through their website, which generates hundreds of millions in revenue yearly, but also improving their in-store point of sale systems. 
 
