@@ -83,3 +83,17 @@ The notification API drops the messages on to Azure Service Bus which are picked
 * _Will Call Tools _- Allowing users to sweep orders, track call logs, locate product bins, service wine club members, and send email notifications for product pickup.
 * _Bin Locating_ - Making it easy for the staff members to associate any product to a Bin location. Users can find an item using the SKU and its Bin location.
 * _Product Lookup_ - The ability to access the details and availability of many products with advanced search, sort, and filtering capabilities.
+* _Local Delivery _- Batch order fulfillment for local customers with the ability to send SMS text and email notifications.
+* _Stocker_ - A feature for creating a list of items to restock in the retails stores. A staff member can use this for picking specific items from the warehouse.
+
+The overall visual treatment and visual design of the mobile application followed functional methodologies versus elaborate custom visuals, and included integration with Local Delivery for fast shipments; a barcode scanner; Auction Bin Locating; advanced search, filter, and sorting options; and more making it easy for staff to learn and use.
+
+\#### Results
+
+The KL Wines and TechFabric collaboration proved to be a formula for success. Together they were able to streamline their workflow and modernize their systems to increase sales not only through their website, which generates hundreds of millions in revenue yearly, but also improving their in-store point of sale systems. 
+
+Today, not only is the company confident that it knows precisely what is, and is not, in inventory - their customers know as well. Shoppers can be sure that when they visit the store, their desired item, perhaps found first on the mobile app, will be there in-store for pickup. 
+
+KL Wines implemented a paperless environment that has increased operational tasks by 50%, reported a 34% Increase in staff production in retail storefronts, improvement in customer feedback on social and web channels, better tracking and reporting of product fulfilment and sales, a reduction of inefficiencies in both warehouse and retail operation, better cross-promotion efforts and most important – an exceptional over-all online customer experience. 
+
+Digital Transformation is an evolution – a journey that never really ends. As markets develop and customers’ needs change, organizations must consistently invest in their digital technology stack to build and maintain customer-centric experiences. By leveraging Azure as a cloud technology platform, Tech Fabric is helping KLWines innovate and meet the ongoing challenges of running America’s favorite eCommerce portal for Wines and Spirits.
