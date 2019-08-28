@@ -80,11 +80,11 @@ TechFabric built a robust notifications system using Azure Service Bus and expos
 
 The notification API drops the messages on to Azure Service Bus which are picked up by Azure Functions and Logic Apps to send the notifications. Many of the legacy systems that had their own notifications logic were refactored to use the notifications API to have a single, centralized and consistent message format.
 
-* _Will Call Tools _- Allowing users to sweep orders, track call logs, locate product bins, service wine club members, and send email notifications for product pickup.
-* _Bin Locating_ - Making it easy for the staff members to associate any product to a Bin location. Users can find an item using the SKU and its Bin location.
-* _Product Lookup_ - The ability to access the details and availability of many products with advanced search, sort, and filtering capabilities.
-* _Local Delivery _- Batch order fulfillment for local customers with the ability to send SMS text and email notifications.
-* _Stocker_ - A feature for creating a list of items to restock in the retails stores. A staff member can use this for picking specific items from the warehouse.
+* **Will Call Tools **- Allowing users to sweep orders, track call logs, locate product bins, service wine club members, and send email notifications for product pickup.
+* **Bin Locating** - Making it easy for the staff members to associate any product to a Bin location. Users can find an item using the SKU and its Bin location.
+* **Product Lookup** - The ability to access the details and availability of many products with advanced search, sort, and filtering capabilities.
+* **Local Delivery** - Batch order fulfillment for local customers with the ability to send SMS text and email notifications.
+* **Stocker** - A feature for creating a list of items to restock in the retails stores. A staff member can use this for picking specific items from the warehouse.
 
 The overall visual treatment and visual design of the mobile application followed functional methodologies versus elaborate custom visuals, and included integration with Local Delivery for fast shipments; a barcode scanner; Auction Bin Locating; advanced search, filter, and sorting options; and more making it easy for staff to learn and use.
 
