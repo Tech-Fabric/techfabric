@@ -2,36 +2,28 @@
 <article class="content">
     <div class="container">
         <div class="case-study-page">
-            <div class="row">
-                <div class="col-md-7">
-                    <a href="{{.Permalink}}" class="btn btn-text btn-text_thin flex-end">
-                        <img class="brand-list__icon rotate_180" src="./svg/outline-arrow_right_alt-24px.svg">
-                        <span>Back To Case Studies</span>
-                    </a>
 
-                    <div class="case-study-page__header">
-                        {{ if .Params.thumbnailImage }}
-                        <div class="case-study__image header-image">
-                            {{ printf `<img src="%s" alt="%s">` .Params.thumbnailImage .Title | safeHTML }}
-                        </div>
-                        {{end}}
+            <a href="{{.Permalink}}" class="btn btn-text btn-text_thin flex-end">
+                <img class="brand-list__icon rotate_180" src="./svg/outline-arrow_right_alt-24px.svg">
+                <span>Back To Case Studies</span>
+            </a>
 
-                        <div>
-                            <h5 class="text-uppercase">Case Study - E-Commerce</h5>
-                            <h3>K&L Wine Merchants</h3>
-                        </div>
-                    </div>
-
-                    <h1>
-                        K&L Wine Merchants move from Monolithic Legacy App to Nimble Event-Driven Microservices with Microsoft Azure Service Fabric
-                    </h1>
-
-                    <main>{{- .Content -}}</main>
+            <div class="case-study-page__header">
+                {{ if .Params.thumbnailImage }}
+                <div class="case-study__image header-image">
+                    {{ printf `<img src="%s" alt="%s">` .Params.thumbnailImage .Title | safeHTML }}
                 </div>
-                <div class="col-md-5">
-                    <img src="{{ .Params.coverImage }}" class="case-study__cover-image">
+                {{end}}
+
+                <div>
+                    <h5 class="text-uppercase">Case Study - E-Commerce</h5>
+                    <h3>K&L Wine Merchants</h3>
                 </div>
             </div>
+
+            <main>
+                {{- .Content -}}
+            </main>
         </div>
     </div>
 </article>
