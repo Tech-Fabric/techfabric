@@ -1,0 +1,64 @@
+.markdown {
+  padding-bottom: 100px;
+
+  h1 {
+    line-height: 1.4em;
+    margin-bottom: 53px;
+    font-weight: 200;
+    font-size: 42px;
+  }
+
+  h3 {
+    font-size: 26px;
+    font-weight: 300;
+    color: $brandPrimary;
+    margin-bottom: 15px;
+  }
+
+  ul {
+    margin: 80px 0;
+
+    li {
+      margin-bottom: 25px;
+      padding-left: 30px;
+      position: relative;
+      line-height: 1.3em;
+
+      strong {
+        color: $brandPrimary;
+      }
+
+      &:before {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 2px;
+        background: $brandPrimary;
+        position: absolute;
+        left: 0;
+        top: .55em;
+      }
+    }
+  }
+
+  img {
+    max-width: 80%;
+    margin: 0 10% 80px;
+  }
+
+  blockquote {
+    max-width: 100%;
+    margin: 0 0 80px;
+  }
+
+  img, blockquote {
+    float: right;
+    width: 660px;
+    clear: both;
+
+    @include breakpoints-up-md {
+      max-width: 50%;
+      margin: 0 0 50px 30px;
+    }
+  }
+}

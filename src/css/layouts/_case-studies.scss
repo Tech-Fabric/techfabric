@@ -31,32 +31,6 @@
         margin-bottom: 0;
       }
     }
-
-    h1 {
-      line-height: 1.4em;
-      margin-bottom: 53px;
-    }
-
-    h3 {
-      font-size: 26px;
-      font-weight: 300;
-      color: #FF312E;
-      margin-bottom: 15px;
-    }
-
-    main {
-      img, blockquote {
-        float: right;
-        width: 660px;
-        max-width: 100%;
-        clear: both;
-
-        @include breakpoints-up-md {
-          margin-left: 30px;
-          max-width: 50%;
-        }
-      }
-    }
   }
 
   &__image {
