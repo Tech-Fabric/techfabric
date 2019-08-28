@@ -10,9 +10,6 @@ coverImage: ''
 
 > “By partnering with TechFabric experts, we were able to clearly define the problem areas and strategize solutions to bring immediate improvements to our operations.”
 >
-> \
->
->
 > _Bryan Zucker, Vice President – K&L Wines_
 
 K&L Wine Merchants (KLWines) is one of the largest online wine and spirits retailers in the United States. 
