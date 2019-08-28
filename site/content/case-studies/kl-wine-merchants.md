@@ -19,7 +19,9 @@ thumbnailImage: /images/uploads/K&L-logo.svg
 >
 > _Bryan Zucker, Vice President – K&L Wines_
 
-# K&L Wine Merchants (KLWines) is one of the largest online wine and spirits retailers in the United States. 
+# K&L Wine Merchants move from Monolithic Legacy App to Nimble Event-Driven Microservices with Microsoft Azure Service Fabric
+
+K&L Wine Merchants (KLWines) is one of the largest online wine and spirits retailers in the United States. 
 They operate three physical locations, an eCommerce portal and at any given point in time have several thousand bottles in its inventory. 
 
 Although, KLWines had a very impressive stack of applications to help with their internal processes and external sales, many of 
