@@ -6,7 +6,14 @@ draft: false
 thumbnailImage: /images/uploads/K&L-logo.svg
 coverImage: ''
 ---
-![](/images/uploads/iPhoneX_Angled_CorkBorg@2x@2x.png)
+![null](/images/uploads/iPhoneX_Angled_CorkBorg@2x@2x.png)
+
+> “By partnering with TechFabric experts, we were able to clearly define the problem areas and strategize solutions to bring immediate improvements to our operations.”
+>
+> \
+>
+>
+> _Bryan Zucker, Vice President – K&L Wines_
 
 K&L Wine Merchants (KLWines) is one of the largest online wine and spirits retailers in the United States. 
 They operate three physical locations, an eCommerce portal and at any given point in time have several thousand bottles in its inventory. 
