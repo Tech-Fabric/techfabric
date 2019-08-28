@@ -3,7 +3,7 @@
     <div class="container">
         <div class="case-study-page">
 
-            <a href="{{.Permalink}}" class="btn btn-text btn-text_thin flex-end">
+            <a href="/case-studies" class="btn btn-text btn-text_thin flex-end">
                 <img class="brand-list__icon rotate_180" src="./svg/outline-arrow_right_alt-24px.svg">
                 <span>Back To Case Studies</span>
             </a>
@@ -16,8 +16,8 @@
                 {{end}}
 
                 <div>
-                    <h5 class="text-uppercase">Case Study - E-Commerce</h5>
-                    <h3>K&L Wine Merchants</h3>
+                    <h5 class="text-uppercase">Case Study - {{ .Params.category }}</h5>
+                    <h3>{{ .Title }}</h3>
                 </div>
             </div>
 

@@ -161,3 +161,31 @@ body {
     transform: rotateZ(180deg);
   }
 }
+
+blockquote {
+  @extend .case-study;
+  @extend .brand-block;
+  @extend .clearfix;
+  @extend .primary-case-study-block;
+  @extend .text-brand-secondary;
+
+  display: flex;
+  align-items: flex-end;
+  font-size: 23px;
+  font-weight: 200;
+
+  em {
+    @extend .brand-list__item;
+    display: inline-flex;
+  }
+
+  p {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @include breakpoints-up-md {
+    font-size: 32px;
+  }
+}

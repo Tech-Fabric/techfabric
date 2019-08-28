@@ -4,7 +4,6 @@ subtitle: Subtitle
 category: e-Commerce
 draft: false
 thumbnailImage: /images/uploads/K&L-logo.svg
-coverImage: ''
 ---
 ![null](/images/uploads/iPhoneX_Angled_CorkBorg@2x@2x.png)
 

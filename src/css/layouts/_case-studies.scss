@@ -5,7 +5,6 @@
 }
 
 .case-study {
-  height: 100%;
   display: flex;
   flex-direction: column;
   border-radius: 12px;
@@ -45,9 +44,18 @@
       margin-bottom: 15px;
     }
 
-    img {
-      float: right;
-      max-width: 660px;
+    main {
+      img, blockquote {
+        float: right;
+        width: 660px;
+        max-width: 100%;
+        clear: both;
+
+        @include breakpoints-up-md {
+          margin-left: 30px;
+          max-width: 50%;
+        }
+      }
     }
   }
 
@@ -194,7 +202,7 @@
 }
 
 .primary-case-study-block {
-  height: calc(100% - 30px);
+  height: calc(100% - 40px);
 }
 
 

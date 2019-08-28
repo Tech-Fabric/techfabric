@@ -18,6 +18,10 @@ collections:
         name: "title"
         widget: "string"
 
+      - label: "Description"
+        name: "description"
+        widget: "string"
+
       - label: "Subtitle"
         name: "subtitle"
         required: false
@@ -35,11 +39,6 @@ collections:
 
       - label: "Thumbnail Image"
         name: "thumbnailImage"
-        required: false
-        widget: "image"
-
-      - label: "Cover Image"
-        name: "coverImage"
         required: false
         widget: "image"
 
