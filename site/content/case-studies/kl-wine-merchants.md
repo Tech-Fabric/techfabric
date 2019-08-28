@@ -19,7 +19,7 @@ thumbnailImage: /images/uploads/K&L-logo.svg
 >
 > _Bryan Zucker, Vice President – K&L Wines_
 
-# K&L Wine Merchants (KLWines) is one of the largest online wine and spirits retailers in the United States. 
+K&L Wine Merchants (KLWines) is one of the largest online wine and spirits retailers in the United States. 
 They operate three physical locations, an eCommerce portal and at any given point in time have several thousand bottles in its inventory. 
 
 Although, KLWines had a very impressive stack of applications to help with their internal processes and external sales, many of 
@@ -71,3 +71,15 @@ Changes happen to a customer’s order as it goes through various stages of orde
 TechFabric built a robust notifications system using Azure Service Bus and exposed it through Open APIs. The notification API abstracts away all the complexity of sending notifications via SMS/Email and exposes a single interface that can be leveraged by other services. Now, the various internal systems are able to tap into the notifications API to fire off notifications to customers either to their web or mobile devices. 
 
 The notification API drops the messages on to Azure Service Bus which are picked up by Azure Functions and Logic Apps to send the notifications. Many of the legacy systems that had their own notifications logic were refactored to use the notifications API to have a single, centralized and consistent message format.
+
+### “Cork Borg” Internal Mobile App increases Staff Productivity by 50%
+
+Changes happen to a customer’s order as it goes through various stages of order processing, and customers expect an order status update with each stage. KL Wines’ eCommerce system sends hundreds of thousands of notifications each day. Various internal systems had their own implementation, and there was an immediate need to build a centralized notifications system to send consistent messages to customers. 
+
+TechFabric built a robust notifications system using Azure Service Bus and exposed it through Open APIs. The notification API abstracts away all the complexity of sending notifications via SMS/Email and exposes a single interface that can be leveraged by other services. Now, the various internal systems are able to tap into the notifications API to fire off notifications to customers either to their web or mobile devices. 
+
+The notification API drops the messages on to Azure Service Bus which are picked up by Azure Functions and Logic Apps to send the notifications. Many of the legacy systems that had their own notifications logic were refactored to use the notifications API to have a single, centralized and consistent message format.
+
+* `Will Call Tools` - Allowing users to sweep orders, track call logs, locate product bins, service wine club members, and send email notifications for product pickup.
+* `Bin Locating` - Making it easy for the staff members to associate any product to a Bin location. Users can find an item using the SKU and its Bin location.
+* `Product Lookup `- The ability to access the details and availability of many products with advanced search, sort, and filtering capabilities.
