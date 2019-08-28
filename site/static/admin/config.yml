@@ -30,7 +30,7 @@ collections:
         name: "draft"
         required: false
         widget: "boolean"
-        default: true
+        default: false
 
       - label: "Thumbnail Image"
         name: "thumbnailImage"
