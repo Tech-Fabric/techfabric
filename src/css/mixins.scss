@@ -49,3 +49,28 @@
   background: linear-gradient(to right,  rgba(134,1,0,1) 0%,rgba(87,32,31,1) 25%,rgba(46,46,46,1) 50%,rgba(6,56,64,1) 75%,rgba(0,68,80,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#860100', endColorstr='#004450',GradientType=1 ); /* IE6-9 */
 }
+
+@mixin text-thin {
+  font-family: "Roboto Thin", "Roboto", sans-serif;
+  font-weight: 200;
+}
+
+@mixin text-light {
+  font-family: "Roboto Light", "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+@mixin text-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+@mixin text-medium {
+  font-family: "Roboto Medium", "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+@mixin text-bold {
+  font-family: "Roboto Bold", "Roboto", sans-serif;
+  font-weight: 700;
+}

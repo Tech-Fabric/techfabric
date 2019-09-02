@@ -1,3 +1,99 @@
+h1 {
+  font-family: "Roboto Light", sans-serif;
+  font-size: 27px;
+  line-height: 35px;
+
+  @include breakpoints-up-sm {
+    font-size: 42px;
+    line-height: 58px;
+  }
+}
+
+h2 {
+  font-size: 29px;
+  margin-bottom: 38px;
+
+  @include breakpoints-up-sm {
+    font-size: 32px;
+    line-height: 42px;
+  }
+}
+
+h3 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.5em;
+
+  @include breakpoints-up-sm {
+    font-size: 26px;
+    line-height: 38px;
+  }
+}
+
+h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $brandSecondary;
+}
+
+h5 {
+  font-size: 12px;
+  opacity: .5;
+
+  @include breakpoints-up-sm {
+    font-size: 16px;
+  }
+}
+
+.text {
+  // Weight
+  &-thin {
+    @include text-thin;
+  }
+
+  &-light {
+    @include text-light;
+  }
+
+  &-regular {
+    @include text-regular;
+  }
+
+  &-medium {
+    @include text-medium;
+  }
+
+  &-bold {
+    @include text-bold;
+  }
+
+  // Alignment
+  &-left {
+    text-align: left;
+  }
+
+  &-center {
+    text-align: center;
+  }
+
+  &-right {
+    text-align: right;
+  }
+
+  // Color
+  &-regular {
+    color: #fff;
+  }
+
+  &-brand-primary {
+    color: $brandPrimary;
+  }
+
+  &-brand-secondary {
+    color: $brandSecondary;
+  }
+}
+
 a {
   display: inline-flex;
   align-items: center;
@@ -12,84 +108,10 @@ a {
 }
 
 b {
-  font-weight: 600;
+  @include text-bold;
 }
 
 p {
   margin-bottom: 25px;
-  line-height: 1.5em;
-}
-
-.text-regular {
-  color: #fff;
-}
-
-h1 {
-  font-size: 27px;
-  line-height: 35px;
-  font-family: "Roboto Light", sans-serif;
-  font-weight: 400;
-
-  @include breakpoints-up-sm {
-    font-size: 42px;
-    line-height: 1em;
-  }
-}
-
-h2 {
-  font-size: 29px;
-  font-weight: 500;
-  margin-bottom: 38px;
-
-  @include breakpoints-up-sm {
-    font-size: 32px;
-    font-weight: 500;
-  }
-}
-
-h3 {
-  font-size: 20px;
-  font-weight: 500;
-  margin: 0;
-  line-height: 1.5em;
-
-  @include breakpoints-up-sm {
-    font-size: 32px;
-  }
-}
-
-h4 {
-  font-family: "Roboto Bold", "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  text-transform: uppercase;
-  color: $brandSecondary;
-  margin: 60px 0 20px;
-}
-
-h5 {
-  font-size: 12px;
-  opacity: .5;
-
-  @include breakpoints-up-sm {
-    font-size: 16px;
-  }
-}
-
-.text {
-  &-weight-light {
-    font-weight: 200;
-  }
-
-  &-center {
-    text-align: center;
-  }
-
-  &-brand-primary {
-    color: $brandPrimary;
-  }
-
-  &-brand-secondary {
-    color: $brandSecondary;
-  }
+  line-height: 24px;
 }
