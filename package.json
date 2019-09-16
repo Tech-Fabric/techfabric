@@ -65,6 +65,7 @@
     "natives": "1.1.6"
   },
   "dependencies": {
-    "bootstrap": "^4.3.1"
+    "bootstrap": "^4.3.1",
+    "createjs": "^1.0.1"
   }
 }
