@@ -14,12 +14,12 @@
   }
 
   &__item {
+    @include text-medium;
     display: flex;
     align-items: center;
     position: relative;
     padding-left: 20px;
     font-size: 16px;
-    @include text-medium;
     line-height: 1.5em;
     margin-bottom: 16px;
     color: #fff;

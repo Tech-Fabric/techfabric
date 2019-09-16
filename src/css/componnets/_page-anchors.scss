@@ -1,0 +1,38 @@
+.page-anchors {
+  background-color: #080808;
+
+  &__list {
+    display: inline-flex;
+    align-items: center;
+    width: auto;
+    position: relative;
+
+    &:after {
+      content: '';
+      display: block;
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      @include contrast-gradient;
+    }
+  }
+
+  &__item {
+    @include text-bold;
+    margin-right: 58px;
+    color: $brandSecondary;
+    display: flex;
+    align-items: center;
+    padding: 28px 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    img {
+      margin-left: 5px;
+    }
+  }
+}
