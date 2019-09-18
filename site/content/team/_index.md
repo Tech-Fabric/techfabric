@@ -9,7 +9,7 @@ description: >-
   know-how. This enables us to go above and beyond, and provide you with
   superior custom software services. And, we work hard to defy your expectations
   too!
-title: Hard work. Work-life balance. Diversity of thought. openness. Humility.
-subtitle: "We strive to provide technology solutions to empower enterprises through amazing user experiences.\_"
+name: Hard work. Work-life balance. Diversity of thought. openness. Humility.
+role: "We strive to provide technology solutions to empower enterprises through amazing user experiences.\_"
 ---
 

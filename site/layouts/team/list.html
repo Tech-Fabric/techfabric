@@ -1,13 +1,13 @@
 {{ define "main" }}
 {{ $section := .Site.GetPage "section" .Section }}
 <div class="container">
-    <h5 class="text-uppercase mb-3">{{ .Params.category }}</h5>
+    <h5 class="text-uppercase mb-3">Our Team</h5>
 
-    {{ with .Title }}
+    {{ with .Params.name }}
     <h1 class="text-light mb-2">{{.}}</h1>
     {{ end }}
 
-    <h3 class="text-brand-primary mb-3">{{ .Params.subtitle }}</h3>
+    <h3 class="text-brand-primary mb-3">{{ .Params.role }}</h3>
 </div>
 
 <main class="container">
