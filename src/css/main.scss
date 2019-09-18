@@ -102,33 +102,6 @@ body {
   }
 }
 
-.info-banner {
-  @include contrast-gradient;
-  border-radius: 40px;
-  padding: 2px;
-
-  &__content {
-    background-color: #1A1A1A;
-    color: #fff;
-    font-size: 16px;
-    letter-spacing: .1px;
-    padding: 7px 20px;
-    line-height: 1.5em;
-    border-radius: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    @include breakpoints-up-md {
-      padding: 23px 20px 21px;
-    }
-
-    a {
-      display: inline-flex;
-    }
-  }
-}
-
 .brand-control {
   &-label {
     margin-bottom: 15px;
