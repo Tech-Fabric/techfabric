@@ -9,6 +9,10 @@
   align-items: center;
   text-align: center;
 
+  img {
+    margin-left: 5px;
+  }
+
   @include breakpoints-up-md {
     padding: 12px 32px;
   }
@@ -30,5 +34,17 @@
     &_thin {
       padding: 0;
     }
+  }
+
+  &-outlined {
+    border: 1px solid $brandPrimary;
+    border-radius: 4px;
+    padding: 14px 12px;
+    min-width: 224px;
+    color: #fff;
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
 }

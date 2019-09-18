@@ -37,7 +37,44 @@
     </div>
 </div>
 
-<main>
+<main class="container">
+    <div class="technologies-hero-block">
+        <img src="/svg/technology-hero.svg" alt="">
+
+        <div>
+            <h2>Moving to the cloud is a simple process that delivers real business value. How it works:</h2>
+
+            <ul class="brand-list entity-card__list mb-5">
+                <li>
+                    <span class="brand-list__item">Apps are built with services packaged in containers</span>
+                </li>
+                <li>
+                    <span class="brand-list__item">The containers are deployed as microservices</span>
+                </li>
+                <li>
+                    <span class="brand-list__item">Then managed on elastic infrastructure through agile DevOps</span>
+                </li>
+                <li>
+                    <span class="brand-list__item">Continuous delivery workflows take care of the rest</span>
+                </li>
+            </ul>
+
+            <div class="d-flex">
+                <div class="btn btn-outlined">Get More Information</div>
+
+                <div class="btn btn-text">
+                    See Our Business Solutions
+                    <img src="./svg/outline-arrow_right_alt-24px.svg" alt="">
+                </div>
+
+                <div class="btn btn-text">
+                    See Case Stories
+                    <img src="./svg/outline-arrow_right_alt-24px.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
     {{- .Content -}}
 </main>
 {{ end }}
