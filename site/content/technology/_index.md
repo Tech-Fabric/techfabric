@@ -1,8 +1,8 @@
 ---
 order: '0'
-category: '-'
-title: Technology
-subtitle: Cloud-Native Apps Built With Modern And Emerging Technologies
+category: Technology
+title: Cloud-Native apps built with modern and emerging technologies
+subtitle: 'Check out TechFabric’s technology stack:'
 thumbnailImage: /images/uploads/technology-hero.svg
 description: '-'
 ---
