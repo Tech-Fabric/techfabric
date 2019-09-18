@@ -13,26 +13,9 @@
 <div class="page-anchors mb-3">
     <div class="container">
         <div class="page-anchors__list">
-            <a href="/technology/#front-end" class="page-anchors__item">
-                Front-End
-                <img src="./svg/outline-arrow_right_alt-24px.svg" alt="">
-            </a>
-            <a href="/technology/#back-end" class="page-anchors__item">
-                Back-End
-                <img src="./svg/outline-arrow_right_alt-24px.svg" alt="">
-            </a>
-            <a href="/technology/#database" class="page-anchors__item">
-                Database
-                <img src="./svg/outline-arrow_right_alt-24px.svg" alt="">
-            </a>
-            <a href="/technology/#cloud" class="page-anchors__item">
-                Cloud
-                <img src="./svg/outline-arrow_right_alt-24px.svg" alt="">
-            </a>
-            <a href="/technology/#mobile" class="page-anchors__item">
-                Mobile
-                <img src="./svg/outline-arrow_right_alt-24px.svg" alt="">
-            </a>
+            {{ range .Pages.ByParam "order" }}
+                {{ .Render "page-menu-item" }}
+            {{ end }}
         </div>
     </div>
 </div>
