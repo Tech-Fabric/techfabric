@@ -1,0 +1,29 @@
+.team {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -15px;
+
+  &-member {
+    max-width: 100%;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    text-align: center;
+
+    &__name {
+      margin: 0 -15px;
+    }
+
+    &__photo {
+      margin-bottom: 24px;
+      height: 220px;
+      background: #707070;
+      border-radius: 8px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

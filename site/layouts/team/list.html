@@ -13,7 +13,7 @@
 <main class="container">
     <p>{{ .Params.description }}</p>
 
-    <div class="technology-stack mb-5">
+    <div class="team mb-5">
         {{ range .Pages.ByParam "order" }}
             {{ .Render "team-member" }}
         {{ end }}
