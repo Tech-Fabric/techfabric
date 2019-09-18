@@ -1,11 +1,11 @@
-<div id="{{.Params.title}}" class="technology-stack-item row">
-    <div class="technology-stack-item__meta col-sm-4">
+<div id="{{.Params.title}}" class="list-page-item row">
+    <div class="col-sm-4">
         <h5 class="text-uppercase mb-2">{{.Params.category}}</h5>
         <h2 class="mb-2"><b>{{.Title}}</b></h2>
         <h3 class="text-brand-primary">{{.Params.subtitle}}</h3>
     </div>
 
-    <div class="technology-stack-item__illustration col-sm-4">
+    <div class="list-page-item__illustration col-sm-4">
         {{ if .Params.thumbnailImage }}
 
         {{ printf `<img src="%s" alt="%s">` .Params.thumbnailImage .Title | safeHTML }}
@@ -13,7 +13,7 @@
         {{end}}
     </div>
 
-    <div class="technology-stack-item__description col-sm-4">
+    <div class="col-sm-4">
         {{ substr .Params.description 0 228 }}
     </div>
 </div>

@@ -12,7 +12,7 @@
     </div>
 
     <div class="row">
-        {{ range .Pages }}
+        {{ range .Pages.ByParam "order" }}
             {{ .Render "summary" }}
         {{ end }}
     </div>

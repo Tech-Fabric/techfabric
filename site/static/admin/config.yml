@@ -14,6 +14,10 @@ collections:
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
 
+      - label: "Order"
+        name: "order"
+        widget: "number"
+        -
       - label: "Title"
         name: "title"
         widget: "string"
@@ -49,6 +53,42 @@ collections:
   - name: "technology" # Used in routes, e.g., /admin/collections/blog
     label: "Technology" # Used in the UI
     folder: "site/content/technology" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+
+      - label: "Order"
+        name: "order"
+        widget: "number"
+
+      - label: "Category"
+        name: "category"
+        widget: "string"
+
+      - label: "Title"
+        name: "title"
+        widget: "string"
+
+      - label: "Subtitle"
+        name: "subtitle"
+        widget: "string"
+
+      - label: "Thumbnail Image"
+        name: "thumbnailImage"
+        required: false
+        widget: "image"
+
+      - label: "Description"
+        name: "description"
+        widget: "string"
+
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+
+  - name: "process" # Used in routes, e.g., /admin/collections/blog
+    label: "Process" # Used in the UI
+    folder: "site/content/process" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter

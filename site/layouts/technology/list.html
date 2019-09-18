@@ -1,13 +1,13 @@
 {{ define "main" }}
 {{ $section := .Site.GetPage "section" .Section }}
 <div class="container">
-    <h5 class="text-uppercase mb-3">{{ .Title }}</h5>
+    <h5 class="text-uppercase mb-3">{{ .Params.category }}</h5>
 
-    {{ with .Params.subtitle }}
+    {{ with .Title }}
     <h1 class="text-light mb-2">{{.}}</h1>
     {{ end }}
 
-    <h3 class="text-brand-primary mb-3">Check out TechFabric’s technology stack:</h3>
+    <h3 class="text-brand-primary mb-3">{{ .Params.subtitle }}</h3>
 </div>
 
 <div class="page-anchors mb-3">
@@ -22,31 +22,33 @@
 
 <main class="container">
     <div class="technologies-hero-block row">
-        <div class="col-sm-6">
-            {{ if .Params.thumbnailImage }}
+        {{ if .Params.thumbnailImage }}
+            <div class="col-sm-6">
                 {{ printf `<img src="%s" alt="%s" class="full-width mb-3">` .Params.thumbnailImage .Title | safeHTML }}
-            {{end}}
-        </div>
-
-        <div class="col-sm-6">
-            <div class="markdown">
-                {{ .Page.Content }}
             </div>
+        {{end}}
 
-            <div class="d-flex flex-wrap mb-5">
-                <div class="btn btn-outlined">Get More Information</div>
-
-                <div class="btn btn-text">
-                    See Our Business Solutions
-                    <img src="./svg/outline-arrow_right_alt-24px.svg" alt="">
+        {{ if .Page.Content }}
+            <div class="col-sm-6">
+                <div class="markdown">
+                    {{ .Page.Content }}
                 </div>
 
-                <div class="btn btn-text">
-                    See Case Stories
-                    <img src="./svg/outline-arrow_right_alt-24px.svg" alt="">
+                <div class="d-flex flex-wrap mb-5">
+                    <div class="btn btn-outlined">Get More Information</div>
+
+                    <div class="btn btn-text">
+                        See Our Business Solutions
+                        <img src="./svg/outline-arrow_right_alt-24px.svg" alt="">
+                    </div>
+
+                    <div class="btn btn-text">
+                        See Case Stories
+                        <img src="./svg/outline-arrow_right_alt-24px.svg" alt="">
+                    </div>
                 </div>
             </div>
-        </div>
+        {{end}}
     </div>
 
     <h2 class="text-center">Our Technology Stack</h2>
