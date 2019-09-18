@@ -17,7 +17,6 @@ collections:
       - label: "Order"
         name: "order"
         widget: "number"
-        required: false
 
       - label: "Title"
         name: "title"
@@ -61,7 +60,6 @@ collections:
       - label: "Order"
         name: "order"
         widget: "number"
-        required: false
 
       - label: "Category"
         name: "category"
@@ -98,7 +96,6 @@ collections:
       - label: "Order"
         name: "order"
         widget: "number"
-        required: false
 
       - label: "Category"
         name: "category"
@@ -126,23 +123,20 @@ collections:
       - label: "Order"
         name: "order"
         widget: "number"
-        required: false
 
-      - label: "Photo"
-        name: "photo"
+      - label: "Thumbnail Image"
+        name: "thumbnailImage"
         required: false
         widget: "image"
 
-      - label: "Name"
-        name: "name"
+      - label: "Title"
+        name: "title"
         widget: "string"
-        required: false
 
-      - label: "Role"
-        name: "role"
+      - label: "Subtitle"
+        name: "subtitle"
         widget: "string"
 
       - label: "Description"
         name: "description"
         widget: "string"
-        required: false
