@@ -1,14 +1,15 @@
 .team {
   display: flex;
   justify-content: space-between;
-  margin: 0 -15px;
+  margin: 0 -30px;
+  flex-wrap: wrap;
 
   &-member {
     max-width: 100%;
     width: 220px;
     display: flex;
     flex-direction: column;
-    margin: 15px;
+    margin: 15px 30px;
     text-align: center;
 
     &__name {
