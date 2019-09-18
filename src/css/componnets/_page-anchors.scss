@@ -6,6 +6,12 @@
     align-items: center;
     width: auto;
     position: relative;
+    flex-wrap: wrap;
+    padding: 10px 0;
+
+    @include breakpoints-up-md {
+      padding: 0;
+    }
 
     &:after {
       content: '';
@@ -21,11 +27,16 @@
 
   &__item {
     @include text-bold;
-    margin-right: 58px;
+    margin-right: 15px;
     color: $brandSecondary;
     display: flex;
     align-items: center;
-    padding: 28px 0;
+    padding: 5px 0;
+
+    @include breakpoints-up-md {
+      padding: 28px 0;
+      margin-right: 58px;
+    }
 
     &:last-child {
       margin-right: 0;

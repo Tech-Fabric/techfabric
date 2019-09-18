@@ -7,7 +7,7 @@ let canvas,
   dom_overlay_container,
   fnStartAnimation;
 
-export const init = (cjs = createjs || {}, an = {}) => {
+export const initializeHomePageAnimation = (cjs = createjs || {}, an = {}) => {
   let p; // shortcut to reference prototypes
   let lib = {};
   const ss = {};

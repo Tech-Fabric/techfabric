@@ -2,3 +2,31 @@
   display: flex;
   margin-top: 60px;
 }
+
+.technology-stack {
+
+  @include breakpoints-up-lg {
+    padding: 0 90px;
+  }
+
+  &-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__meta {
+
+    }
+
+    &__illustration {
+      padding: 40px;
+      img {
+        width: 100%;
+      }
+    }
+
+    &__description {
+
+    }
+  }
+}

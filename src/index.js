@@ -1,14 +1,16 @@
 // JS Goes here - ES6 supported
 import './css/main.scss';
 import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
-import { init } from './lib/home-page-animation';
+import { initializeHomePageAnimation } from './lib/home-page-animation';
 
 const getVisibleMenu = () => {
   return document.getElementsByClassName('header__brand-menu display')[0];
 };
 
 const whenDocumentLoaded = function() {
-  init();
+  if (document.location.pathname === '/') {
+    initializeHomePageAnimation();
+  }
 
   const menuButtons = document.querySelectorAll('[data-menu-open]');
   const menuToggle = document.getElementById('drawer-toggle');

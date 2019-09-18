@@ -38,10 +38,12 @@
 </div>
 
 <main class="container">
-    <div class="technologies-hero-block">
-        <img src="/svg/technology-hero.svg" alt="">
+    <div class="technologies-hero-block row">
+        <div class="col-sm-6">
+            <img src="/svg/technology-hero.svg" class="full-width mb-3">
+        </div>
 
-        <div>
+        <div class="col-sm-6">
             <h2>Moving to the cloud is a simple process that delivers real business value. How it works:</h2>
 
             <ul class="brand-list entity-card__list mb-5">
@@ -59,7 +61,7 @@
                 </li>
             </ul>
 
-            <div class="d-flex">
+            <div class="d-flex flex-wrap mb-5">
                 <div class="btn btn-outlined">Get More Information</div>
 
                 <div class="btn btn-text">
@@ -75,6 +77,12 @@
         </div>
     </div>
 
-    {{- .Content -}}
+    <h2 class="text-center">Our Technology Stack</h2>
+
+    <div class="technology-stack mb-5">
+        {{ range .Pages }}
+            {{ .Render "technology-list-item" }}
+        {{ end }}
+    </div>
 </main>
 {{ end }}
