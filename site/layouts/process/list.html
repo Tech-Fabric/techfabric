@@ -14,17 +14,28 @@
     <div class="container">
         <div class="page-anchors__list">
             {{ range .Pages.ByParam "order" }}
-            {{ .Render "page-menu-item" }}
+                {{ .Render "page-menu-item" }}
             {{ end }}
         </div>
     </div>
 </div>
 
-<main class="container">
-    <div class="technology-stack mb-5">
+<main class="process-page container">
+    <div class="mb-5">
         {{ range .Pages.ByParam "order" }}
-        {{ .Render "process-list-item" }}
+            {{ .Render "process-list-item" }}
         {{ end }}
     </div>
 </main>
+
+<div class="brand-block">
+    <div class="container">
+        <h3 class="text-center text-brand-secondary text-light">Let’s Make Something Amazing Together</h3>
+    </div>
+</div>
+
+<div class="contact-form contact-form_bg">
+    {{ partial "contact-form" }}
+</div>
+
 {{ end }}

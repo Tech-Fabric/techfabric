@@ -92,6 +92,16 @@ body {
   }
 }
 
+.contact-form {
+  @include breakpoints-up-lg {
+    padding: 50px 100px;
+  }
+
+  &_bg {
+    background: #080808;
+  }
+}
+
 .info-banner {
   @include contrast-gradient;
   border-radius: 40px;
