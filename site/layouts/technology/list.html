@@ -80,7 +80,7 @@
     <h2 class="text-center">Our Technology Stack</h2>
 
     <div class="technology-stack mb-5">
-        {{ range .Pages }}
+        {{ range .Pages.ByParam "order" }}
             {{ .Render "technology-list-item" }}
         {{ end }}
     </div>
