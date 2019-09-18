@@ -93,6 +93,8 @@ body {
 }
 
 .contact-form {
+  padding-bottom: 25px;
+
   @include breakpoints-up-lg {
     padding: 50px 100px;
   }

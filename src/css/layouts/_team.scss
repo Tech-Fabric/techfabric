@@ -1,24 +1,38 @@
 .team {
   display: flex;
-  justify-content: space-between;
-  margin: 0 -30px;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0 -40px;
   flex-wrap: wrap;
+
+  &__contaiter {
+    padding: 0 40px;
+  }
+
+  @include breakpoints-up-sm {
+    margin: 0 -60px;
+  }
 
   &-member {
     max-width: 100%;
     width: 220px;
     display: flex;
     flex-direction: column;
-    margin: 40px 30px;
+    margin: 40px;
     text-align: center;
+
+    @include breakpoints-up-sm {
+      margin: 40px 60px;
+    }
 
     &__name {
       margin: 0 -15px;
     }
 
     &__photo {
-      margin-bottom: 24px;
       height: 220px;
+      width: 220px;
+      margin: auto auto 24px;
       background: #707070;
       border-radius: 8px;
 
