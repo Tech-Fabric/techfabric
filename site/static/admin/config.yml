@@ -124,19 +124,19 @@ collections:
         name: "order"
         widget: "number"
 
-      - label: "Description"
-        name: "description"
-        widget: "string"
-
-      - label: "Thumbnail Image"
-        name: "thumbnailImage"
+      - label: "Photo"
+        name: "photo"
         required: false
         widget: "image"
 
-      - label: "Title"
-        name: "title"
+      - label: "Name"
+        name: "name"
         widget: "string"
 
-      - label: "Subtitle"
-        name: "subtitle"
+      - label: "Role"
+        name: "role"
+        widget: "string"
+
+      - label: "Description"
+        name: "description"
         widget: "string"
