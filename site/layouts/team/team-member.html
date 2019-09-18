@@ -1,0 +1,14 @@
+<div id="{{.Params.title}}" class="list-page-item row">
+    <div class="list-page-item__illustration col-sm-4">
+        {{ if .Params.thumbnailImage }}
+
+        {{ printf `<img src="%s" alt="%s">` .Params.thumbnailImage .Title | safeHTML }}
+
+        {{end}}
+    </div>
+
+    <div class="col-sm-4">
+        <h2 class="mb-2">{{.Title}}</h2>
+        <h3 class="text-brand-primary">{{.Params.subtitle}}</h3>
+    </div>
+</div>
