@@ -14,12 +14,13 @@ description: >-
 headerBody: >-
   ##### e-Commerce
 
+
   ## Using cloud technologies that shape the future of online retail
+
 
   ### Our team experts help eCommerce businesses move their product display,
   order fulfillment, shipping, and inventory management to the cloud with the
   latest cloud-native platforms
-
 
 
   Special areas of expertise include:
@@ -34,5 +35,8 @@ headerBody: >-
   management
 
   * Some other bullet point text because I can’t think of anything else
+
+
+  ![](/images/uploads/ecommerce-industry-hero.svg)
 ---
 
