@@ -1,0 +1,13 @@
+{{ define "main" }}
+{{ $section := .Site.GetPage "section" .Section }}
+
+<main>
+    <p>{{ .Params.description }}</p>
+
+    <div class="team row mb-5">
+        {{ range .Pages.ByParam "order" }}
+            {{ .Render "industry" }}
+        {{ end }}
+    </div>
+</main>
+{{ end }}
