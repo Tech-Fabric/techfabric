@@ -133,6 +133,10 @@ collections:
         required: false
         widget: "image"
 
+      - label: "Category"
+        name: "category"
+        widget: "string"
+
       - label: "Title"
         name: "title"
         widget: "string"
@@ -145,3 +149,31 @@ collections:
         name: "description"
         widget: "string"
         required: false
+
+  - name: "industries" # Used in routes, e.g., /admin/collections/blog
+    label: "Industries" # Used in the UI
+    folder: "site/content/industries" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+
+      - label: "Order"
+        name: "order"
+        widget: "number"
+        required: false
+
+      - label: "Title"
+        name: "title"
+        widget: "string"
+
+      - label: "Subtitle"
+        name: "subtitle"
+        widget: "string"
+
+      - label: "Description"
+        name: "description"
+        widget: "string"
+
+      - label: "Header Content"
+        name: "headerBody"
+        widget: "markdown"
