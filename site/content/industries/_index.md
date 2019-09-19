@@ -1,6 +1,7 @@
 ---
-title: "Industries"
-subtitle: "-"
-date: 2019-08-21T16:05:10+03:00
-draft: false
+order: '0'
+category: Industries
+title: Industries
+subtitle: “TechFabric Flow” is the development process we designed to help digitally transform our clients.
+headerBody: '   '
 ---
