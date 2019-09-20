@@ -1,16 +1,16 @@
 ---
-order: '1'
+order: '2'
+category: e-Commerce
 title: Using cloud technologies that shape the future of online retail
 subtitle: >-
   Our team experts help eCommerce businesses move their product display, order
   fulfillment, shipping, and inventory management to the cloud with the latest
   cloud-native platforms
 description: >-
-  We’ve partnered with industry leading auto finance, re-finance, and
-  re-marketing organizations to implement and guide them through their digital
-  transformation journeys.We’ve partnered with industry leading auto finance,
-  re-finance, and re-marketing organizations to implement and guide them through
-  their digital transformation journeys.
+  Our seasoned experts have produced tremendous results for our online retail
+  clients. We harness the power of cloud-native technologies to empower lean
+  eCommerce processes, omni-channel efforts, and analytics that continue to
+  drive sales.
 headerBody: >-
   ##### e-Commerce
 
@@ -37,6 +37,6 @@ headerBody: >-
   * Some other bullet point text because I can’t think of anything else
 
 
-  ![](/images/uploads/ecommerce-industry-hero.svg)
+  ![null](/images/uploads/ecommerce-industry-hero.svg)
 ---
 
