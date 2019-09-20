@@ -28,6 +28,8 @@ the applications were developed over a period of time and were ripe for moderniz
 of solutions to achieve their goal of creating an internal web application with multiple modules for mitigating the inventory 
 management concerns while also speeding up search capabilities for an improved customer experience.
 
+{{<space 50>}}
+
 #### Challenge
 
 A seasoned online retailer, KL Wines has a keen sense for what the market can provide and what their customers want. Their 
