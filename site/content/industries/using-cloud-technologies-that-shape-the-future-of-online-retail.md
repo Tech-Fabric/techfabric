@@ -2,10 +2,6 @@
 order: '1'
 category: e-Commerce
 title: Using cloud technologies that shape the future of online retail
-subtitle: >-
-  Our team experts help eCommerce businesses move their product display, order
-  fulfillment, shipping, and inventory management to the cloud with the latest
-  cloud-native platforms
 description: >-
   Our seasoned experts have produced tremendous results for our online retail
   clients. We harness the power of cloud-native technologies to empower lean
@@ -13,6 +9,13 @@ description: >-
   drive sales.
 ---
 ![null](/images/uploads/ecommerce-industry-hero.svg)
+
+##### e-Commerce
+
+## Using cloud technologies that shape the future of online retail
+Special areas of expertise include:
+
+### Our team experts help eCommerce businesses move their product display, order fulfillment, shipping, and inventory management to the cloud with the latest cloud-native platforms
 
 Special areas of expertise include:
 
