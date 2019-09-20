@@ -1,0 +1,13 @@
+<div id="{{.Params.title}}" class="row process-list-item">
+    {{ if .Title }}
+    <div class="col-sm-6">
+        <h5 class="text-uppercase mb-2">{{.Params.category}}</h5>
+        <h2 class="mb-2"><b>{{.Title}}</b></h2>
+        <h3 class="text-brand-primary">{{.Params.subtitle}}</h3>
+    </div>
+    {{end}}
+
+    <div class="col-sm-{{ if .Title }}6{{ else }}12{{ end }} markdown">
+        {{ .Page.Content }}
+    </div>
+</div>

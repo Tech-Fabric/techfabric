@@ -162,6 +162,10 @@ collections:
         widget: "number"
         required: false
 
+      - label: "Category"
+        name: "category"
+        widget: "string"
+
       - label: "Title"
         name: "title"
         widget: "string"
