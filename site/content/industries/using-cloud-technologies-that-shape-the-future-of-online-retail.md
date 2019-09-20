@@ -25,7 +25,9 @@ Special areas of expertise include:
   management
 * Some other bullet point text because I can’t think of anything else
 
-{{< btn-link href="/industries/automotive" >}} Learn More {{< /btn-link >}}
+{{< btn-link href="/technology" >}} See Our technology Stack {{< /btn-link >}}
+
+{{< btn-link href="/solutions" >}} See Our solutions {{< /btn-link >}}
 
 ##### Industry solutions
 
