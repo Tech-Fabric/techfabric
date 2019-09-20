@@ -14,7 +14,12 @@ description: >-
 ---
 ![null](/images/uploads/ecommerce-industry-hero.svg)
 
+##### e-Commerce
+
+## Using cloud technologies that shape the future of online retail
 Special areas of expertise include:
+
+### Our team experts help eCommerce businesses move their product display, order fulfillment, shipping, and inventory management to the cloud with the latest cloud-native platforms
 
 * Implementation of powerful search solutions like Microsoft Azure Search
 
