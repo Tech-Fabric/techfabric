@@ -178,6 +178,6 @@ collections:
         name: "description"
         widget: "string"
 
-      - label: "Header Content"
-        name: "headerBody"
+      - label: "Body"
+        name: "body"
         widget: "markdown"

@@ -1,4 +1,5 @@
-{{ partial "header.html" . }}
+{{ define "main" }}
+{{ $section := .Site.GetPage "section" .Section }}
 
 <section id="main">
     <div>
@@ -10,5 +11,4 @@
         </ul>
     </div>
 </section>
-
-{{ partial "footer.html" . }}
+{{ end }}

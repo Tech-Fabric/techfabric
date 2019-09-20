@@ -1,4 +1,6 @@
-{{ define "main" }} {{ $section := .Site.GetPage "section" .Section }}
+{{ define "main" }}
+{{ $section := .Site.GetPage "section" .Section }}
+
 <article class="container">
 
   <main>{{- .Content -}}</main>
