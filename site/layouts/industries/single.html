@@ -2,13 +2,8 @@
 {{ $section := .Site.GetPage "section" .Section }}
 
 <article class="container">
-
     <div class="industries">
         <main class="markdown">
-            <h5>{{ .Params.category }}</h5>
-            <h2>{{ .Title }}</h2>
-            <h3>{{ .Params.description }}</h3>
-
             {{ .Page.Content }}
         </main>
     </div>

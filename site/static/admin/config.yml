@@ -170,10 +170,6 @@ collections:
         name: "title"
         widget: "string"
 
-      - label: "Subtitle"
-        name: "subtitle"
-        widget: "string"
-
       - label: "Description"
         name: "description"
         widget: "string"
