@@ -38,17 +38,28 @@
       }
     }
   }
+  
+  p {
+    img, blockquote {
+      float: right;
+      width: 660px;
+      clear: both;
+      max-width: 100%;
+      margin: 0 0 80px;
 
-  img, blockquote {
-    float: right;
-    width: 660px;
-    clear: both;
-    max-width: 100%;
-    margin: 0 0 80px;
+      @include breakpoints-up-md {
+        max-width: 50%;
+        margin: 0 0 50px 30px;
+      }
+    }
+  }
 
-    @include breakpoints-up-md {
-      max-width: 50%;
-      margin: 0 0 50px 30px;
+  .btn {
+    display: inline-flex;
+    margin-bottom: 15px;
+
+    &+.btn {
+      margin-left: 25px;
     }
   }
 }
