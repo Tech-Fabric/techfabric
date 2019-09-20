@@ -1,4 +1,5 @@
 ---
+order: '1'
 title: K&L Wine Merchants
 description: >-
   Although, KLWines had a very impressive stack of applications to help with
