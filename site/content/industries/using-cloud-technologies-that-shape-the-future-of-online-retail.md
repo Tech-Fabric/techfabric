@@ -30,4 +30,4 @@ management
 
 ##### Industry solutions
 
-### We innovate by tailoring technology solutions to your industry specific needs
+#### We innovate by tailoring technology solutions to your industry specific needs
