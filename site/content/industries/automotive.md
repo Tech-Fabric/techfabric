@@ -7,6 +7,8 @@ description: >-
   re-marketing organizations to implement and guide them through their digital
   transformation journeys.
 ---
+youtube n_XX6GusZro
+
 ![Automating at the speed of business](/images/uploads/automotive-industry-hero.svg)
 
 ##### Automotive
