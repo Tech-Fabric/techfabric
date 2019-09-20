@@ -26,4 +26,6 @@ management
 
 * Some other bullet point text because I can’t think of anything else
 
+##### Industry solutions
 
+### We innovate by tailoring technology solutions to your industry specific needs
