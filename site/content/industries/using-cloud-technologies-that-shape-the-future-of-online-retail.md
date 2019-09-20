@@ -12,7 +12,7 @@ description: >-
 
 ##### E-COMMERCE
 
-## Using cloud technologies that shape the future of online retail
+# Using cloud technologies that shape the future of online retail
 
 ### Our team experts help eCommerce businesses move their product display, order fulfillment, shipping, and inventory management to the cloud with the latest cloud-native platforms
 
@@ -25,16 +25,14 @@ Special areas of expertise include:
   management
 * Some other bullet point text because I can’t think of anything else
 
-{{< btn-link href="/technology" >}} See Our technology Stack {{< /btn-link >}}
+{{<btn-outlined href="/technology" label="See Our technology Stack">}}
 
-{{< btn-link href="/solutions" >}} See Our solutions {{< /btn-link >}}
+{{<btn-link href="/technology" label="See Our technology Stack">}}
 
+{{<btn-link href="/solutions" label="See Our solutions">}}
 
-
-
+{{<space 100>}}
 
 ##### INDUSTRY SOLUTIONS
-
-
 
 ## **We innovate by tailoring technology solutions to your industry specific needs**

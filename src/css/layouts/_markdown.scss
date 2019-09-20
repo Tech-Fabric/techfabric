@@ -1,7 +1,7 @@
 .markdown {
   h1 {
     line-height: 1.4em;
-    margin-bottom: 53px;
+    margin-bottom: 25px;
     font-weight: 200;
     font-size: 42px;
   }
@@ -10,11 +10,15 @@
     font-size: 26px;
     @include text-light;
     color: $brandPrimary;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
+  }
+
+  h5 {
+    margin-bottom: 5px;
   }
 
   ul {
-    margin: 80px 0;
+    margin: 0 0 45px;
 
     li {
       margin-bottom: 25px;
