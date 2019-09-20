@@ -32,7 +32,7 @@ Special areas of expertise include:
 
 ##### INDUSTRY SOLUTIONS
 
-## **We innovate by tailoring technology solutions to your industry specific needs**
+## **We innovate by combining the right technology solutions with our Automotive fin-tech client needs**
 
 {{<industry-solutions>}}
 
