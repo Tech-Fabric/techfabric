@@ -19,14 +19,13 @@ description: >-
 Special areas of expertise include:
 
 * Implementation of powerful search solutions like Microsoft Azure Search
-
 * Platform solutions for driving Omni-channel user experiences and
-content-strategies
-
+  content-strategies
 * Cloud-native web & mobile applications that improve inventory and warehouse
-management
-
+  management
 * Some other bullet point text because I can’t think of anything else
+
+{{< btn-link href="/industries/automotive" >}} Learn More {{< /btn-link >}}
 
 ##### Industry solutions
 
