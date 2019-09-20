@@ -1,7 +1,6 @@
 ---
 order: '2'
 category: e-Commerce
-slug: e-commerce
 title: Using cloud technologies that shape the future of online retail
 subtitle: >-
   Our team experts help eCommerce businesses move their product display, order
@@ -13,16 +12,6 @@ description: >-
   eCommerce processes, omni-channel efforts, and analytics that continue to
   drive sales.
 ---
-##### e-Commerce
-
-
-## Using cloud technologies that shape the future of online retail
-
-
-### Our team experts help eCommerce businesses move their product display,
-order fulfillment, shipping, and inventory management to the cloud with the
-latest cloud-native platforms
-
 
 Special areas of expertise include:
 
