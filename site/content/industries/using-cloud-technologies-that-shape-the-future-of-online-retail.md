@@ -37,4 +37,33 @@ Special areas of expertise include:
 
 ## **We innovate by tailoring technology solutions to your industry specific needs**
 
+{{<industry-solutions>}}![null](/images/uploads/ecommerce-industry-hero.svg)
+
+##### E-COMMERCE
+
+# Using cloud technologies that shape the future of online retail
+
+### Our team experts help eCommerce businesses move their product display, order fulfillment, shipping, and inventory management to the cloud with the latest cloud-native platforms
+
+Special areas of expertise include:
+
+* Implementation of powerful search solutions like Microsoft Azure Search
+* Platform solutions for driving Omni-channel user experiences and
+  content-strategies
+* Cloud-native web & mobile applications that improve inventory and warehouse
+  management
+* Some other bullet point text because I can’t think of anything else
+
+{{<btn-outlined href="/technology" label="See Our technology Stack">}}
+
+{{<btn-link href="/technology" label="See Our technology Stack">}}
+
+{{<btn-link href="/solutions" label="See Our solutions">}}
+
+{{<space 100>}}
+
+##### INDUSTRY SOLUTIONS
+
+## **We innovate by tailoring technology solutions to your industry specific needs**
+
 {{<industry-solutions>}}
