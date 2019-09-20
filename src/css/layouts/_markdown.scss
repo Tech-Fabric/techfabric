@@ -13,6 +13,10 @@
     margin-bottom: 25px;
   }
 
+  h4 {
+    margin-bottom: 20px;
+  }
+
   h5 {
     margin-bottom: 5px;
   }
@@ -42,19 +46,24 @@
       }
     }
   }
-  
-  p {
-    img, blockquote {
-      float: right;
-      width: 660px;
-      clear: both;
-      max-width: 100%;
-      margin: 0 0 80px;
 
-      @include breakpoints-up-md {
-        max-width: 50%;
-        margin: 0 0 50px 30px;
-      }
+  img, blockquote {
+    float: right;
+    width: 660px;
+    clear: both;
+    max-width: 100%;
+    margin: 0 0 80px;
+
+    @include breakpoints-up-md {
+      max-width: 50%;
+      margin: 0 0 50px 30px;
+    }
+  }
+
+  blockquote {
+    p {
+      font-size: 32px;
+      line-height: 48px;
     }
   }
 

@@ -10,7 +10,6 @@ description: >-
   an improved customer experience.
 subtitle: Subtitle
 category: e-Commerce
-draft: false
 thumbnailImage: /images/uploads/K&L-logo.svg
 ---
 ![null](/images/uploads/iPhoneX_Angled_CorkBorg@2x@2x.png)

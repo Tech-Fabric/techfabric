@@ -6,7 +6,6 @@ description: >-
   voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
   kasd
 category: Automotive
-draft: false
 thumbnailImage: /images/uploads/carfinance-logo.svg
 ---
 # Lorem ipsum dolor sit amet, consetetur sadipscing elitr

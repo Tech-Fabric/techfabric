@@ -6,7 +6,6 @@ description: >-
   voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
   kasd
 category: Medical
-draft: false
 thumbnailImage: /images/uploads/simonmed-logo.svg
 ---
 # Lorem ipsum dolor sit amet, consetetur sadipscing elitr
