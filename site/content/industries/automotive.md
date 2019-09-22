@@ -7,8 +7,6 @@ description: >-
   re-marketing organizations to implement and guide them through their digital
   transformation journeys.
 ---
-youtube n_XX6GusZro
-
 ![Automating at the speed of business](/images/uploads/automotive-industry-hero.svg)
 
 ##### Automotive
@@ -34,8 +32,10 @@ Special areas of expertise include:
 
 ##### INDUSTRY SOLUTIONS
 
-## **We innovate by combining the right technology solutions with our Automotive fin-tech client needs**
+## **We innovate by tailoring technology solutions to your industry specific needs**
 
 {{<industry-solutions>}}
 
 The Automotive Technology Sphere
+
+youtube tAGnKpE4NCI
