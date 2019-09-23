@@ -16,7 +16,7 @@ caseStudyDescription: >-
   fingertips. This automation drastically reduced the amount of work for
   SimonMed staff and created an efficient form process for patients.
 caseStudyImageRight: /images/uploads/iphonex_angled_simonmed-2x-2x.png
-caseStudyImageBottom: /images/uploads/iphonex_straight_simonmed_startscreen-2x-2x.png
+caseStudyImageBottom: /images/uploads/iphonex_simonmed2x-2x-copy.png
 caseStudyURL: /case-studies/simonmed
 ---
 ![Medical Industry](/images/uploads/medical-industry-hero.svg)
