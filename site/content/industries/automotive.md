@@ -1,5 +1,6 @@
 ---
 order: '1'
+slug: automotive
 category: Automotive
 title: Automating at the speed of business
 description: >-
