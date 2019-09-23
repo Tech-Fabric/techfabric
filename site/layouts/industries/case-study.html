@@ -22,7 +22,7 @@
                         {{ .Page.Params.caseStudyDescription }}
                     </p>
 
-                    <a href="/case-studies/kl-wine-merchants" class="btn btn-text btn-text_thin flex-end">
+                    <a href="{{ .Page.Params.caseStudyURL }}" class="btn btn-text btn-text_thin flex-end">
                         See Case Study
                         <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg">
                     </a>
@@ -38,13 +38,12 @@
             </div>
         </div>
 
-        <div class="case-study__img-right">
-            {{ if .Page.Params.caseStudyImageRight }}
 
-            {{ printf `<img src="%s" alt="%s">` .Params.caseStudyImageRight .Title | safeHTML }}
-
-            {{end}}
-        </div>
+        {{ if .Page.Params.caseStudyImageRight }}
+            <div class="case-study__img-right">
+                {{ printf `<img src="%s" alt="%s">` .Params.caseStudyImageRight .Title | safeHTML }}
+            </div>
+        {{end}}
     </div>
 </div>
 {{ end }}

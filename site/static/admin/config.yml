@@ -191,6 +191,10 @@ collections:
         required: false
         widget: "image"
 
+      - label: "Case Study URL"
+        name: "caseStudyURL"
+        widget: "string"
+
       - label: "Body"
         name: "body"
         widget: "markdown"
