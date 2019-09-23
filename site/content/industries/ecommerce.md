@@ -17,7 +17,7 @@ caseStudyDescription: >-
   played a key role in helping to transform the way their customers explore the
   world of bottled wine and spirits.
 caseStudyImageRight: /images/uploads/iphonex_angled_corkborg-2x-2x.png
-caseStudyImageBottom: /images/uploads/iphonex_straight_binlocating-2x-2x.png
+caseStudyImageBottom: /images/uploads/iphonex_klwines-2x-2x.png
 caseStudyURL: /case-studies/kl-wine-merchants
 ---
 ![null](/images/uploads/ecommerce-industry-hero.svg)
