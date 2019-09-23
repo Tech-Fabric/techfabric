@@ -61,7 +61,7 @@
     margin-bottom: 45px;
 
     @include breakpoints-up-lg {
-      margin-bottom: 125px;
+      margin-bottom: 120px;
     }
   }
 }
@@ -138,8 +138,6 @@
       width: calc(100% + 46px);
       margin-left: -23px;
 
-      @extend .image-hover;
-
       @include breakpoints-up-sm {
         margin-bottom: 20px;
         width: calc(100% + 64px);
@@ -190,6 +188,10 @@
 
   &__list {
     margin: 3px 0 0 0;
+  }
+
+  &__body {
+    flex: 1;
   }
 
   &__footer {

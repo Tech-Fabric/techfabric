@@ -1,5 +1,4 @@
 .home-page {
-  min-height: 952px;
   position: relative;
 
   @include breakpoints-up-lg {
@@ -140,7 +139,7 @@
     }
 
     @include breakpoints-up-lg {
-      margin-top: 85px;
+      margin: 50px 0;
     }
 
     a {
@@ -240,12 +239,6 @@
 .container {
   &.featured-case-studies {
     margin-bottom: 90px;
-  }
-}
-
-.response-block {
-  &__quote {
-    margin-bottom: 30px;
   }
 }
 
