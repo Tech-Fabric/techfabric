@@ -36,6 +36,6 @@ Special areas of expertise include:
 
 {{<industry-solutions>}}
 
-The Automotive Technology Sphere
+## **Learn about a recent client success**
 
-youtube tAGnKpE4NCI
+{{<case-study>}}
