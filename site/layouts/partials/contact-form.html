@@ -1,4 +1,4 @@
-<div class="container section">
+<form name="contact" method="POST" data-netlify="true" class="container section">
     <div class="row contact-information">
         <div class="col-lg-7">
             <h3>
@@ -39,40 +39,40 @@
                 <div class="col-sm-6">
                     <label class="brand-control-label">First Name <span class="text-brand-primary">*</span></label>
                     <div class="input-group">
-                        <input type="text" class="brand-control-input">
+                        <input type="text" name="name" class="brand-control-input">
                     </div>
                 </div>
 
                 <div class="col-sm-6">
                     <label class="brand-control-label">Last Name <span class="text-brand-primary">*</span></label>
                     <div class="input-group">
-                        <input type="text" class="brand-control-input">
+                        <input type="text" name="surname" class="brand-control-input">
                     </div>
                 </div>
 
                 <div class="col-sm-6">
                     <label class="brand-control-label">Email <span class="text-brand-primary">*</span></label>
                     <div class="input-group">
-                        <input type="text" class="brand-control-input">
+                        <input type="text" name="email" class="brand-control-input">
                     </div>
                 </div>
 
                 <div class="col-sm-6">
                     <label class="brand-control-label">Phone <span class="text-brand-primary">*</span></label>
                     <div class="input-group">
-                        <input type="text" class="brand-control-input">
+                        <input type="text" name="phone" class="brand-control-input">
                     </div>
                 </div>
 
                 <div class="col-12">
                     <label class="brand-control-label">Message <span class="text-brand-primary">*</span></label>
                     <div class="input-group">
-                        <textarea class="brand-control-input brand-control-input_textarea" cols="30" rows="10"></textarea>
+                        <textarea class="brand-control-input brand-control-input_textarea" name="message" cols="30" rows="10"></textarea>
                     </div>
                 </div>
 
                 <div class="col-12 flex-start">
-                    <button class="btn btn-prim">Send</button>
+                    <button type="submit" class="btn btn-prim">Send</button>
 
                     <div class="form-terms-and-conditions">
                         By submitting this form, you consent to receive marketing communications from TechFabric.
@@ -82,4 +82,4 @@
             </div>
         </div>
     </div>
-</div>
+</form>
