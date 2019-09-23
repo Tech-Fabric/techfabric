@@ -1,4 +1,8 @@
+{{ if .Page.Params.caseStudyTitle }}
+<h2 class="mb-4"><strong>Learn about a recent client success</strong></h2>
+
 <div class="case-study">
+
     <div class="flex-center flex-row mb-5">
         <div class="case-study__logo">
             {{ if .Page.Params.caseStudyLogo }}
@@ -40,3 +44,4 @@
         {{end}}
     </div>
 </div>
+{{ end }}

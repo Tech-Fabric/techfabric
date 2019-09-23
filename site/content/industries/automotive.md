@@ -36,7 +36,3 @@ Special areas of expertise include:
 ## **We innovate by tailoring technology solutions to your industry specific needs**
 
 {{<industry-solutions>}}
-
-## **Learn about a recent client success**
-
-{{<case-study>}}
