@@ -8,6 +8,15 @@ description: >-
   eCommerce processes, omni-channel efforts, and analytics that continue to
   drive sales.
 caseStudyLogo: /images/uploads/autoapprove-logo.svg
+caseStudyTitle: 'Auto Approve '
+caseStudyDescription: >-
+  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+  eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+  voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+  kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+  ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+  tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+  vero eos et
 caseStudyImageRight: ''
 caseStudyImageBottom: /images/uploads/autoapprove_straight_macbookpro-2x-2x.png
 ---
