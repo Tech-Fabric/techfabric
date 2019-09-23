@@ -7,6 +7,9 @@ description: >-
   clients. We harness the power of cloud-native technologies to empower lean
   eCommerce processes, omni-channel efforts, and analytics that continue to
   drive sales.
+caseStudyLogo: /images/uploads/autoapprove-logo.svg
+caseStudyImageRight: ''
+caseStudyImageBottom: /images/uploads/autoapprove_straight_macbookpro-2x-2x.png
 ---
 ![null](/images/uploads/ecommerce-industry-hero.svg)
 
