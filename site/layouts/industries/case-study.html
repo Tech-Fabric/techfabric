@@ -1,30 +1,41 @@
 {{ if .Page.Params.caseStudyTitle }}
 <h2 class="mb-4"><strong>Learn about a recent client success</strong></h2>
 
-<div class="case-study">
-
+<div class="case-study case-study_spaced">
     <div class="flex-center flex-row mb-5">
-        <div class="case-study__logo">
-            {{ if .Page.Params.caseStudyLogo }}
+        <div class="flex-center case-study__body">
+            <div class="flex-center">
+                <div class="case-study__logo flex-start">
+                    {{ if .Page.Params.caseStudyLogo }}
 
-            {{ printf `<img src="%s" alt="%s" class="client-logo">` .Params.caseStudyLogo .Title | safeHTML }}
+                    {{ printf `<img src="%s" alt="%s" class="client-logo">` .Params.caseStudyLogo .Title | safeHTML }}
 
-            {{end}}
-        </div>
+                    {{end}}
+                </div>
 
-        <div>
-            <h5 class="text-uppercase">Case Study</h5>
+                <div>
+                    <h5 class="text-uppercase">Case Study</h5>
 
-            <h2 class="mb-1"><b>{{ .Page.Params.caseStudyTitle }}</b></h2>
+                    <h2 class="mb-1"><b>{{ .Page.Params.caseStudyTitle }}</b></h2>
 
-            <p class="entity-card__description">
-                {{ .Page.Params.caseStudyDescription }}
-            </p>
+                    <p class="entity-card__description">
+                        {{ .Page.Params.caseStudyDescription }}
+                    </p>
 
-            <a href="/case-studies/kl-wine-merchants" class="btn btn-text btn-text_thin flex-end">
-                See Case Study
-                <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg">
-            </a>
+                    <a href="/case-studies/kl-wine-merchants" class="btn btn-text btn-text_thin flex-end">
+                        See Case Study
+                        <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg">
+                    </a>
+                </div>
+            </div>
+
+            <div class="case-study__img-bottom-center flex-center">
+                {{ if .Page.Params.caseStudyImageBottom }}
+
+                {{ printf `<img src="%s" alt="%s">` .Params.caseStudyImageBottom .Title | safeHTML }}
+
+                {{end}}
+            </div>
         </div>
 
         <div class="case-study__img-right">
@@ -34,14 +45,6 @@
 
             {{end}}
         </div>
-    </div>
-
-    <div class="case-study__img-bottom-center flex-center">
-        {{ if .Page.Params.caseStudyImageBottom }}
-
-        {{ printf `<img src="%s" alt="%s">` .Params.caseStudyImageBottom .Title | safeHTML }}
-
-        {{end}}
     </div>
 </div>
 {{ end }}

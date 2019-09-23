@@ -34,6 +34,10 @@
     }
   }
 
+  &_spaced {
+    margin-bottom: 100px;
+  }
+
   &__logo {
     width: 168px;
     margin-right: 60px;
@@ -104,6 +108,32 @@
     @include breakpoints-up-lg {
       margin-top: 68px;
       max-width: 300px;
+    }
+  }
+
+  &__img-bottom-center {
+    margin-top: 50px;
+    height: 367px;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  &__body {
+    width: 100%;
+    margin-top: 50px;
+    align-self: flex-start;
+    flex-direction: column;
+  }
+
+  &__img-right {
+    width: 90%;
+    margin-top: 70px;
+    padding: 0 80px;
+
+    img {
+      width: 100%;
     }
   }
 }

@@ -1,6 +1,7 @@
 ---
 order: '3'
 category: medical
+slug: medical
 title: Building secure & compliant innovations for healthcare & medical partners
 description: >-
   Navigating HIPAA compliance and other regulations is difficult. This requires
