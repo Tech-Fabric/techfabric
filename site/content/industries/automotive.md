@@ -16,7 +16,7 @@ caseStudyDescription: >-
   ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
   tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
   vero eos et
-caseStudyImageBottom: /images/uploads/autoapprove_straight_macbookpro-2x-2x.png
+caseStudyImageBottom: /images/uploads/autoapprove_macbookpro-2x-2x-copy.png
 caseStudyURL: /case-studies/auto-approve
 ---
 ![Automating at the speed of business](/images/uploads/automotive-industry-hero.svg)
