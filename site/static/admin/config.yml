@@ -168,6 +168,29 @@ collections:
         name: "description"
         widget: "string"
 
+      - label: "Case Study Logo"
+        name: "caseStudyLogo"
+        required: false
+        widget: "image"
+
+      - label: "Case Study Title"
+        name: "caseStudyTitle"
+        widget: "string"
+
+      - label: "Case Study Description"
+        name: "caseStudyDescription"
+        widget: "string"
+
+      - label: "Case Study Image Right"
+        name: "caseStudyImageRight"
+        required: false
+        widget: "image"
+
+      - label: "Case Study Image Bottom"
+        name: "caseStudyImageBottom"
+        required: false
+        widget: "image"
+
       - label: "Body"
         name: "body"
         widget: "markdown"

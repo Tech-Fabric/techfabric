@@ -1,22 +1,42 @@
-<div class="col-xs-12 col-lg-5 entity-card">
-    <div class="case-study__logo">
-        <img src="./svg/K&L_Logo-1.svg" class="client-logo">
+<div class="case-study">
+    <div class="flex-center flex-row mb-5">
+        <div class="case-study__logo">
+            {{ if .Page.Params.caseStudyLogo }}
+
+            {{ printf `<img src="%s" alt="%s" class="client-logo">` .Params.caseStudyLogo .Title | safeHTML }}
+
+            {{end}}
+        </div>
+
+        <div>
+            <h5 class="text-uppercase">Case Study</h5>
+
+            <h2 class="mb-1"><b>{{ .Page.Params.caseStudyTitle }}</b></h2>
+
+            <p class="entity-card__description">
+                {{ .Page.Params.caseStudyDescription }}
+            </p>
+
+            <a href="/case-studies/kl-wine-merchants" class="btn btn-text btn-text_thin flex-end">
+                See Case Study
+                <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg">
+            </a>
+        </div>
+
+        <div class="case-study__img-right">
+            {{ if .Page.Params.caseStudyImageRight }}
+
+            {{ printf `<img src="%s" alt="%s">` .Params.caseStudyImageRight .Title | safeHTML }}
+
+            {{end}}
+        </div>
     </div>
 
-    <h5 class="text-uppercase">Case Study</h5>
+    <div class="case-study__img-bottom-center flex-center">
+        {{ if .Page.Params.caseStudyImageBottom }}
 
-    <h3 class="mb-1">Auto Approve</h3>
+        {{ printf `<img src="%s" alt="%s">` .Params.caseStudyImageBottom .Title | safeHTML }}
 
-    <p class="entity-card__description">
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-    </p>
-
-    <a href="/case-studies/kl-wine-merchants" class="btn btn-text btn-text_thin flex-end">
-        See Case Study
-        <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg">
-    </a>
-
-    <div class="case-study__img-bottom-center">
-        <img src="./images/Image 18.png" class="entity-card-image">
+        {{end}}
     </div>
 </div>
