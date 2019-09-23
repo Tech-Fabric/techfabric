@@ -1,7 +1,6 @@
 ---
 order: '3'
 category: medical
-slug: medical
 title: Building secure & compliant innovations for healthcare & medical partners
 description: >-
   Navigating HIPAA compliance and other regulations is difficult. This requires
@@ -19,6 +18,8 @@ caseStudyDescription: >-
 caseStudyImageRight: /images/uploads/iphonex_angled_simonmed-2x-2x.png
 caseStudyImageBottom: /images/uploads/iphonex_straight_simonmed_startscreen-2x-2x.png
 ---
+![Medical Industry](/images/uploads/medical-industry-hero.svg)
+
 ##### Medical
 
 # Building secure & compliant innovations for healthcare & medical partners
