@@ -18,7 +18,7 @@ caseStudyDescription: >-
 caseStudyImageRight: /images/uploads/iphonex_angled_simonmed-2x-2x.png
 caseStudyImageBottom: /images/uploads/iphonex_straight_simonmed_startscreen-2x-2x.png
 ---
-![](/images/uploads/medical-industry-hero.svg)
+![Medical Industry](/images/uploads/medical-industry-hero.svg)
 
 ##### Medical
 
