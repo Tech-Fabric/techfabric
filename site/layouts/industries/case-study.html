@@ -2,8 +2,8 @@
 <h2 class="mb-4"><strong>Learn about a recent client success</strong></h2>
 
 <div class="case-study case-study_spaced">
-    <div class="flex-center flex-row mb-5">
-        <div class="flex-center case-study__body">
+    <div class="flex-center flex-row row mb-5">
+        <div class="flex-center case-study__body {{ if .Page.Params.caseStudyImageRight }}col-lg-6{{ end }}">
             <div class="flex-center">
                 <div class="case-study__logo flex-start">
                     {{ if .Page.Params.caseStudyLogo }}
@@ -40,7 +40,7 @@
 
 
         {{ if .Page.Params.caseStudyImageRight }}
-            <div class="case-study__img-right">
+            <div class="case-study__img-right col-lg-6">
                 {{ printf `<img src="%s" alt="%s">` .Params.caseStudyImageRight .Title | safeHTML }}
             </div>
         {{end}}
