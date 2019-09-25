@@ -13,14 +13,10 @@
 
 .markdown {
   h1 {
-    line-height: 1.4em;
     margin-bottom: 25px;
-    font-weight: 200;
-    font-size: 42px;
   }
 
   h3 {
-    font-size: 26px;
     @include text-light;
     color: $brandPrimary;
     margin-bottom: 25px;

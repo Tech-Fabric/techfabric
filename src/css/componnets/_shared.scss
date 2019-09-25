@@ -90,7 +90,7 @@
 
 .entity-card {
   @extend .clearfix;
-  padding: 33px 0 0;
+  padding: 33px 25px 0;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -216,3 +216,6 @@
   }
 }
 
+.industry-solution-image {
+  margin-bottom: 30px;
+}

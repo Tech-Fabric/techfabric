@@ -32,6 +32,7 @@
     display: flex;
     align-items: center;
     padding: 5px 0;
+    text-transform: capitalize;
 
     @include breakpoints-up-md {
       padding: 28px 0;

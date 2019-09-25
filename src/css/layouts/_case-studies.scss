@@ -39,8 +39,12 @@
   }
 
   &__logo {
-    width: 168px;
-    margin-right: 60px;
+    margin-bottom: 30px;
+
+    @include breakpoints-up-sm {
+      margin-right: 60px;
+      align-self: flex-start;
+    }
   }
 
   &__image {
@@ -123,15 +127,21 @@
 
   &__body {
     width: 100%;
-    margin-top: 50px;
     align-self: flex-start;
     flex-direction: column;
+
+    @include breakpoints-up-sm {
+      margin-top: 50px;
+    }
   }
 
   &__img-right {
     width: 90%;
     margin-top: 70px;
-    padding: 0 80px;
+
+    @include breakpoints-up-sm {
+      padding: 0 80px;
+    }
 
     img {
       width: 100%;
