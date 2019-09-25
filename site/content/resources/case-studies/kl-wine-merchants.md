@@ -13,7 +13,7 @@ subtitle: Subtitle
 category: e-Commerce
 thumbnailImage: /images/uploads/K&L-logo.svg
 ---
-![null](/images/uploads/iPhoneX_Angled_CorkBorg@2x@2x.png)
+![null](/images/uploads/iphonex_angled_corkborg-2x-2x.png)
 
 > “By partnering with TechFabric experts, we were able to clearly define the problem areas and strategize solutions to bring immediate improvements to our operations.”
 >
@@ -80,7 +80,7 @@ TechFabric built a robust notifications system using Azure Service Bus and expos
 
 The notification API drops the messages on to Azure Service Bus which are picked up by Azure Functions and Logic Apps to send the notifications. Many of the legacy systems that had their own notifications logic were refactored to use the notifications API to have a single, centralized and consistent message format.
 
-![](/images/uploads/cork-borg-app-infographic.svg)
+![null](/images/uploads/cork-borg-app-infographic.svg)
 
 ### “Cork Borg” Internal Mobile App increases Staff Productivity by 50%
 
