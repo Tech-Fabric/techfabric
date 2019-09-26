@@ -219,3 +219,31 @@ collections:
       - label: "Body"
         name: "body"
         widget: "markdown"
+
+  - name: "solutions" # Used in routes, e.g., /admin/collections/blog
+    label: "Solutions" # Used in the UI
+    folder: "site/content/solutions" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+
+      - label: "Order"
+        name: "order"
+        widget: "number"
+        required: false
+
+      - label: "Category"
+        name: "category"
+        widget: "string"
+
+      - label: "Title"
+        name: "title"
+        widget: "string"
+
+      - label: "Description"
+        name: "description"
+        widget: "string"
+
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
