@@ -4,8 +4,10 @@
 @import 'imports/index';
 @import 'componnets/index';
 @import 'layouts/index';
+@import "admin/index";
 
 body {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -15,30 +17,30 @@ body {
   'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0f0f0f+0,3c3c3c+50,0f0f0f+100 */
   background: rgb(15, 15, 15); /* Old browsers */
+}
+
+.document-body {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0f0f0f+0,3c3c3c+50,0f0f0f+100 */
   background: -moz-linear-gradient(top, rgba(15, 15, 15, 1) 0%, rgba(60, 60, 60, 1) 50%, rgba(15, 15, 15, 1) 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top, rgba(15, 15, 15, 1) 0%, rgba(60, 60, 60, 1) 50%, rgba(15, 15, 15, 1) 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, rgba(15, 15, 15, 1) 0%, rgba(60, 60, 60, 1) 50%, rgba(15, 15, 15, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0f0f0f', endColorstr='#0f0f0f', GradientType=0); /* IE6-9 */
   background-size: 100% 47%;
   color: white;
-  padding-top: 70px;
-  position: relative;
+}
+
+.page-body {
+  flex-grow: 1;
+  padding-top: 90px;
 
   @include breakpoints-up-sm {
-    padding-top: 100px;
+    padding-top: 120px;
   }
 
   @include breakpoints-up-lg {
-    padding-top: 0;
+    padding-top: 20px;
   }
-}
-
-.body {
-  flex-grow: 1;
-  padding-top: 20px;
 }
 
 .image-hover {

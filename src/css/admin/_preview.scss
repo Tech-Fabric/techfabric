@@ -1,0 +1,8 @@
+.frame-content {
+  @extend .markdown;
+  color: #fff;
+
+  & > div {
+    padding: 20px;
+  }
+}

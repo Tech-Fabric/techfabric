@@ -7,14 +7,20 @@ media_folder: "site/static/images/uploads" # Media files will be stored in the r
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 
 collections:
-  - label: "Home"
+  - label: "Single Pages"
     name: "home"
     files:
       - label: "Home Page"
         name: "home"
         file: "site/content/_index.md"
         fields:
-          - {label: Title, name: title, widget: string}
+          - label: "Title"
+            name: "title"
+            widget: "string"
+
+          - label: "Call to Action"
+            name: "callToAction"
+            widget: "markdown"
 
   - name: "case-studies" # Used in routes, e.g., /admin/collections/blog
     label: "Case Studies" # Used in the UI
@@ -181,6 +187,7 @@ collections:
         name: "caseStudy"
         widget: 'object'
         fields:
+
           - label: "Logo"
             name: "logo"
             required: false
