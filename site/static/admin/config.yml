@@ -7,9 +7,18 @@ media_folder: "site/static/images/uploads" # Media files will be stored in the r
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 
 collections:
+  - label: "Home"
+    name: "home"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "site/content/_index.md"
+        fields:
+          - {label: Title, name: title, widget: string}
+
   - name: "case-studies" # Used in routes, e.g., /admin/collections/blog
     label: "Case Studies" # Used in the UI
-    folder: "site/content/resources/case-studies" # The path to the folder where the documents are stored
+    folder: "site/content/case-studies" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
@@ -47,7 +56,7 @@ collections:
 
   - name: "technology" # Used in routes, e.g., /admin/collections/blog
     label: "Technology" # Used in the UI
-    folder: "site/content/resources/technology" # The path to the folder where the documents are stored
+    folder: "site/content/technology" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
@@ -84,7 +93,7 @@ collections:
 
   - name: "process" # Used in routes, e.g., /admin/collections/blog
     label: "Process" # Used in the UI
-    folder: "site/content/resources/process" # The path to the folder where the documents are stored
+    folder: "site/content/process" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
@@ -112,7 +121,7 @@ collections:
 
   - name: "team" # Used in routes, e.g., /admin/collections/blog
     label: "Team" # Used in the UI
-    folder: "site/content/resources/team" # The path to the folder where the documents are stored
+    folder: "site/content/team" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
@@ -168,32 +177,36 @@ collections:
         name: "description"
         widget: "string"
 
-      - label: "Case Study Logo"
-        name: "caseStudyLogo"
-        required: false
-        widget: "image"
+      - label: 'Case Study'
+        name: "caseStudy"
+        widget: 'object'
+        fields:
+          - label: "Logo"
+            name: "logo"
+            required: false
+            widget: "image"
 
-      - label: "Case Study Title"
-        name: "caseStudyTitle"
-        widget: "string"
+          - label: "Title"
+            name: "title"
+            widget: "string"
 
-      - label: "Case Study Description"
-        name: "caseStudyDescription"
-        widget: "string"
+          - label: "Description"
+            name: "description"
+            widget: "string"
 
-      - label: "Case Study Image Right"
-        name: "caseStudyImageRight"
-        required: false
-        widget: "image"
+          - label: "Image Right"
+            name: "imageRight"
+            required: false
+            widget: "image"
 
-      - label: "Case Study Image Bottom"
-        name: "caseStudyImageBottom"
-        required: false
-        widget: "image"
+          - label: "Image Bottom"
+            name: "imageBottom"
+            required: false
+            widget: "image"
 
-      - label: "Case Study URL"
-        name: "caseStudyURL"
-        widget: "string"
+          - label: "URL"
+            name: "url"
+            widget: "string"
 
       - label: "Body"
         name: "body"

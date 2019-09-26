@@ -9,7 +9,6 @@ title = "Custom Software Development | Tech Fabric"
 # disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
 [menu]
-
   [[menu.main]]
     identifier = "Industries"
     name = "Industries"

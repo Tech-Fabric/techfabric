@@ -1,14 +1,14 @@
-{{ if .Page.Params.caseStudyTitle }}
+{{ if .Page.Params.caseStudy.title }}
 <h2 class="mb-4"><strong>Learn about a recent client success</strong></h2>
 
 <div class="case-study case-study_spaced">
     <div class="flex-center flex-row row mb-5">
-        <div class="flex-center case-study__body {{ if .Page.Params.caseStudyImageRight }}col-lg-6{{ end }}">
+        <div class="flex-center case-study__body {{ if .Page.Params.caseStudy.imageRight }}col-lg-6{{ end }}">
             <div class="flex-center">
                 <div class="case-study__logo flex-start">
-                    {{ if .Page.Params.caseStudyLogo }}
+                    {{ if .Page.Params.caseStudy.logo }}
 
-                    {{ printf `<img src="%s" alt="%s" class="client-logo">` .Params.caseStudyLogo .Title | safeHTML }}
+                    {{ printf `<img src="%s" alt="%s" class="client-logo">` .Params.caseStudy.logo .Title | safeHTML }}
 
                     {{end}}
                 </div>
@@ -16,13 +16,13 @@
                 <div>
                     <h5 class="text-uppercase">Case Study</h5>
 
-                    <h2 class="mb-1"><b>{{ .Page.Params.caseStudyTitle }}</b></h2>
+                    <h2 class="mb-1"><b>{{ .Page.Params.caseStudy.title }}</b></h2>
 
                     <p class="entity-card__description">
-                        {{ .Page.Params.caseStudyDescription }}
+                        {{ .Page.Params.caseStudy.description }}
                     </p>
 
-                    <a href="{{ .Page.Params.caseStudyURL }}" class="btn btn-text btn-text_thin flex-end">
+                    <a href="{{ .Page.Params.caseStudy.url }}" class="btn btn-text btn-text_thin flex-end">
                         See Case Study
                         <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg">
                     </a>
@@ -30,18 +30,18 @@
             </div>
 
             <div class="case-study__img-bottom-center flex-center">
-                {{ if .Page.Params.caseStudyImageBottom }}
+                {{ if .Page.Params.caseStudy.imageBottom }}
 
-                {{ printf `<img src="%s" alt="%s">` .Params.caseStudyImageBottom .Title | safeHTML }}
+                {{ printf `<img src="%s" alt="%s">` .Params.caseStudy.imageBottom .Title | safeHTML }}
 
                 {{end}}
             </div>
         </div>
 
 
-        {{ if .Page.Params.caseStudyImageRight }}
+        {{ if .Page.Params.caseStudy.imageRight }}
             <div class="case-study__img-right col-lg-6">
-                {{ printf `<img src="%s" alt="%s">` .Params.caseStudyImageRight .Title | safeHTML }}
+                {{ printf `<img src="%s" alt="%s">` .Params.caseStudy.imageRight .Title | safeHTML }}
             </div>
         {{end}}
     </div>

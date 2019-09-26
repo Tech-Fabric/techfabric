@@ -7,18 +7,19 @@ description: >-
   clients. We harness the power of cloud-native technologies to empower lean
   eCommerce processes, omni-channel efforts, and analytics that continue to
   drive sales.
-caseStudyLogo: /images/uploads/K&L-logo.svg
-caseStudyTitle: K&L Wines
-caseStudyDescription: >-
-  The renowned online wine retailer partnered with TechFabric to digitally
-  transform the way they manage their up-front inventory costs and warehouse
-  workflow. We also helped create a much needed update to how their wine
-  connoisseurs search and discover new wine and spirits. Microsoft Azure search
-  played a key role in helping to transform the way their customers explore the
-  world of bottled wine and spirits.
-caseStudyImageRight: /images/uploads/iphonex_angled_corkborg-2x-2x.png
-caseStudyImageBottom: /images/uploads/iphonex_klwines.png
-caseStudyURL: /case-studies/kl-wine-merchants
+caseStudy:
+  logo: /images/uploads/K&L-logo.svg
+  title: K&L Wines
+  description: >-
+      The renowned online wine retailer partnered with TechFabric to digitally
+      transform the way they manage their up-front inventory costs and warehouse
+      workflow. We also helped create a much needed update to how their wine
+      connoisseurs search and discover new wine and spirits. Microsoft Azure search
+      played a key role in helping to transform the way their customers explore the
+      world of bottled wine and spirits.
+  imageRight: /images/uploads/iphonex_angled_corkborg-2x-2x.png
+  imageBottom: /images/uploads/iphonex_klwines.png
+  url: /case-studies/kl-wine-merchants
 ---
 ![null](/images/uploads/ecommerce-industry-hero.svg)
 
