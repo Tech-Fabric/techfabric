@@ -9,6 +9,7 @@ public_folder: "/images/uploads" # The src attribute for uploaded media will beg
 collections:
   - label: "Single Pages"
     name: "home"
+    preview: false
     files:
       - label: "Home Page"
         name: "home"
@@ -183,9 +184,9 @@ collections:
         name: "description"
         widget: "string"
 
-      - label: 'Case Study'
+      - label: "Case Study"
         name: "caseStudy"
-        widget: 'object'
+        widget: "object"
         fields:
 
           - label: "Logo"

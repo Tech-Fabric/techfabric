@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ $_hugo_config := `{ "version": 1 }` }}
 
 <div class="home-page">
     <div class="container">
@@ -51,22 +52,7 @@
             </div>
 
             <div class="hero-block home-page__call-to-action">
-                {{ .Params.callToAction }}
-
-                <div class="home-page__call-to-action-body">
-                    <div class="hero-block__title">
-                        <span class="text-brand-secondary">
-                             We strive to provide technology solutions to empower enterprises through
-                        </span>
-                        <b class="mobile-capitalized">
-                            amazing user experiences
-                        </b>
-                    </div>
-
-                    <div class="hero-block__subtitle">
-                        We use the latest cloud-native technologies to provide world class development & consulting services.
-                    </div>
-                </div>
+                {{ .Params.callToAction | markdownify }}
 
                 <div class="home-page__call-to-action-footer">
                     <a href="/get-in-touch">

@@ -1,10 +1,15 @@
 .hero-block {
-  &__title {
-    color: #ffffff;
+  h2 {
     font-size: 20px;
     line-height: 1.5em;
     margin-bottom: 15px;
     font-weight: 200;
+    color: $brandSecondary;
+
+    strong {
+      font-weight: 600;
+      color: #fff;
+    }
 
     @include breakpoints-up-xl {
       font-size: 32px;
