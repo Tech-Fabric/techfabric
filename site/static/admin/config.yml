@@ -8,8 +8,10 @@ public_folder: "/images/uploads" # The src attribute for uploaded media will beg
 
 collections:
   - label: "Single Pages"
+    description: 'A collection of editable single pages'
     name: "home"
-    preview: false
+    editor:
+      preview: false
     files:
       - label: "Home Page"
         name: "home"
@@ -23,9 +25,16 @@ collections:
             name: "callToAction"
             widget: "markdown"
 
+          - label: "Partners"
+            name: "partners"
+            widget: "list"
+            fields:
+              - { label: Logo, name: logo, widget: image }
+              - { label: Link, name: link, widget: string }
+
   - name: "case-studies" # Used in routes, e.g., /admin/collections/blog
-    label: "Case Studies" # Used in the UI
-    folder: "site/content/case-studies" # The path to the folder where the documents are stored
+    label: "Case Studies"
+    folder: "site/content/case-studies"
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
@@ -61,12 +70,12 @@ collections:
         name: "body"
         widget: "markdown"
 
-  - name: "technology" # Used in routes, e.g., /admin/collections/blog
-    label: "Technology" # Used in the UI
-    folder: "site/content/technology" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
+  - name: "technology"
+    label: "Technology"
+    folder: "site/content/technology"
+    create: true
+    slug: "{{slug}}"
+    fields:
 
       - label: "Order"
         name: "order"
@@ -98,12 +107,12 @@ collections:
         name: "body"
         widget: "markdown"
 
-  - name: "process" # Used in routes, e.g., /admin/collections/blog
-    label: "Process" # Used in the UI
-    folder: "site/content/process" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
+  - name: "process"
+    label: "Process"
+    folder: "site/content/process"
+    create: true
+    slug: "{{slug}}"
+    fields:
 
       - label: "Order"
         name: "order"
@@ -126,12 +135,12 @@ collections:
         name: "body"
         widget: "markdown"
 
-  - name: "team" # Used in routes, e.g., /admin/collections/blog
-    label: "Team" # Used in the UI
-    folder: "site/content/team" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
+  - name: "team"
+    label: "Team"
+    folder: "site/content/team"
+    create: true
+    slug: "{{slug}}"
+    fields:
 
       - label: "Order"
         name: "order"
@@ -160,12 +169,12 @@ collections:
         widget: "string"
         required: false
 
-  - name: "industries" # Used in routes, e.g., /admin/collections/blog
-    label: "Industries" # Used in the UI
-    folder: "site/content/industries" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
+  - name: "industries"
+    label: "Industries"
+    folder: "site/content/industries"
+    create: true
+    slug: "{{slug}}"
+    fields:
 
       - label: "Order"
         name: "order"
@@ -220,12 +229,14 @@ collections:
         name: "body"
         widget: "markdown"
 
-  - name: "solutions" # Used in routes, e.g., /admin/collections/blog
-    label: "Solutions" # Used in the UI
-    folder: "site/content/solutions" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
+  - name: "solutions"
+    identifier_field: "category"
+    label: "Solutions"
+    folder: "site/content/solutions"
+    template: "technology"
+    create: true
+    slug: "{{slug}}"
+    fields:
 
       - label: "Order"
         name: "order"
@@ -239,6 +250,15 @@ collections:
       - label: "Title"
         name: "title"
         widget: "string"
+
+      - label: "Subtitle"
+        name: "subtitle"
+        widget: "string"
+
+      - label: "Thumbnail Image"
+        name: "thumbnailImage"
+        required: false
+        widget: "image"
 
       - label: "Description"
         name: "description"

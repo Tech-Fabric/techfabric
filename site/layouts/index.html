@@ -1,5 +1,4 @@
 {{ define "main" }}
-{{ $_hugo_config := `{ "version": 1 }` }}
 
 <div class="home-page">
     <div class="container">
@@ -52,7 +51,9 @@
             </div>
 
             <div class="hero-block home-page__call-to-action">
-                {{ .Params.callToAction | markdownify }}
+                {{ if .Params.callToAction}}
+                    {{ .Params.callToAction | markdownify }}
+                {{ end }}
 
                 <div class="home-page__call-to-action-footer">
                     <a href="/get-in-touch">
@@ -98,8 +99,16 @@
 <div class="brand-block brand-block_spaced">
     <div class="container">
         <h3 class="text-center text-brand-secondary text-light">Companies innovating with TechFabric</h3>
-
         <div class="home-page__innovating-companies">
+
+            {{ range .Params.partners }}
+              {{ printf `
+                <a href="{{ .link }}">
+                    <img width="185px" src="{{ .logo }}">
+                </a>
+              `}}
+            {{ end }}
+
             <a href="/approve-engine">
                 <img width="185px" src="./svg/ApproveLogo.svg">
             </a>
