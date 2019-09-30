@@ -1,0 +1,30 @@
+{{ define "main" }}
+{{ $section := .Site.GetPage "section" .Section }}
+<div class="container">
+    <h5 class="text-uppercase mb-3">{{ .Params.category }}</h5>
+
+    {{ with .Title }}
+    <h1 class="text-light mb-2">{{.}}</h1>
+    {{ end }}
+
+    <h3 class="text-brand-primary mb-3">{{ .Params.subtitle }}</h3>
+</div>
+
+<div class="page-anchors mb-3">
+    <div class="container">
+        <div class="page-anchors__list">
+            {{ range .Pages.ByParam "order" }}
+                {{ .Render "page-menu-item" }}
+            {{ end }}
+        </div>
+    </div>
+</div>
+
+<main class="container">
+    <div class="technology-stack mb-5">
+        {{ range .Pages.ByParam "order" }}
+            {{ .Render "solutions-list-item" }}
+        {{ end }}
+    </div>
+</main>
+{{ end }}
