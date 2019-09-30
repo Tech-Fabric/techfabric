@@ -6,23 +6,27 @@
                     <img src="./images/TF-logo.svg" alt="">
                 </div>
 
-                <a href="/" class="footer__link">Gilbert, Arizona (HQ)</a>
+                {{ with .Site.GetPage "settings" }}
 
-                <span>1530 E. Williams Field Rd, Ste 101 Gilbert, AZ 85295</span>
+                <a href="/" class="footer__link">{{ .Params.contacts.city }}</a>
+
+                <span>{{ .Params.contacts.address }}, {{ .Params.contacts.zipCode }}</span>
 
                 <div class="footer__phone">
-                    <a href="tel:6028577370" class="text-regular tex-bold">(602) 857-7370</a>
-                    <a href="mailto:contact@techfabric.io" target="__blank" class="text-brand-secondary text-bold">contact@techfabric.io</a>
+                    <a href="tel:{{ .Params.contacts.phoneNumber }}" class="text-regular tex-bold">{{ .Params.contacts.phoneNumber }}</a>
+                    <a href="mailto:{{ .Params.contacts.email }}" target="__blank" class="text-brand-secondary text-bold">{{ .Params.contacts.email }}</a>
                 </div>
+
+                {{ end }}
             </div>
 
             <div class="col-12 col-sm-6 col-lg-2 footer__contacts">
                 <h4>INDUSTRIES</h4>
 
                 <ul>
-                    <li><a href="/industries/automotive">Automotive</a></li>
-                    <li><a href="/industries/ecommerce">eCommerce</a></li>
-                    <li><a href="/industries/medical">Healthcare</a></li>
+                    {{ range where .Site.Pages "Params.menu" "industries" }}
+                        <li><a href="{{ .Permalink }}">{{ .Params.category }}</a></li>
+                    {{ end }}
                 </ul>
             </div>
 
@@ -30,11 +34,9 @@
                 <h4>SOLUTIONS</h4>
 
                 <ul>
-                    <li><a href="/microservices-and-apis">Microservices & APIs</a></li>
-                    <li><a href="/cloud-native-web-and-mobile-apps">Cloud-Native Web & Mobile Apps</a></li>
-                    <li><a href="/machine-learning-ai-and-iot">Machine Learning, AI, & IoT</a></li>
-                    <li><a href="/human-centered-design">Human Centered Design</a></li>
-                    <li><a href="/devops-and-infrastructure">DevOps & Infrastructure</a></li>
+                    {{ range where .Site.Pages "Params.menu" "solutions" }}
+                        <li><a href="{{ .Permalink }}">{{ .Params.category }}s</a></li>
+                    {{ end }}
                 </ul>
             </div>
 
@@ -42,10 +44,9 @@
                 <h4>RESOURCES</h4>
 
                 <ul>
-                    <li><a href="/case-studies/">Case Studies</a></li>
-                    <li><a href="/technology">Technology</a></li>
-                    <li><a href="/process">Our Process</a></li>
-                    <li><a href="/team">Our Team</a></li>
+                    {{ range where .Site.Pages "Params.menu" "resources" }}
+                        <li><a href="{{ .Permalink }}">{{ .Params.category }}s</a></li>
+                    {{ end }}
                 </ul>
             </div>
 
@@ -53,7 +54,7 @@
                 <h4>OUR CULTURE</h4>
 
                 <ul>
-                    <li><a href="/blog">Visit Our Blog</a></li>
+                    <li><a href="https://blog.techfabric.io/">Visit Our Blog</a></li>
 
                     <li class="footer__social-networks">
                         <a href="linkedin.com" target="_blank">
