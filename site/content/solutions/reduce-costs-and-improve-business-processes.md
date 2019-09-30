@@ -1,14 +1,12 @@
 ---
-order: '1'
-category: Digital Transformation
-title: Automation & growth through modern technology
-subtitle: >-
-  Digital transformation provides businesses with the ability to adapt to
-  changes, trends, and new innovations within their industry.
-thumbnailImage: /images/uploads/solution-digital-transformation.svg
+order: '3'
+category: Cloud Native Web & Mobile Apps
+title: Reduce costs and Improve business processes
+subtitle: Cloud-native apps will minimize infrastructure overhead and manual efforts.
+thumbnailImage: /images/uploads/solution-cloudnative-apps.svg
 link:
-  title: See Our Technology Stack
-  url: /technology
+  title: See Our Front-End Technologies
+  url: '/technology/#Modern%20Front-end%20frameworks'
 ---
 * Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 
 * Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 

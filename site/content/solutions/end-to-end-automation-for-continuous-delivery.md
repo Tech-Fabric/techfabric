@@ -1,14 +1,13 @@
 ---
-order: '1'
-category: Digital Transformation
-title: Automation & growth through modern technology
+order: '6'
+category: DevOps & Infrastructure
+title: End-to-end Automation For continuous delivery
 subtitle: >-
-  Digital transformation provides businesses with the ability to adapt to
-  changes, trends, and new innovations within their industry.
-thumbnailImage: /images/uploads/solution-digital-transformation.svg
-link:
-  title: See Our Technology Stack
-  url: /technology
+  We use the latest modern DevOps practices to provided a shorter development
+  life cycle and deliver rich features, fixes, and updates.We use the latest
+  modern DevOps practices to provided a shorter development life cycle and
+  deliver rich features, fixes, and updates.
+thumbnailImage: /images/uploads/solution-devops-infrastructure.svg
 ---
 * Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 
 * Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 
