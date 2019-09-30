@@ -1,6 +1,6 @@
 ---
 order: '3'
-category: medical
+category: Medical
 title: Building secure & compliant innovations for healthcare & medical partners
 description: >-
   Navigating HIPAA compliance and other regulations is difficult. This requires
@@ -10,14 +10,14 @@ caseStudy:
   logo: /images/uploads/simonmed-logo.svg
   title: SimonMed
   description: >-
-      The radiology and diagnostic imaging company partnered with TechFabric to
-      digitally transform the way they complete the new and existing patient
-      on-boarding process. TechFabric used cutting-edge technology to bring the
-      patient form & check-in experience from the waiting area to the patients
-      fingertips. This automation drastically reduced the amount of work for
-      SimonMed staff and created an efficient form process for patients.
-  imageRight: /images/uploads/iphonex_angled_simonmed-2x-2x.png
+    The radiology and diagnostic imaging company partnered with TechFabric to
+    digitally transform the way they complete the new and existing patient
+    on-boarding process. TechFabric used cutting-edge technology to bring the
+    patient form & check-in experience from the waiting area to the patients
+    fingertips. This automation drastically reduced the amount of work for
+    SimonMed staff and created an efficient form process for patients.
   imageBottom: /images/uploads/iphonex_simonmed.png
+  imageRight: /images/uploads/iphonex_angled_simonmed-2x-2x.png
   url: /case-studies/simonmed
 ---
 ![Medical Industry](/images/uploads/medical-industry-hero.svg)
