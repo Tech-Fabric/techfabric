@@ -131,6 +131,14 @@
         }
       }
 
+      &:last-child {
+        margin-bottom: 0;
+
+        &:after {
+          background: none;
+        }
+      }
+
       &-container {
         position: relative;
         overflow: hidden;
@@ -181,14 +189,6 @@
 
         @include breakpoints-up-xl {
           margin-bottom: 56px;
-        }
-      }
-
-      &_last {
-        margin-bottom: 0;
-
-        &:after {
-          background: none;
         }
       }
     }

@@ -1,6 +1,7 @@
 ---
 order: '0'
-description: >-
+category: Our Team
+text: >-
   Tech Fabric has comprehensive expertise in several fields of custom software
   development, and hardware systems architectural design and management. This
   allows us to satisfy your project’s needs, from developing front-end
@@ -11,5 +12,7 @@ description: >-
   too!
 title: Hard work. Work-life balance. Diversity of thought. openness. Humility.
 subtitle: "We strive to provide technology solutions to empower enterprises through amazing user experiences.\_"
+menu: resources
+menuDescription: Find out more about us and our amazing leadership team.
 ---
 

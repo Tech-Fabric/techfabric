@@ -19,6 +19,7 @@ caseStudy:
     vero eos et
   imageBottom: /images/uploads/autoapprove_macbookpro.png
   url: /case-studies/auto-approve
+menu: industries
 ---
 ![Automating at the speed of business](/images/uploads/automotive-industry-hero.svg)
 

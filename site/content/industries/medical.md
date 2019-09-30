@@ -19,6 +19,7 @@ caseStudy:
   imageBottom: /images/uploads/iphonex_simonmed.png
   imageRight: /images/uploads/iphonex_angled_simonmed-2x-2x.png
   url: /case-studies/simonmed
+menu: industries
 ---
 ![Medical Industry](/images/uploads/medical-industry-hero.svg)
 

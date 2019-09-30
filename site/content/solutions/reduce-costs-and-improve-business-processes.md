@@ -7,6 +7,7 @@ thumbnailImage: /images/uploads/solution-cloudnative-apps.svg
 link:
   title: See Our Front-End Technologies
   url: '/technology/#Modern%20Front-end%20frameworks'
+menu: solutions
 ---
 * Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 
 * Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 

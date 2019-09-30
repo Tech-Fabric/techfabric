@@ -5,6 +5,8 @@ title: Cloud-Native apps built with modern and emerging technologies
 subtitle: 'Check out TechFabric’s technology stack:'
 thumbnailImage: /images/uploads/technology-hero.svg
 description: '-'
+menu: resources
+menuDescription: “Cutting Edge” is our middle name. We’re a Microsoft Gold Partner and experts in the latest Cloud-Native platforms.
 ---
 ## Moving to the cloud is a simple process that delivers real business value. How it works:
 

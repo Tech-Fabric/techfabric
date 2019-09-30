@@ -20,6 +20,7 @@ caseStudy:
   imageRight: /images/uploads/iphonex_angled_corkborg-2x-2x.png
   imageBottom: /images/uploads/iphonex_klwines.png
   url: /case-studies/kl-wine-merchants
+menu: industries
 ---
 ![null](/images/uploads/ecommerce-industry-hero.svg)
 

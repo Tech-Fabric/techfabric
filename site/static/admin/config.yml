@@ -35,11 +35,16 @@ collections:
         name: "settings"
         file: "site/content/settings.md"
         fields:
-          - label: "Menu"
-            name: "menu"
-            widget: "list"
+          - label: "Contacts"
+            name: "contacts"
+            widget: "object"
             fields:
-              - { label: "Item", name: "item", widget: "string" }
+              - { label: "City", name: "city", widget: "string" }
+              - { label: "Street", name: "street", widget: "string" }
+              - { label: "State", name: "state", widget: "string" }
+              - { label: "Zip Code", name: "zipCode", widget: "string" }
+              - { label: "Phone Number", name: "phoneNumber", widget: "string" }
+              - { label: "Email", name: "email", widget: "string" }
 
   - name: "case-studies" # Used in routes, e.g., /admin/collections/blog
     label: "Case Studies"
@@ -70,10 +75,22 @@ collections:
         name: "category"
         widget: "string"
 
+      - label: "Menu"
+        name: "menu"
+        required: false,
+        widget: "select"
+        default: ["resources"]
+        options: ["none", "industries", "solutions", "resources"]
+
       - label: "Thumbnail Image"
         name: "thumbnailImage"
         required: false
         widget: "image"
+
+      - label: "Menu Description>"
+        name: "menuDescription"
+        widget: "string"
+        required: false
 
       - label: "Body"
         name: "body"
@@ -112,6 +129,13 @@ collections:
         name: "description"
         widget: "string"
 
+      - label: "Menu"
+        name: "menu"
+        required: false,
+        widget: "select"
+        default: ["resources"]
+        options: ["none", "industries", "solutions", "resources"]
+
       - label: "Body"
         name: "body"
         widget: "markdown"
@@ -139,6 +163,18 @@ collections:
       - label: "Subtitle"
         name: "subtitle"
         widget: "string"
+
+      - label: "Menu"
+        name: "menu"
+        required: false,
+        widget: "select"
+        default: ["resources"]
+        options: ["none", "industries", "solutions", "resources"]
+
+      - label: "Menu Description>"
+        name: "menuDescription"
+        widget: "string"
+        required: false
 
       - label: "Body"
         name: "body"
@@ -173,8 +209,20 @@ collections:
         name: "subtitle"
         widget: "string"
 
+      - label: "Menu"
+        name: "menu"
+        required: false,
+        widget: "select"
+        default: ["resources"]
+        options: ["none", "industries", "solutions", "resources"]
+
       - label: "Description"
         name: "description"
+        widget: "string"
+        required: false
+
+      - label: "Menu Description>"
+        name: "menuDescription"
         widget: "string"
         required: false
 
@@ -234,6 +282,13 @@ collections:
             name: "url"
             widget: "string"
 
+      - label: "Menu"
+        name: "menu"
+        required: false,
+        widget: "select"
+        default: ["industries"]
+        options: ["none", "industries", "solutions", "resources"]
+
       - label: "Body"
         name: "body"
         widget: "markdown"
@@ -284,6 +339,13 @@ collections:
             name: "url"
             required: false
             widget: "string"
+
+      - label: "Menu"
+        name: "menu"
+        required: false,
+        widget: "select"
+        default: ["solutions"]
+        options: ["none", "industries", "solutions", "resources"]
 
       - label: "Body"
         name: "body"
