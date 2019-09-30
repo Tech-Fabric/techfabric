@@ -26,68 +26,37 @@
     </div>
 
     <div class="header__brand-menu" data-menu-id="industries">
+        {{ $section := "industries" }}
+
         <div class="container">
-            <h3 class="header__menu-title">We bring industry expertise to the table.</h3>
+            <h3 class="header__menu-title">
+                {{ with .Site.GetPage $section }}{{ .Params.subtitle }}{{ end }}
+            </h3>
 
             <div class="row">
-                <div class="col-sm-12 col-md-4">
-                    <div class="header__menu-section">
+                {{ range (where .Site.RegularPages.ByTitle "Section" $section) }}
+                <div class="col-sm-12 col-md-4 header__menu-section">
+                    <div class="header__menu-section-container">
                         <div>
-                            <h4 class="header__menu-section-title">Automotive</h4>
+                            <h4 class="header__menu-section-title">{{ .Params.category }}</h4>
                             <p class="header__menu-section-description">
-                                We’ve partnered with industry leading auto finance,
-                                re-finance, and re-marketing organizations to implement
-                                and guide them through their digital transformation journeys.
+                                {{ .Params.description }}
                             </p>
 
+                            {{ if eq .Params.category "Automotive" }}
                             <div class="bordered-link header-menu-bordered-link">
                                 The Automotive Technology Sphere
                             </div>
+                            {{ end }}
                         </div>
 
-                        <a href="/industries/automotive" class="btn btn-text btn-text_thin pull-right flex-end">
+                        <a href="{{ .Permalink }}" class="btn btn-text btn-text_thin pull-right flex-end">
                             Learn More
                             <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg" alt="">
                         </a>
                     </div>
                 </div>
-
-                <div class="col-sm-12 col-md-4">
-                    <div class="header__menu-section">
-                        <div>
-                            <h4 class="header__menu-section-title">eCommerce</h4>
-                            <p class="header__menu-section-description">
-                                Our seasoned experts have produced tremendous results for our online retail clients.
-                                We harness the power of cloud-native technologies to empower lean eCommerce processes,
-                                omni-channel efforts, and analytics that continue to drive sales.
-                            </p>
-                        </div>
-
-                        <a href="/industries/ecommerce" class="btn btn-text btn-text_thin pull-right flex-end">
-                            Learn More
-                            <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg" alt="">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-sm-12 col-md-4">
-                    <div class="header__menu-section header__menu-section_last">
-                        <div>
-                            <h4 class="header__menu-section-title">Medical</h4>
-                            <p class="header__menu-section-description">
-                                Need HIPAA compliant solutions? We’ve got it covered.
-                                Our team understands the complexities that come with clinical,
-                                medical practice, and record management.
-                                We help medical companies move to the cloud through paperless processing.
-                            </p>
-                        </div>
-
-                        <a href="/industries/medical" class="btn btn-text btn-text_thin pull-right flex-end">
-                            Learn More
-                            <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg" alt="">
-                        </a>
-                    </div>
-                </div>
+                {{ end }}
             </div>
         </div>
     </div>

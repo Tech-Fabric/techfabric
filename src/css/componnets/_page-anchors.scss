@@ -36,7 +36,6 @@
 
     @include breakpoints-up-md {
       padding: 28px 0;
-      margin-right: 58px;
     }
 
     &:last-child {
@@ -44,7 +43,7 @@
     }
 
     img {
-      margin-left: 5px;
+      margin-left: 3px;
     }
   }
 }
