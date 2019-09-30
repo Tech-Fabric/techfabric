@@ -14,8 +14,8 @@
 
                 <div class="contact-information__phone">
                     <div>Contact us anytime to get more information:</div>
-                    <a href="tel:6028577370" class="text-brand-primary text-bold">(602) 857-7370</a>
-                    <a href="mailto:contact@techfabric.io" target="__blank" class="text-brand-secondary text-bold">contact@techfabric.io</a>
+                    <a href="tel:{{ .Params.contacts.phoneNumber }}" class="text-regular tex-bold">{{ .Params.contacts.phoneNumber }}</a>
+                    <a href="mailto:{{ .Params.contacts.email }}" target="__blank" class="text-brand-secondary text-bold">{{ .Params.contacts.email }}</a>
                 </div>
 
                 <div class="info-banner">

@@ -10,7 +10,7 @@
 
                 <a href="/" class="footer__link">{{ .Params.contacts.city }}</a>
 
-                <span>{{ .Params.contacts.address }}, {{ .Params.contacts.zipCode }}</span>
+                <span>{{ .Params.contacts.address }}, {{ .Params.contacts.state }} {{ .Params.contacts.zipCode }}</span>
 
                 <div class="footer__phone">
                     <a href="tel:{{ .Params.contacts.phoneNumber }}" class="text-regular tex-bold">{{ .Params.contacts.phoneNumber }}</a>
@@ -21,7 +21,7 @@
             </div>
 
             <div class="col-12 col-sm-6 col-lg-2 footer__contacts">
-                <h4>INDUSTRIES</h4>
+                <h4 class="text-transparent">INDUSTRIES</h4>
 
                 <ul>
                     {{ range where .Site.Pages "Params.menu" "industries" }}
@@ -31,7 +31,7 @@
             </div>
 
             <div class="col-12 col-sm-6 col-lg-3 footer__contacts">
-                <h4>SOLUTIONS</h4>
+                <h4 class="text-transparent">SOLUTIONS</h4>
 
                 <ul>
                     {{ range where .Site.Pages "Params.menu" "solutions" }}
@@ -41,7 +41,7 @@
             </div>
 
             <div class="col-12 col-sm-6 col-lg-2 footer__contacts">
-                <h4>RESOURCES</h4>
+                <h4 class="text-transparent">RESOURCES</h4>
 
                 <ul>
                     {{ range where .Site.Pages "Params.menu" "resources" }}
@@ -51,22 +51,22 @@
             </div>
 
             <div class="col-12 col-sm-6 col-lg-2 footer__contacts">
-                <h4>OUR CULTURE</h4>
+                <h4 class="text-transparent">OUR CULTURE</h4>
 
                 <ul>
                     <li><a href="https://blog.techfabric.io/">Visit Our Blog</a></li>
 
                     <li class="footer__social-networks">
-                        <a href="linkedin.com" target="_blank">
+                        <a href="{{ .Params.social.linkedIn }}" target="_blank">
                             <img src="./svg/linkedin.svg" alt="">
                         </a>
-                        <a href="facebook.com" target="_blank">
+                        <a href="{{ .Params.social.facebook }}" target="_blank">
                             <img src="./svg/facebook.svg" alt="">
                         </a>
-                        <a href="instagram.com" target="_blank">
+                        <a href="{{ .Params.social.instagram }}" target="_blank">
                             <img src="./svg/instagram.svg" alt="">
                         </a>
-                        <a href="twitter.com" target="_blank">
+                        <a href="{{ .Params.social.twitter }}" target="_blank">
                             <img src="./svg/twitter.svg" alt="">
                         </a>
                     </li>

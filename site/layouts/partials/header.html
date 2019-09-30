@@ -97,11 +97,11 @@
                         </p>
 
                         <p>
-                            Phone: <a href="tel:6028577370" class="text-regular">(602) 857-7370</a>
+                            <a href="tel:{{ .Params.contacts.phoneNumber }}" class="text-regular tex-bold">{{ .Params.contacts.phoneNumber }}</a>
                         </p>
 
                         <span>
-                            Email - <a href="mailto:contact@techfabric.io" target="__blank" class="text-brand-secondary">contact@techfabric.io</a>
+                            <a href="mailto:{{ .Params.contacts.email }}" target="__blank" class="text-brand-secondary">{{ .Params.contacts.email }}</a>
                         </span>
                     </div>
                 </div>
@@ -166,29 +166,29 @@
                         </li>
 
                         <li class="footer__social-networks">
-                            <a href="linkedin.com" target="_blank">
+                            <a href="{{ .Params.social.linkedIn }}" target="_blank">
                                 <img src="./svg/linkedin.svg" alt="">
                             </a>
-                            <a href="facebook.com" target="_blank">
+                            <a href="{{ .Params.social.facebook }}" target="_blank">
                                 <img src="./svg/facebook.svg" alt="">
                             </a>
-                            <a href="instagram.com" target="_blank">
+                            <a href="{{ .Params.social.instagram }}" target="_blank">
                                 <img src="./svg/instagram.svg" alt="">
                             </a>
-                            <a href="twitter.com" target="_blank">
+                            <a href="{{ .Params.social.twitter }}" target="_blank">
                                 <img src="./svg/twitter.svg" alt="">
                             </a>
                         </li>
 
                         <h3>Let’s Connect</h3>
 
-                        <a href="/" class="footer__link">Gilbert, Arizona (HQ)</a>
+                        <a href="/" class="footer__link">{{ .Params.contacts.city }}</a>
 
-                        <div>1530 E. Williams Field Rd, Ste 101 Gilbert, AZ 85295</div>
+                        <div>{{ .Params.contacts.address }}, {{ .Params.contacts.state }} {{ .Params.contacts.zipCode }}</div>
 
                         <div class="footer__phone">
-                            <a href="tel:6028577370" class="text-regular">(602) 857-7370</a>
-                            <a href="mailto:contact@techfabric.io" target="__blank" class="text-brand-secondary text-bold">contact@techfabric.io</a>
+                            <a href="tel:{{ .Params.contacts.phoneNumber }}" class="text-regular">{{ .Params.contacts.phoneNumber }}</a>
+                            <a href="mailto:{{ .Params.contacts.email }}" target="__blank" class="text-brand-secondary text-bold">{{ .Params.contacts.email }}</a>
                         </div>
                     </ul>
                 </div>
