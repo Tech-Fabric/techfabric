@@ -7,7 +7,7 @@ description: >-
   voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
   kasd
 category: Automotive
-menu: resources
+menu: none
 thumbnailImage: /images/uploads/cudirect-logo.svg
 ---
 ##### Automotive 
