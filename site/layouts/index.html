@@ -88,7 +88,7 @@
             <a href="/react">
                 <img src="./svg/React_Logo.svg">
             </a>
-            <a href="/any-language">
+            <a href="/technology">
                 Any Language
                 <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg">
             </a>
@@ -102,11 +102,7 @@
         <div class="home-page__innovating-companies">
 
             {{ range .Params.partners }}
-              {{ printf `
-                <a href="{{ .link }}">
-                    <img width="185px" src="{{ .logo }}">
-                </a>
-              `}}
+                {{ .Render "image-link" . }}
             {{ end }}
 
             <a href="/approve-engine">

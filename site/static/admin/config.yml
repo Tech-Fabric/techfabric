@@ -31,6 +31,15 @@ collections:
             fields:
               - { label: Logo, name: logo, widget: image }
               - { label: Link, name: link, widget: string }
+      - label: "Settings"
+        name: "settings"
+        file: "site/content/settings.md"
+        fields:
+          - label: "Menu"
+            name: "menu"
+            widget: "list"
+            fields:
+              - { label: "Item", name: "item", widget: "string" }
 
   - name: "case-studies" # Used in routes, e.g., /admin/collections/blog
     label: "Case Studies"
