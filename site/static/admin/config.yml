@@ -29,8 +29,9 @@ collections:
             name: "partners"
             widget: "list"
             fields:
-              - { label: Logo, name: logo, widget: image }
-              - { label: Link, name: link, widget: string }
+              - { label: "Logo", name: "logo", widget: "image" }
+              - { label: "Link", name: "link", widget: "string" }
+
       - label: "Settings"
         name: "settings"
         file: "site/content/settings.md"

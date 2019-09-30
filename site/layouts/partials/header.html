@@ -68,9 +68,11 @@
 
                     {{ $section := "solutions" }}
 
+                    {{ with .Site.GetPage $section }}
                     <h3 class="header__menu-title">
-                        {{ with .Site.GetPage $section }}{{ .Params.subtitle }}{{ end }}
+                        {{ .Params.subtitle }}
                     </h3>
+                    {{ end }}
 
                     <div class="row">
                         {{ range where .Site.Pages "Params.menu" $section }}
@@ -88,8 +90,9 @@
                     </div>
                 </div>
 
+                {{ with .Site.GetPage $section }}
                 <div class="col-sm-12 col-md-4 header__menu-contacts-block">
-                    <h3 class="text-brand-secondary text-light">Let’s Make Something Amazing Together</h3>
+                    <h3 class="text-brand-secondary text-light text-brand-secondary">Let’s Make Something Amazing Together</h3>
 
                     <div>
                         <p>
@@ -105,6 +108,7 @@
                         </span>
                     </div>
                 </div>
+                {{ end }}
             </div>
         </div>
     </div>
