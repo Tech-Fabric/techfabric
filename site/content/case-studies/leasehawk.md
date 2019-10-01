@@ -6,7 +6,7 @@ description: >-
   eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
   voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
   kasd
-category: Automotive
+category: Real Estate
 thumbnailImage: /images/uploads/leasehawk-logo.svg
 ---
 ##### Automotive
