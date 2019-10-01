@@ -92,20 +92,22 @@
 
                 {{ with .Site.GetPage $section }}
                 <div class="col-sm-12 col-md-4 header__menu-contacts-block">
-                    <h3 class="text-brand-secondary text-light text-brand-secondary">Let’s Make Something Amazing Together</h3>
+                    <h2 class="text-brand-secondary">Let’s Make Something Amazing Together</h2>
 
                     <div>
                         <p>
                             We’d love to talk about your next project and how we can help. Contact us today at:
                         </p>
 
-                        <p>
-                            <a href="tel:{{ .Params.contacts.phoneNumber }}" class="text-regular tex-bold">{{ .Params.contacts.phoneNumber }}</a>
+                        {{ with .Site.GetPage "settings" }}
+                        <p class="mb-1">
+                            Phone: <a href="tel:{{ .Params.contacts.phoneNumber }}" class="text-regular tex-bold">{{ .Params.contacts.phoneNumber }}</a>
                         </p>
 
                         <span>
-                            <a href="mailto:{{ .Params.contacts.email }}" target="_blank" class="text-brand-secondary">{{ .Params.contacts.email }}</a>
+                            Email - <a href="mailto:{{ .Params.contacts.email }}" target="_blank" class="text-brand-secondary">{{ .Params.contacts.email }}</a>
                         </span>
+                        {{ end }}
                     </div>
                 </div>
                 {{ end }}
@@ -157,19 +159,21 @@
                 </div>
 
                 <div class="col-sm-12 col-md-4 header__menu-contacts-block">
-                    <h3>Our Culture</h3>
+                    <h2 class="mb-4"><b>Our Culture</b></h2>
 
                     <ul class="header__culture">
                         <li><h3 class="text-light mb-2"><a href="https://blog.techfabric.io/">Blog</a></h3></li>
                         <li>See what inspires us and how life is like at TechFabric.</li>
                         <li>
-                            <a href="/">
+                            <a href="https://blog.techfabric.io/" target="_blank">
                                 Visit Our Blog
                                 <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg" alt="">
                             </a>
                         </li>
 
-                        <li class="footer__social-networks">
+                        {{ with .Site.GetPage "settings" }}
+
+                        <li class="footer__social-networks mb-4">
                             <a href="{{ .Params.social.linkedIn }}" target="_blank">
                                 <img src="./svg/linkedin.svg" alt="">
                             </a>
@@ -184,9 +188,10 @@
                             </a>
                         </li>
 
-                        <h3>Let’s Connect</h3>
+                        <h2 class="mb-4"><b>Let’s Connect</b></h2>
 
-                        <a href="/" class="footer__link">{{ .Params.contacts.city }}</a>
+
+                        <span class="text-brand-secondary footer__link">{{ .Params.contacts.city }}</span>
 
                         <div>{{ .Params.contacts.address }}, {{ .Params.contacts.state }} {{ .Params.contacts.zipCode }}</div>
 
@@ -194,6 +199,7 @@
                             <a href="tel:{{ .Params.contacts.phoneNumber }}" class="text-regular">{{ .Params.contacts.phoneNumber }}</a>
                             <a href="mailto:{{ .Params.contacts.email }}" target="_blank" class="text-brand-secondary text-bold">{{ .Params.contacts.email }}</a>
                         </div>
+                        {{ end }}
                     </ul>
                 </div>
             </div>

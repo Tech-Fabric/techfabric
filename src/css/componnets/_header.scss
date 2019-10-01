@@ -196,7 +196,8 @@
     &-contacts-block {
       line-height: 1.2em;
 
-      h3 {
+      h2 {
+        @include text-light;
         @include breakpoints-up-md {
           margin-bottom: 32px;
         }
