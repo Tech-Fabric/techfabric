@@ -3,6 +3,7 @@ contacts:
   city: 'Gilbert, Arizona (HQ)'
   email: contact@techfabric.io
   phoneNumber: '(602) 857-7370 '
+  address: 1530 E. Williams Field Rd, Ste 101 Gilbert
   state: AZ
   zipCode: '85295'
 social:

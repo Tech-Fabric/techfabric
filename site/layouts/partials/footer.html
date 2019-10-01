@@ -8,13 +8,15 @@
 
                 {{ with .Site.GetPage "settings" }}
 
-                <a href="/" class="footer__link">{{ .Params.contacts.city }}</a>
+                <a href="/" class="footer__link">
+                    <img src="./svg/outline-location_on-24px.svg" alt="{{ .Params.contacts.city }}"> {{ .Params.contacts.city }}
+                </a>
 
                 <span>{{ .Params.contacts.address }}, {{ .Params.contacts.state }} {{ .Params.contacts.zipCode }}</span>
 
                 <div class="footer__phone">
                     <a href="tel:{{ .Params.contacts.phoneNumber }}" class="text-regular tex-bold">{{ .Params.contacts.phoneNumber }}</a>
-                    <a href="mailto:{{ .Params.contacts.email }}" target="__blank" class="text-brand-secondary text-bold">{{ .Params.contacts.email }}</a>
+                    <a href="mailto:{{ .Params.contacts.email }}" target="_blank" class="text-brand-secondary text-bold">{{ .Params.contacts.email }}</a>
                 </div>
 
                 {{ end }}
@@ -56,6 +58,8 @@
                 <ul>
                     <li><a href="https://blog.techfabric.io/">Visit Our Blog</a></li>
 
+                    {{ with .Site.GetPage "settings" }}
+
                     <li class="footer__social-networks">
                         <a href="{{ .Params.social.linkedIn }}" target="_blank">
                             <img src="./svg/linkedin.svg" alt="">
@@ -70,6 +74,8 @@
                             <img src="./svg/twitter.svg" alt="">
                         </a>
                     </li>
+
+                    {{ end }}
                 </ul>
             </div>
         </div>

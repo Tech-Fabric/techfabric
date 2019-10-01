@@ -17,36 +17,14 @@
                 <h3>Our Solutions Include</h3>
 
                 <ul class="brand-list">
-                    <li>
-                        <a class="brand-list__item" href="/microservices-and-apis">
-                            <span class="text-brand-secondary">Microservices & APIs</span>
-                            <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg">
-                        </a>
-                    </li>
-                    <li>
-                        <a class="brand-list__item" href="/cloud-native-apps">
-                            <span class="text-brand-secondary">Cloud-native WEb & Mobil e Apps</span>
-                            <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg">
-                        </a>
-                    </li>
-                    <li>
-                        <a class="brand-list__item" href="/machine-learning">
-                            <span class="text-brand-secondary">Machine Learning, AI, & IoT</span>
-                            <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg">
-                        </a>
-                    </li>
-                    <li>
-                        <a class="brand-list__item" href="/human-centered-design">
-                            <span class="text-brand-secondary">Human Centered Design</span>
-                            <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg">
-                        </a>
-                    </li>
-                    <li>
-                        <a class="brand-list__item" href="/dev-ops-and-infrastructure">
-                            <span class="text-brand-secondary">DevOps & Infrastructure</span>
-                            <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg">
-                        </a>
-                    </li>
+                    {{ range where .Site.Pages "Params.menu" "solutions" }}
+                        <li>
+                            <a class="brand-list__item" href="/solutions/#{{ .Params.title }}">
+                                <span class="text-brand-secondary">{{ .Params.category }}</span>
+                                <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg">
+                            </a>
+                        </li>
+                    {{ end }}
                 </ul>
             </div>
 
@@ -70,22 +48,22 @@
         </div>
 
         <div class="home-page__technologies">
-            <a href="/mps">
+            <a href="/technology/#Scalable%20Infrastructure">
                 <img src="./svg/MSPartner_Logo.svg">
             </a>
-            <a href="/azure">
+            <a href="/technology/#Scalable%20Infrastructure">
                 <img src="./svg/azure_white.svg">
             </a>
-            <a href="/csharp">
+            <a href="/technology/#Backed%20by%20industry%20standards">
                 <img src="./svg/CSharp_white.svg">
             </a>
-            <a href="/js">
+            <a href="/technology/#Modern%20Front-end%20frameworks">
                 <img src="./svg/Javascript_Logo.svg">
             </a>
-            <a href="/ts">
+            <a href="/technology/#Modern%20Front-end%20frameworks">
                 <img src="./svg/Typescript_Logo.svg">
             </a>
-            <a href="/react">
+            <a href="/technology/#Modern%20Front-end%20frameworks">
                 <img src="./svg/React_Logo.svg">
             </a>
             <a href="/technology">
@@ -100,17 +78,20 @@
     <div class="container">
         <h3 class="text-center text-brand-secondary text-light">Companies innovating with TechFabric</h3>
         <div class="home-page__innovating-companies">
-            <a href="/approve-engine">
+            <a href="/case-studies/autoapprove">
                 <img width="185px" src="./svg/ApproveLogo.svg">
             </a>
-            <a href="/cu-direct">
+            <a href="/case-studies/cu-direct/">
                 <img src="./svg/CUDirect-logo-white.svg">
             </a>
-            <a href="/mps">
-                <img src="./svg/MSPartner_Logo.svg">
-            </a>
-            <a href="/klwines">
+            <a href="/case-studies/kl-wine-merchants/">
                 <img src="./svg/K&L_Logo.svg">
+            </a>
+            <a href="/case-studies/carfinance">
+                <img src="./svg/CarFinance-Logo-White.svg">
+            </a>
+            <a href="/case-studies/simonmed">
+                <img src="./svg/SimonMed-Logo-White.svg">
             </a>
             <a href="/case-studies">
                 See Case Studies
@@ -297,12 +278,12 @@
                     <div class="row">
                         <div class="col-xs-12 col-lg-5">
                             <div class="case-study__image">
-                                <img src="./svg/K&L_Logo-1.svg" class="client-logo">
+                                <img src="./svg/CUDirect-logo-white.svg" class="client-logo">
                             </div>
 
-                            <h5 class="text-uppercase">e-Commerce</h5>
+                            <h5 class="text-uppercase">Automotivev</h5>
 
-                            <h3 class="mb-1">K&L Wine Merchants</h3>
+                            <h3 class="mb-1">Members Protection Services</h3>
 
                             <p class="entity-card__description">
                                 Online wine retailer partnered with TechFabric to
@@ -410,7 +391,7 @@
 
             <h3 class="section-header__subtitle mb-3">Recent Insights From Our Blog</h3>
 
-            <a href="/blog/recent/view-all" class="btn btn-text btn-text_thin">
+            <a href="https://blog.techfabric.io/" target="_blank" class="btn btn-text btn-text_thin">
                 View All Posts
                 <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg">
             </a>
@@ -428,7 +409,9 @@
                 </h3>
 
                 <div class="entity-card__image-wrapper">
-                    <a target="_blank" href="./images/Image-19@2x.jpg"><img class="entity-card__image" src="./images/Image-19@2x.jpg"></a>
+                    <a target="_blank" href="https://blog.techfabric.io/ai-and-machine-learning-dominate-autofinance-innovation-summit/">
+                        <img class="entity-card__image" src="./images/Image-19@2x.jpg">
+                    </a>
                 </div>
 
                 <p class="entity-card__description">
@@ -451,7 +434,9 @@
                 </h3>
 
                 <div class="entity-card__image-wrapper">
-                    <a target="_blank" href="./images/Image-22@2x.jpg"><img class="entity-card__image" src="./images/Image-22@2x.jpg"></a>
+                    <a target="_blank" href="https://blog.techfabric.io/setting-up-secure-service-fabric-cluster/">
+                        <img class="entity-card__image" src="./images/Image-22@2x.jpg">
+                    </a>
                 </div>
 
                 <p class="entity-card__description">
@@ -475,7 +460,9 @@
                 </h3>
 
                 <div class="entity-card__image-wrapper">
-                    <a target="_blank" href="./images/Image-23@2x.jpg"><img class="entity-card__image" src="./images/Image-23@2x.jpg"></a>
+                    <a target="_blank" href="https://blog.techfabric.io/deploying-service-fabric-cluster-to-existing-vnet-with-containers/">
+                        <img class="entity-card__image" src="./images/Image-23@2x.jpg">
+                    </a>
                 </div>
 
                 <p class="entity-card__description">
