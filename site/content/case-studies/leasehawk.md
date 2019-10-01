@@ -1,6 +1,6 @@
 ---
 order: '7'
-title: LeaseHawk
+title: Lease Hawk
 description: >-
   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
   eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
@@ -11,4 +11,4 @@ thumbnailImage: /images/uploads/leasehawk-logo.svg
 ---
 ##### Automotive
 
-## LeaseHawk
+## Lease Hawk

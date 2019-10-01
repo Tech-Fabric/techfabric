@@ -8,7 +8,7 @@ description: >-
   navigate your digital transformation journey.
 caseStudy:
   logo: /images/uploads/simonmed-logo.svg
-  title: SimonMed
+  title: SimonMed Imaging
   description: >-
     The radiology and diagnostic imaging company partnered with TechFabric to
     digitally transform the way they complete the new and existing patient
