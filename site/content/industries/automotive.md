@@ -36,7 +36,7 @@ Special areas of expertise include:
 * API development and integrations for Equifax, TransUnion, and Experian
 * Custom financial calculation development
 
-{{<btn-outlined href="/technology" label="Let’s Talk">}}
+{{<btn-outlined href="/industries/automotive/#contact-form" label="Let’s Talk">}}
 
 {{<btn-link href="/technology" label="See Our technology Stack">}}
 
