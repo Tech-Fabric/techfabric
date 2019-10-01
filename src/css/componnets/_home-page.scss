@@ -5,6 +5,10 @@
     padding-top: 33px;
   }
 
+  &__title {
+    z-index: 1;
+  }
+
   &__call-to-action {
     display: flex;
     flex-direction: column-reverse;

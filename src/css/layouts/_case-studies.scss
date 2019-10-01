@@ -96,14 +96,13 @@
     width: 100%;
 
     @include breakpoints-up-lg {
-      margin: -33px auto 0;
-      max-width: 620px;
+      padding: 41px 30px;
+      max-width: 100%;
     }
   }
 
   &__img-bottom-left {
     max-width: 100%;
-    margin: 30px auto 0;
 
     img {
       max-width: 100%;
@@ -111,8 +110,8 @@
     }
 
     @include breakpoints-up-lg {
-      margin-top: 68px;
-      max-width: 300px;
+      margin-top: 70px;
+      padding: 41px 30px;
     }
   }
 
