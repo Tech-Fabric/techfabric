@@ -113,6 +113,8 @@
     }
 
     &-section {
+      margin-bottom: 30px;
+
       &:after {
         content: '';
         width: 100%;
@@ -143,7 +145,10 @@
         position: relative;
         overflow: hidden;
         padding-bottom: 30px;
-        margin-bottom: 40px;
+
+        @include breakpoints-up-sm {
+          margin-bottom: 40px;
+        }
 
         @include breakpoints-up-md {
           height: 100%;
@@ -194,8 +199,6 @@
     }
 
     &-contacts-block {
-      line-height: 1.2em;
-
       h2 {
         @include text-light;
         @include breakpoints-up-md {
