@@ -9,7 +9,6 @@ description: >-
   drive sales.
 caseStudy:
   logo: /images/uploads/K&L-logo.svg
-  title: K&L Wines
   description: >-
       The renowned online wine retailer partnered with TechFabric to digitally
       transform the way they manage their up-front inventory costs and warehouse
