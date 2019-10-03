@@ -115,6 +115,16 @@
     &-section {
       margin-bottom: 30px;
 
+      .row {
+        & > div {
+          &:last-child {
+            .header__menu-section-description {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+
       &:after {
         content: '';
         width: 100%;
@@ -134,7 +144,7 @@
       }
 
       &:last-child {
-        margin-bottom: 0;
+        //margin-bottom: 0;
 
         &:after {
           background: none;

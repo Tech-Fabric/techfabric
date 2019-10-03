@@ -37,7 +37,7 @@
 
                 <ul>
                     {{ range where .Site.Pages "Params.menu" "solutions" }}
-                        <li><a href="{{ .Permalink }}">{{ .Params.category }}s</a></li>
+                        <li><a href="{{ .Permalink }}">{{ .Params.category }}</a></li>
                     {{ end }}
                 </ul>
             </div>
@@ -47,7 +47,7 @@
 
                 <ul>
                     {{ range where .Site.Pages "Params.menu" "resources" }}
-                        <li><a href="{{ .Permalink }}">{{ .Params.category }}s</a></li>
+                        <li><a href="{{ .Permalink }}">{{ .Params.category }}</a></li>
                     {{ end }}
                 </ul>
             </div>

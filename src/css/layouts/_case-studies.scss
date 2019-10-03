@@ -9,7 +9,7 @@
   flex-direction: column;
   border-radius: 12px;
   padding: 33px 40px;
-  //margin-bottom: 30px;
+  margin-bottom: 25px;
   box-shadow: rgba(0, 0, 0, 0.29) 0 20px 20px;
   @include brand-gradient-45;
 
@@ -94,10 +94,12 @@
 
   &__screenshot {
     width: 100%;
+    margin-top: 15px;
 
     @include breakpoints-up-lg {
       padding: 41px 30px;
       max-width: 100%;
+      margin: 0;
     }
   }
 
@@ -222,7 +224,12 @@
 }
 
 .primary-case-study-block {
-  height: calc(100% - 40px);
+  padding-bottom: 30px;
+
+  @include breakpoints-up-lg {
+    height: calc(100% - 25px);
+    margin: 0;
+  }
 }
 
 
