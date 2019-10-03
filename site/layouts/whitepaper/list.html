@@ -1,0 +1,15 @@
+{{ define "main" }}
+{{ $section := .Site.GetPage "section" .Section }}
+<div class="container">
+    <h5 class="text-uppercase mb-3">{{ .Params.category }}</h5>
+
+    {{ with .Title }}
+    <h1 class="text-light mb-2">{{.}}</h1>
+    {{ end }}
+
+    <h3 class="text-brand-primary mb-3">{{ .Params.subtitle }}</h3>
+</div>
+
+{{ partial "whitepaper-form"}}
+
+{{ end }}
