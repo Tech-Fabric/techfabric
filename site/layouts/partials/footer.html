@@ -37,7 +37,7 @@
 
                 <ul>
                     {{ range where .Site.Pages "Params.menu" "solutions" }}
-                        <li><a href="{{ .Permalink }}">{{ .Params.category }}</a></li>
+                        <li><a href="/solutions/#{{ .Params.title }}">{{ .Params.category }}</a></li>
                     {{ end }}
                 </ul>
             </div>

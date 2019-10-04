@@ -210,6 +210,7 @@ collections:
       - label: "Category"
         name: "category"
         widget: "string"
+        required: false
 
       - label: "Title"
         name: "title"
@@ -221,7 +222,7 @@ collections:
 
       - label: "Menu"
         name: "menu"
-        required: false,
+        required: false
         widget: "select"
         default: ["resources"]
         options: ["none", "industries", "solutions", "resources"]
