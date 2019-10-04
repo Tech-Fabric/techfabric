@@ -90,6 +90,7 @@
 
 .entity-card {
   @extend .clearfix;
+  height: 100%;
   padding: 33px 25px 20px;
   position: relative;
   display: flex;
