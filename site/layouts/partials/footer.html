@@ -8,11 +8,11 @@
 
                 {{ with .Site.GetPage "settings" }}
 
-                <a href="/" class="footer__link">
+                <a href="{{ .Params.contacts.mapUrl }}" target="_blank" class="footer__link">
                     <img src="./svg/outline-location_on-24px.svg" alt="{{ .Params.contacts.city }}"> {{ .Params.contacts.city }}
                 </a>
 
-                <span>{{ .Params.contacts.address }}, {{ .Params.contacts.state }} {{ .Params.contacts.zipCode }}</span>
+                <a href="{{ .Params.contacts.mapUrl }}" class="text-unstyled" target="_blank">{{ .Params.contacts.address }}, {{ .Params.contacts.state }} {{ .Params.contacts.zipCode }}</a>
 
                 <div class="footer__phone">
                     <a href="tel:{{ .Params.contacts.phoneNumber }}" class="text-regular tex-bold">{{ .Params.contacts.phoneNumber }}</a>

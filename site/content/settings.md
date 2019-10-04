@@ -6,6 +6,7 @@ contacts:
   address: 1530 E. Williams Field Rd, Ste 101 Gilbert
   state: AZ
   zipCode: '85295'
+  mapUrl: https://goo.gl/maps/wdU1F46CtDLUeP488
 social:
   facebook: 'https://www.facebook.com/techfabrichq'
   instagram: 'https://www.instagram.com/tech_fabric'

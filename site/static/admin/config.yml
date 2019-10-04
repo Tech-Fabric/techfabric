@@ -42,6 +42,7 @@ collections:
             fields:
               - { label: "City", name: "city", widget: "string" }
               - { label: "Address", name: "address", widget: "string" }
+              - { label: "Map URL", name: "mapUrl", widget: "string" }
               - { label: "State", name: "state", widget: "string" }
               - { label: "Zip Code", name: "zipCode", widget: "string" }
               - { label: "Phone Number", name: "phoneNumber", widget: "string" }
