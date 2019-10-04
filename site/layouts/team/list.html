@@ -14,7 +14,7 @@
     <p>{{ .Params.description }}</p>
 
     <div class="team row mb-5">
-        {{ range .Pages.ByParam "order" }}
+        {{ range sort .Pages ".Params.order" }}
             {{ .Render "team-member" }}
         {{ end }}
     </div>
