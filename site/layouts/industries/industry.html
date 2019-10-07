@@ -1,5 +1,9 @@
-<div id="{{.Params.title}}" class="team-member">
-    <h3 class="team-member__name text-brand-primary mb-2">{{.Title}}</h3>
-    <p class="mb-0">{{.Params.subtitle}}</p>
-    <p class="mb-0">{{.Params.description}}</p>
+<div id="{{.Params.title}}" class="industry">
+    <h4 class="header__menu-section-title">{{.Params.category}}</h4>
+    <p class="header__menu-section-description">{{.Params.description}}</p>
+
+    <a href="{{ .Permalink }}" class="btn btn-text btn-text_thin pull-right">
+        Learn More
+        <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg" alt="">
+    </a>
 </div>

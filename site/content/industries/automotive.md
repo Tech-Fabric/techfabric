@@ -10,13 +10,8 @@ caseStudy:
   logo: /images/uploads/autoapprove-logo.svg
   title: Auto Approve
   description: >-
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-    voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
-    kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
-    ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-    vero eos et
+    Auto Approve simplifies the loan process, speeds it up, and has the power to connect you with your best loan option. Since we specialize in refinances, Auto Approve is the ideal way to get out of your high-interest auto loan.
+    Auto Approve improves your financial health to free up more of your cash flow each month. Our goal is to provide superior service that will have you (and everyone you tell about us) coming back for all your future auto loans.
   imageBottom: /images/uploads/autoapprove_macbookpro.png
   url: /case-studies/auto-approve
 menu: industries
