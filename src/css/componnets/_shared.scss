@@ -170,6 +170,7 @@
     @extend .clearfix;
     margin-bottom: 13px;
     font-size: 22px;
+    text-transform: capitalize;
 
     @include breakpoints-up-xl {
       margin-bottom: 34px;
