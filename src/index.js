@@ -33,7 +33,7 @@ const whenDocumentLoaded = function() {
     const menu = document.querySelector('[data-menu-id=' + value + ']');
 
     const callback = (event) => {
-      drawer.classList.toggle('d-none');
+      isMobile && drawer.classList.toggle('d-none');
       menu.classList.toggle('display');
     };
 
