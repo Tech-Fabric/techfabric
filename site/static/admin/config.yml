@@ -19,14 +19,17 @@ collections:
         fields:
           - label: "Title"
             name: "title"
+            required: false
             widget: "string"
 
           - label: "Call to Action"
+            required: false
             name: "callToAction"
             widget: "markdown"
 
           - label: "Partners"
             name: "partners"
+            required: false
             widget: "list"
             fields:
               - { label: "Logo", name: "logo", widget: "image" }
