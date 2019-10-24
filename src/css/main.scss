@@ -32,10 +32,10 @@ body {
 
 .page-body {
   flex-grow: 1;
-  padding-top: 90px;
+  padding-top: 30px;
 
   @include breakpoints-up-sm {
-    padding-top: 120px;
+    padding-top: 60px;
   }
 
   @include breakpoints-up-lg {
