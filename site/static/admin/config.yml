@@ -18,8 +18,8 @@ collections:
         file: "site/content"
         fields:
           - label: "Title"
-            name: "title"
             required: false
+            name: "title"
             widget: "string"
 
           - label: "Call to Action"
@@ -28,8 +28,8 @@ collections:
             widget: "markdown"
 
           - label: "Partners"
-            name: "partners"
             required: false
+            name: "partners"
             widget: "list"
             fields:
               - { label: "Logo", name: "logo", widget: "image" }

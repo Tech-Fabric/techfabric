@@ -11,6 +11,5 @@ social:
   facebook: 'https://www.facebook.com/techfabrichq'
   instagram: 'https://www.instagram.com/tech_fabric'
   linkedIn: 'https://linkedin.com/company/tech-fabric'
-  twitter: 'https://twitter.com/hashtag/techfabric'
+  twitter: 'https://twitter.com/tech_fabric'
 ---
-
