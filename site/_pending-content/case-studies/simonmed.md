@@ -5,7 +5,7 @@ description: >-
     SimonMed Imaging is one of the largest outpatient medical imaging providers and largest physician 
     radiology practices in the United States. We specialize in using the newest diagnostic imaging 
     technologies and bringing them to the community in an affordable and accessible way. 
-category: Medical
+category: Healthcare
 thumbnailImage: /images/uploads/simonmed-logo.svg
 ---
 # Lorem ipsum dolor sit amet, consetetur sadipscing elitr
