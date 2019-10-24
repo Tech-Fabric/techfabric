@@ -1,11 +1,6 @@
 // JS Goes here - ES6 supported
 import './css/main.scss';
-import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 import { initializeHomePageAnimation } from './lib/home-page-animation';
-
-const getVisibleMenu = () => {
-  return document.getElementsByClassName('header__brand-menu display')[0];
-};
 
 const whenDocumentLoaded = function() {
   if (document.location.pathname === '/') {
@@ -19,18 +14,10 @@ const whenDocumentLoaded = function() {
   const isMobile = window.innerWidth <= 756;
 
   menuToggle.addEventListener('click', () => {
-    const drawer = document.getElementById('drawer');
     const drawerButton = document.getElementById('drawer-toggle-label');
-    const isOpened = drawer.classList.contains('visible');
 
-    if (isOpened) {
-      const drawerMenu = getVisibleMenu();
-      clearAllBodyScrollLocks(drawerMenu);
-    } else {
-      disableBodyScroll(drawer);
-    }
+    document.body.classList.toggle('drawer-opened');
 
-    drawer.classList.toggle('visible');
     drawerButton.classList.toggle('hamburger-icon_close');
 
     for (const menu of menuBodies) {
