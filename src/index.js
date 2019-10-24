@@ -8,6 +8,7 @@ const whenDocumentLoaded = function() {
   }
 
   const menuButtons = document.querySelectorAll('[data-menu-open]');
+  const drawer = document.getElementById('drawer');
   const menuToggle = document.getElementById('drawer-toggle');
   const menuBodies = document.querySelectorAll('[data-menu-id]');
 
@@ -20,6 +21,8 @@ const whenDocumentLoaded = function() {
 
     drawerButton.classList.toggle('hamburger-icon_close');
 
+    drawer.classList.toggle('d-none');
+
     for (const menu of menuBodies) {
       menu.classList.remove('display');
     }
@@ -30,6 +33,7 @@ const whenDocumentLoaded = function() {
     const menu = document.querySelector('[data-menu-id=' + value + ']');
 
     const callback = (event) => {
+      drawer.classList.toggle('d-none');
       menu.classList.toggle('display');
     };
 
