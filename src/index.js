@@ -2,6 +2,10 @@
 import './css/main.scss';
 import { initializeHomePageAnimation } from './lib/home-page-animation';
 
+const getVisibleMenu = () => {
+  return document.getElementsByClassName('header__brand-menu display')[0];
+};
+
 const whenDocumentLoaded = function() {
   if (document.location.pathname === '/') {
     initializeHomePageAnimation();
@@ -21,7 +25,9 @@ const whenDocumentLoaded = function() {
 
     drawerButton.classList.toggle('hamburger-icon_close');
 
-    drawer.classList.toggle('d-none');
+    if (!getVisibleMenu()) {
+      drawer.classList.toggle('d-none');
+    }
 
     for (const menu of menuBodies) {
       menu.classList.remove('display');
