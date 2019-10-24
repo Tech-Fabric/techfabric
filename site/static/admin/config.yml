@@ -15,7 +15,7 @@ collections:
     files:
       - label: "Home Page"
         name: "home"
-        file: "site/content/_index.md"
+        file: "site/content/home-page.md"
         fields:
           - label: "Title"
             name: "title"
