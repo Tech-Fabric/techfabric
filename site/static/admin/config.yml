@@ -15,15 +15,25 @@ collections:
     files:
       - label: "Landing Page"
         name: "landing"
-        file: "site/content"
+        file: "site/content/_index.md"
         fields:
-          - label: "Contacts"
-            name: "contacts"
-            widget: "object"
+          - label: "Title"
+            required: false
+            name: "title"
+            widget: "string"
+
+          - label: "Call to Action"
+            required: false
+            name: "callToAction"
+            widget: "markdown"
+
+          - label: "Partners"
+            required: false
+            name: "partners"
+            widget: "list"
             fields:
-              - { label: "City", name: "city", widget: "string" }
-              - { label: "Address", name: "address", widget: "string" }
-              - { label: "Map URL", name: "mapUrl", widget: "string" }
+              - { label: "Logo", name: "logo", widget: "image" }
+              - { label: "Link", name: "link", widget: "string" }
 
       - label: "Settings"
         name: "settings"
