@@ -9,7 +9,7 @@ public_folder: "/images/uploads" # The src attribute for uploaded media will beg
 collections:
   - label: "Single Pages"
     description: 'A collection of editable single pages'
-    name: "home"
+    name: "pages"
     editor:
       preview: false
     files:
@@ -17,23 +17,13 @@ collections:
         name: "landing"
         file: "site/content"
         fields:
-          - label: "Title"
-            required: false
-            name: "title"
-            widget: "string"
-
-          - label: "Call to Action"
-            required: false
-            name: "callToAction"
-            widget: "markdown"
-
-          - label: "Partners"
-            required: false
-            name: "partners"
-            widget: "list"
+          - label: "Contacts"
+            name: "contacts"
+            widget: "object"
             fields:
-              - { label: "Logo", name: "logo", widget: "image" }
-              - { label: "Link", name: "link", widget: "string" }
+              - { label: "City", name: "city", widget: "string" }
+              - { label: "Address", name: "address", widget: "string" }
+              - { label: "Map URL", name: "mapUrl", widget: "string" }
 
       - label: "Settings"
         name: "settings"
