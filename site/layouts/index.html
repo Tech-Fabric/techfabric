@@ -78,25 +78,25 @@
     <div class="container">
         <h3 class="text-center text-brand-secondary text-light">Companies innovating with TechFabric</h3>
         <div class="home-page__innovating-companies">
-            <a href="/case-studies/autoapprove">
+            <a href="/#/case-studies/autoapprove">
                 <img width="185px" src="./svg/ApproveLogo.svg">
             </a>
-            <a href="/case-studies/cu-direct/">
+            <a href="/#/case-studies/cu-direct/">
                 <img src="./svg/CUDirect-logo-white.svg">
             </a>
-            <a href="/case-studies/kl-wine-merchants/">
+            <a href="/#/case-studies/kl-wine-merchants/">
                 <img src="./svg/K&L_Logo.svg">
             </a>
-            <a href="/case-studies/carfinance">
+            <a href="/#/case-studies/carfinance">
                 <img src="./svg/CarFinance-Logo-White.svg">
             </a>
-            <a href="/case-studies/simonmed">
+            <a href="/#/case-studies/simonmed">
                 <img src="./svg/SimonMed-Logo-White.svg">
             </a>
-            <a href="/case-studies">
-                See Case Studies
-                <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg">
-            </a>
+<!--            <a href="/case-studies">-->
+<!--                See Case Studies-->
+<!--                <img class="brand-list__icon" src="./svg/outline-arrow_right_alt-24px.svg">-->
+<!--            </a>-->
         </div>
     </div>
 </div>
@@ -387,6 +387,8 @@
     </div>
 </div>
 
+{{ $response := getJSON "https://blog.techfabric.io/ghost/api/v2/content/posts/?key=8e83ce7798d413b94ce82cf268&include=tags,authors" }}
+
 <div class="container section">
     <div class="row">
         <div class="col-12 news-ideas">
@@ -400,82 +402,30 @@
             </a>
         </div>
 
+        {{ range $i, $post := $response.posts }}{{if lt $i 3}}
         <div class="col-lg-4 entity-card-wrapper">
             <div class="entity-card entity-card_bg">
                 <div class="entity-card__header">
-                    <h5 class="text-uppercase">Machine learning</h5>
-                    <h5 class="text-uppercase">5 min read</h5>
+                    <h5>{{ $post.primary_author.name }}</h5>
+                    <h5>{{ dateFormat "Jan 2, 2006 " $post.published_at}}</h5>
                 </div>
 
                 <h3 class="entity-card__title">
-                    AI and Machine Learning Dominate Auto Finance Innovation Summit
+                    {{ $post.title }}
                 </h3>
 
                 <div class="entity-card__image-wrapper">
-                    <a target="_blank" href="https://blog.techfabric.io/ai-and-machine-learning-dominate-autofinance-innovation-summit/">
-                        <img class="entity-card__image" src="./images/Image-19@2x.jpg">
+                    <a target="_blank" href="{{$post.url}}">
+                        <img src="{{$post.feature_image}}" class="entity-card__image">
                     </a>
                 </div>
 
                 <p class="entity-card__description">
-                    The dust has settled from attending our first Auto Finance
-                    Innovation Summit in San Diego and I am even more convinced that the auto finance industry is in
-                    an accelerated state of application modernization.
+                    {{ $post.excerpt | truncate 180 }}
                 </p>
             </div>
         </div>
-
-        <div class="col-lg-4 entity-card-wrapper">
-            <div class="entity-card entity-card_bg">
-                <div class="entity-card__header">
-                    <h5 class="text-uppercase">Azure service fabric</h5>
-                    <h5 class="text-uppercase">5 min read</h5>
-                </div>
-
-                <h3 class="entity-card__title">
-                    Setting up production ready infrastructure for Microservices
-                </h3>
-
-                <div class="entity-card__image-wrapper">
-                    <a target="_blank" href="https://blog.techfabric.io/setting-up-secure-service-fabric-cluster/">
-                        <img class="entity-card__image" src="./images/Image-22@2x.jpg">
-                    </a>
-                </div>
-
-                <p class="entity-card__description">
-                    Creating production ready service fabric clusters to manage y
-                    our Microservices and ensure it’s setup to handle increase in
-                    traffic is very critical and can be done by following these series
-                    of steps.
-                </p>
-            </div>
-        </div>
-
-        <div class="col-lg-4 entity-card-wrapper">
-            <div class="entity-card entity-card_bg">
-                <div class="entity-card__header">
-                    <h5 class="text-uppercase">Azure service fabric</h5>
-                    <h5 class="text-uppercase">5 min read</h5>
-                </div>
-
-                <h3 class="entity-card__title">
-                    Deploying Service Fabric Cluster to Existing VNET with Containers
-                </h3>
-
-                <div class="entity-card__image-wrapper">
-                    <a target="_blank" href="https://blog.techfabric.io/deploying-service-fabric-cluster-to-existing-vnet-with-containers/">
-                        <img class="entity-card__image" src="./images/Image-23@2x.jpg">
-                    </a>
-                </div>
-
-                <p class="entity-card__description">
-                    Service Fabric is a terrific platform for orchestrating your
-                    Microservices. It provides many features like Service Discovery,
-                    Fault Tolerance, Reverse Proxy etc., out of the box, making it
-                    extremely easy to manage your Microservices.
-                </p>
-            </div>
-        </div>
+        {{ end }}{{ end }}
     </div>
 </div>
 
