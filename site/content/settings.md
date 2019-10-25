@@ -1,7 +1,7 @@
 ---
 contacts:
   address: '1530 E. Williams Field Rd, Ste 101 Gilbert'
-  city: 'Gilbert, Arizona (HQ)'
+  city: 'Gilbert, Arizona (HQ) '
   email: contact@techfabric.io
   mapUrl: 'https://goo.gl/maps/wdU1F46CtDLUeP488'
   phoneNumber: '(602) 857-7370 '
