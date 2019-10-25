@@ -13,6 +13,28 @@ collections:
     editor:
       preview: false
     files:
+      - label: "Home Page"
+        name: "home"
+        file: "site/content"
+        fields:
+          - label: "Title"
+            required: false
+            name: "title"
+            widget: "string"
+
+          - label: "Call to Action"
+            required: false
+            name: "callToAction"
+            widget: "markdown"
+
+          - label: "Partners"
+            required: false
+            name: "partners"
+            widget: "list"
+            fields:
+              - { label: "Logo", name: "logo", widget: "image" }
+              - { label: "Link", name: "link", widget: "string" }
+
       - label: "Settings"
         name: "settings"
         file: "site/content/settings.md"
