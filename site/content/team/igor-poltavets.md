@@ -1,6 +1,6 @@
 ---
 order: 17
-thumbnailImage: /images/uploads/Igor.jpg
+thumbnailImage: /images/uploads/игорь1.png
 title: Igor Poltavets
 subtitle: Software Engineer
 ---
