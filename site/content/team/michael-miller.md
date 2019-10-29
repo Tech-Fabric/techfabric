@@ -1,6 +1,6 @@
 ---
 order: 12
 title: Michael Miller
-subtitle: Software Engineer
+subtitle: 'Software Engineer '
 ---
 
