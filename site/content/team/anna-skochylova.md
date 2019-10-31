@@ -1,6 +1,6 @@
 ---
 order: '23'
-thumbnailImage: /images/uploads/img_3719.png
+thumbnailImage: /images/uploads/anna.jpg
 title: Anna Skochylova
 subtitle: QA Engineer
 menu:
