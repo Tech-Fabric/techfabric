@@ -1,7 +1,7 @@
 ---
 order: '13'
 title: Lenin Syamala
-subtitle: Software Engineer
+subtitle: Project manager
 menu:
   - resources
 ---
