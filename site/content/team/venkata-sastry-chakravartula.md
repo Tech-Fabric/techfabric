@@ -1,6 +1,6 @@
 ---
 order: '12'
-title: 'Venkata Sastry Chakravartula '
+title: 'Venkat Sastry Chakravartula '
 subtitle: Analyst
 menu:
   - resources
