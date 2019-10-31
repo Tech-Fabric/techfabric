@@ -1,6 +1,6 @@
 ---
 order: '20'
-thumbnailImage: /images/uploads/олег.jpg
+thumbnailImage: /images/uploads/oleg.jpg
 title: Oleg Kolesnyk
 subtitle: Software Engineer
 ---
