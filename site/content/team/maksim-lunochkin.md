@@ -1,7 +1,9 @@
 ---
-order: '22'
-thumbnailImage: /images/uploads/dima.jpg
-title: Dmytro Honcharenko
-subtitle: 'Software Engineer '
+order: '21'
+thumbnailImage: /images/uploads/Maksim.jpg
+title: Maksim Lunochkin
+subtitle: Software Engineer
+menu:
+  - resources
 ---
 
