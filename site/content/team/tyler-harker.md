@@ -1,6 +1,6 @@
 ---
 order: '7'
-thumbnailImage: /images/uploads/image-9-2x.png
+thumbnailImage: /images/uploads/tyler.jpg
 title: Tyler Harker
 subtitle: Software Engineer
 description: '-'
