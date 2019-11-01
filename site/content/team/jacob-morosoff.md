@@ -1,6 +1,6 @@
 ---
 order: 15
-thumbnailImage: /images/uploads/jacob.jpg
+thumbnailImage: ''
 title: Jacob Morosoff
 subtitle: 'Software Engineer '
 ---
