@@ -1,7 +1,7 @@
 ---
 order: '12'
 title: 'Venkat Sastry Chakravartula '
-subtitle: Analyst
+subtitle: Software Engineer
 menu:
   - resources
 ---
