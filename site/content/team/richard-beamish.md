@@ -1,6 +1,6 @@
 ---
 order: 14
-thumbnailImage: 
+thumbnailImage: /images/uploads/richard.jpg
 title: Richard Beamish
 subtitle: Software Engineer
 ---
