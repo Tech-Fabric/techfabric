@@ -1,5 +1,5 @@
 ---
-order: 18
+order: '15'
 thumbnailImage: /images/uploads/Yaroslav.jpeg
 title: Yaroslav Zaklynskyi
 subtitle: Software Engineer
