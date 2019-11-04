@@ -1,5 +1,5 @@
 ---
-order: '25'
+order: '23'
 thumbnailImage: /images/uploads/ihor.jpg
 title: Ihor Seleznov
 subtitle: QA Engineer
