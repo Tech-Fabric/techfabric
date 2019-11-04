@@ -1,5 +1,5 @@
 ---
-order: '28'
+order: '19'
 thumbnailImage: /images/uploads/denys-sukhobok.jpg
 title: Denys Sukhobok
 subtitle: Software Engineer
