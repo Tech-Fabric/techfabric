@@ -1,6 +1,6 @@
 ---
 order: '15'
-thumbnailImage: /images/uploads/алена.png
+thumbnailImage: ''
 title: Alyona Beliashova
 subtitle: General Manager – Ukraine
 ---
