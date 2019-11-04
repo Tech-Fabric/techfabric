@@ -1,7 +1,8 @@
 ---
-order: '8'
-title: Venkat Proddutoori
+order: '15'
 thumbnailImage: /images/uploads/Venkat.png
+title: Venkat Proddutoori
 subtitle: Software Engineer
 description: '-'
 ---
+
