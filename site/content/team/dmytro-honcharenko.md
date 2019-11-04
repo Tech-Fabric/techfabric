@@ -1,5 +1,5 @@
 ---
-order: '22'
+order: '21'
 thumbnailImage: /images/uploads/dima.jpg
 category: ''
 title: Dmytro Honcharenko
