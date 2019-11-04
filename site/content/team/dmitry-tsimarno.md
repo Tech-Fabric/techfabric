@@ -1,5 +1,5 @@
 ---
-order: '27'
+order: '20'
 thumbnailImage: /images/uploads/dmytro-tsimarno.jpg
 title: Dmitry Tsimarno
 subtitle: Software Engineer
