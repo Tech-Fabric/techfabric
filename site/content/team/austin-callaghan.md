@@ -1,5 +1,5 @@
 ---
-order: 13
+order: '6'
 title: Austin Callaghan
 subtitle: 'Software Engineer '
 ---
