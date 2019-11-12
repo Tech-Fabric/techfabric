@@ -1,7 +1,7 @@
 ---
 order: '27'
 title: Lenin Syamala
-subtitle: Project manager/Architect
+subtitle: Project Manager/Architect
 menu:
   - resources
 ---
