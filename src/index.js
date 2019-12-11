@@ -12,7 +12,9 @@ const whenDocumentLoaded = function() {
   const menuToggle = document.getElementById('drawer-toggle');
   const menuBodies = document.querySelectorAll('[data-menu-id]');
 
-  const isMobile = window.innerWidth <= 756;
+  const isMobile = ('ontouchstart' in window);
+
+  const clickEvent = isMobile ? 'touchend' : 'click';
 
   menuToggle.addEventListener('click', () => {
     const drawerButton = document.getElementById('drawer-toggle-label');
@@ -28,13 +30,39 @@ const whenDocumentLoaded = function() {
     drawer.classList.remove('d-none');
   });
 
-  for (const button of menuButtons) {
+  const closeAllMenus = () => {
+    menuBodies.forEach((menu) => {
+      menu.classList.remove('display');
+    });
+  };
+
+  // Close menu on iPad when user clicks outside
+  if (isMobile) {
+    window.addEventListener(clickEvent, (e) => {
+      const openedMenus = document.getElementsByClassName('header__brand-menu display');
+      const clickedOnDrawer = document.getElementById('drawer').contains(e.target);
+
+      if (openedMenus && !clickedOnDrawer) {
+        closeAllMenus();
+      }
+    });
+  }
+
+  menuButtons.forEach((button) => {
     const value = button.dataset.menuOpen;
     const menu = document.querySelector('[data-menu-id=' + value + ']');
 
     const callback = (event) => {
-      isMobile && drawer.classList.toggle('d-none');
-      menu.classList.toggle('display');
+      if (isMobile) {
+        closeAllMenus();
+
+        if (!menu.classList.contains('display')) {
+          // drawer.classList.toggle('d-none');
+          menu.classList.toggle('display');
+        }
+      } else {
+        menu.classList.toggle('display');
+      }
     };
 
     const eventName = isMobile ? 'click' : 'mouseenter';
@@ -50,7 +78,7 @@ const whenDocumentLoaded = function() {
     if (!isMobile) {
       menu.addEventListener('mouseleave', callback);
     }
-  }
+  });
 };
 
 if (
