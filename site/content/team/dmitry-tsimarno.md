@@ -1,6 +1,6 @@
 ---
 order: '20'
-thumbnailImage: /images/uploads/dmitry_tsimarno.jpeg
+thumbnailImage: /images/uploads/tsimarno.jpg
 title: Dmitry Tsimarno
 subtitle: Software Engineer
 menu:
