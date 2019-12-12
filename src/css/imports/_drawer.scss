@@ -57,12 +57,12 @@
 
   .header__content {
     position: fixed;
+    z-index: 12;
+    background: #000;
   }
 
-  .menu-opened {
-    .header__content {
-      position: relative;
-    }
+  .header__brand-menu {
+    padding-top: 55px;
   }
 
   .page-body, .footer {
