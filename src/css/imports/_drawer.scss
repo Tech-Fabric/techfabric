@@ -55,6 +55,16 @@
     }
   }
 
+  .header__content {
+    position: fixed;
+  }
+
+  .menu-opened {
+    .header__content {
+      position: relative;
+    }
+  }
+
   .page-body, .footer {
     display: none;
   }

@@ -8,6 +8,16 @@
   padding: 0;
   z-index: 9;
 
+  &.menu-opened {
+    #drawer {
+      display: none;
+
+      @include breakpoints-up-md {
+        display: block;
+      }
+    }
+  }
+
   @include breakpoints-up-md {
     min-height: 75px;
     display: flex;

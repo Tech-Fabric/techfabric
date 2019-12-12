@@ -7,14 +7,22 @@ const whenDocumentLoaded = function() {
     initializeHomePageAnimation();
   }
 
+  const header = document.getElementById('header');
   const menuButtons = document.querySelectorAll('[data-menu-open]');
   const drawer = document.getElementById('drawer');
   const menuToggle = document.getElementById('drawer-toggle');
   const menuBodies = document.querySelectorAll('[data-menu-id]');
 
   const isMobile = ('ontouchstart' in window);
-
   const clickEvent = isMobile ? 'touchend' : 'click';
+
+  const closeAllMenus = () => {
+    header.classList.remove('menu-opened');
+
+    menuBodies.forEach((menu) => {
+      menu.classList.remove('display');
+    });
+  };
 
   menuToggle.addEventListener('click', () => {
     const drawerButton = document.getElementById('drawer-toggle-label');
@@ -29,12 +37,6 @@ const whenDocumentLoaded = function() {
 
     drawer.classList.remove('d-none');
   });
-
-  const closeAllMenus = () => {
-    menuBodies.forEach((menu) => {
-      menu.classList.remove('display');
-    });
-  };
 
   // Close menu on iPad when user clicks outside
   if (isMobile) {
@@ -56,10 +58,9 @@ const whenDocumentLoaded = function() {
     const callback = (event) => {
       if (isMobile) {
         closeAllMenus();
-
         if (!menu.classList.contains('display')) {
-          // drawer.classList.toggle('d-none');
           menu.classList.toggle('display');
+          header.classList.add('menu-opened');
         }
       } else {
         menu.classList.toggle('display');
