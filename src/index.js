@@ -41,8 +41,9 @@ const whenDocumentLoaded = function() {
     window.addEventListener(clickEvent, (e) => {
       const openedMenus = document.getElementsByClassName('header__brand-menu display');
       const clickedOnDrawer = document.getElementById('drawer').contains(e.target);
+      const clickedOnOpenedMenu = Array.prototype.some.call(openedMenus, (menu) => menu.contains(e.target));
 
-      if (openedMenus && !clickedOnDrawer) {
+      if (openedMenus && !clickedOnDrawer && !clickedOnOpenedMenu) {
         closeAllMenus();
       }
     });
