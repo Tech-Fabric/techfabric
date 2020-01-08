@@ -1,6 +1,6 @@
 ---
 order: '38'
-thumbnailImage: /images/uploads/image-8-2x.png
+thumbnailImage: /images/uploads/sushruth2.jpg
 title: Sushruth Aeluguri
 subtitle: Software Engineer
 description: '-'
