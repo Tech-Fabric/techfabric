@@ -97,7 +97,7 @@ body {
   padding: 25px 0;
 
   @include breakpoints-up-lg {
-    padding: 50px 100px;
+    padding: 50px 80px;
   }
 
   &_bg {
@@ -190,5 +190,11 @@ blockquote {
 
   @include breakpoints-up-md {
     font-size: 32px;
+  }
+}
+
+.container {
+  @include breakpoints-up-md {
+    padding: 0 30px;
   }
 }
