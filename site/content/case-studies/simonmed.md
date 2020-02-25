@@ -1,11 +1,11 @@
 ---
 order: '1'
+title: SimonMed
 menu: none
 preview:
   category: Healthcare
   description: Diagnostic Imaging & Patient On-boarding
   logo: /images/uploads/simonmed-logo.svg
-  title: SimonMed
 detailed:
   challenge: >-
     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
@@ -80,5 +80,11 @@ detailed:
     nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
     diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
     clita kasd gubergren, no sea
+colors:
+  background: >-
+    linear-gradient(180deg, rgba(2,133,213,1) 0%, rgba(186,238,185,1) 35%,
+    rgba(255,255,255,1) 100%);
+  footer: '#f1f9ff'
+  heading: '#0285d5'
 ---
 
