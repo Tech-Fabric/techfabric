@@ -1,11 +1,11 @@
 ---
 order: '1'
+title: SimonMed
 menu: none
 preview:
   category: Healthcare
   description: Diagnostic Imaging & Patient On-boarding
   logo: /images/uploads/simonmed-logo.svg
-  title: SimonMed
 detailed:
   challenge: >-
     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
