@@ -1,6 +1,6 @@
 ---
 order: '1'
-menu: industries
+menu: none
 preview:
   category: Healthcare
   description: Diagnostic Imaging & Patient On-boarding
