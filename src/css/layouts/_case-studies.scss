@@ -20,6 +20,22 @@
   &-page {
     color: #000;
 
+    .markdown.container {
+      max-width: 1120px;
+
+      h5 {
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 30px;
+        opacity: 1;
+      }
+
+      p {
+        line-height: 32px;
+        margin-bottom: 102px;
+      }
+    }
+
     &__header {
       display: flex;
       clear: both;
@@ -60,14 +76,26 @@
     &__screens {
       max-height: 50vh;
       text-align: center;
-      padding: 0 20px 40px;
-      margin-bottom: 40px;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+      padding: 0 20px;
+      margin-bottom: 135px;
 
       img {
         max-height: 100%;
-        max-width: 100%;
+        max-width: 1320px;
       }
+    }
+
+    &__fullwidth {
+      text-align: center;
+
+      img {
+        width: 100%;
+        max-width: 2000px;
+      }
+    }
+
+    &__footer {
+      background: #fff;
     }
   }
 

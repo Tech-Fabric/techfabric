@@ -140,6 +140,23 @@ collections:
           name: "result"
           widget: "string"
 
+      - label: "Colors"
+        name: "colors"
+        widget: "object"
+        fields:
+
+        - label: "Background"
+          name: "background"
+          widget: "string"
+
+        - label: "Heading color (HEX Code)"
+          name: "heading"
+          widget: "string"
+
+        - label: "Footer color (HEX Code)"
+          name: "footer"
+          widget: "string"
+
   - name: "technology"
     label: "Technology"
     folder: "site/content/technology"

@@ -1,7 +1,7 @@
 ---
 title: Case Stories
 description: '   '
-subtitle: We’ve gotten really good with digital transform-ations. Read the stories.
+subtitle: We’ve gotten really good with digital transformations. Read the stories.
 category: Case Studies
 menu: none
 menuDescription: >-

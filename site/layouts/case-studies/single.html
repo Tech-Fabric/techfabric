@@ -10,23 +10,52 @@
             </a>
 
             <div class="container">
-                <h5 class="text-uppercase">Client - {{ .Params.category }}</h5>
-                <h3>{{ .Title }}</h3>
+                <h5 class="text-uppercase">Client - {{ .Params.preview.category }}</h5>
+                <h5>{{ .Params.preview.title }}</h5>
             </div>
         </div>
 
-        <div class="case-study-page__body">
-            <h2 class="case-study-page__description">{{ .Params.description }}</h2>
+        <div class="case-study-page__body" style="background: {{ .Params.colors.background}}">
+            <h2 class="case-study-page__description">{{ .Params.preview.description }}</h2>
 
             <div class="case-study-page__screens">
-                {{ if .Params.heroImage }}
-                {{ printf `<img src="%s" alt="%s">` .Params.heroImage .Title | safeHTML }}
+                {{ if .Params.detailed.heroImage }}
+                {{ printf `<img src="%s" alt="%s">` .Params.detailed.heroImage .Params.preview.title | safeHTML }}
                 {{end}}
             </div>
 
-            <main class="markdown container">
-                {{- .Content -}}
-            </main>
+            <div class="markdown container">
+                <h5 style="color: {{ .Params.colors.heading }}">The Client</h5>
+
+                <p>{{.Params.detailed.client}}</p>
+
+                <h5 style="color: {{ .Params.colors.heading }}">The Challenge</h5>
+                <p>{{.Params.detailed.challenge}}</p>
+            </div>
+
+            <div class="case-study-page__fullwidth">
+                {{ if .Params.detailed.fullwidthImage }}
+                {{ printf `<img src="%s" alt="%s" class="case-study-page__fullwidth">` .Params.detailed.fullwidthImage | safeHTML }}
+                {{ end }}
+            </div>
+        </div>
+
+        <div class="case-study-page__footer" style="background: {{ .Params.colors.footer}}">
+            <div class="markdown container">
+                <h5 style="color: {{ .Params.colors.heading }}">The Solution</h5>
+                <p>{{.Params.detailed.solution}}</p>
+
+                <h5 style="color: {{ .Params.colors.heading }}">The Result</h5>
+                <p>{{.Params.detailed.result}}</p>
+            </div>
+
+            <div class="brand-block">
+                <div class="container">
+                    <h5 class="text-center text-brand-secondary text-light">Let’s Make Something Amazing Together</h5>
+                </div>
+            </div>
+
+            {{ partial "contact-form" }}
         </div>
     </div>
 </article>
