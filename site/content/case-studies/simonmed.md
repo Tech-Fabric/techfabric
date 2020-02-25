@@ -83,7 +83,7 @@ detailed:
 colors:
   background: >-
     linear-gradient(180deg, rgba(2,133,213,1) 0%, rgba(186,238,185,1) 35%,
-    rgba(255,255,255,1) 100%)
+    rgba(255,255,255,1) 100%);
   footer: '#f1f9ff'
   heading: '#0285d5'
 ---
