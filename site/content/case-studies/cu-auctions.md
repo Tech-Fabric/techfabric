@@ -1,11 +1,11 @@
 ---
-order: '2'
-title: Auto Approve
+order: '3'
+title: CU Auctions
 menu: none
 preview:
   category: Automotive
-  description: Vehicle Refinancing & Aftermarket Products
-  logo: /images/uploads/autoapprove-logo.svg
+  description: Indirect Auto Auctioning
+  logo: /images/uploads/cuauctions-logo.svg
   subtitle: >-
     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
     eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
@@ -41,8 +41,8 @@ detailed:
     amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
     nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
     diam voluptua. At vero eos et accusam et justo duo dolores
-  fullwidthImage: /images/uploads/autoapprove-screens.png
-  heroImage: /images/uploads/autoapprove-hero.png
+  fullwidthImage: /images/uploads/cuauctions-screens@2x.png
+  heroImage: /images/uploads/acuauctions-hero@2x.png
   result: >-
     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
     eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
@@ -86,10 +86,8 @@ detailed:
     diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
     clita kasd gubergren, no sea
 colors:
-  bodyBackground: 'linear-gradient(180deg, #043C72 0%, #00B3E4 15%, #BDE8F3 30%, #DDF4FA 100%)'
-  footerBackground: '#043C72'
-  headingColor: '#043C72'
-  footerColor: '#ffffff'
-  footerHeadingColor: '#00B3E4'
+  bodyBackground: 'linear-gradient(180deg, #898989 0%, #f8f8f8 25%, #FFFFFF 100%)'
+  footerBackground: '#f0f0f0'
+  headingColor: '#CB222E'
 ---
 

@@ -82,7 +82,7 @@ detailed:
     clita kasd gubergren, no sea
 colors:
   bodyBackground: >-
-    linear-gradient(180deg, rgba(2,133,213,1) 0%, rgba(186,238,185,1) 35%,
+    linear-gradient(180deg, rgba(2,133,213,1) 0%, rgba(186,238,185,1) 25%,
     rgba(255,255,255,1) 100%);
   footerBackground: '#f1f9ff'
   headingColor: '#0285d5'

@@ -2,16 +2,21 @@
 
 <style>
     .case-study-page__body {
-        background: {{ .Params.colors.background | safeCSS}};
+        background: {{ .Params.colors.bodyBackground | safeCSS}};
     }
 
     .case-study-page__footer {
-        background: {{ .Params.colors.footer}};
+        background: {{ .Params.colors.footerBackground}};
+        color: {{ .Params.colors.footerColor | safeCSS }};
     }
 
     .case-study-page__body h5,
     .case-study-page__footer h5 {
-        color: {{ .Params.colors.heading | safeCSS }};
+        color: {{ .Params.colors.headingColor | safeCSS }};
+    }
+
+    .case-study-page__footer h5 {
+        color: {{ .Params.colors.footerHeadingColor | safeCSS }};
     }
 </style>
 
