@@ -85,8 +85,9 @@ detailed:
     diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
     clita kasd gubergren, no sea
 colors:
-  background: 'linear-gradient(180deg, #043C72 0%, #00B3E4 25%, #BDE8F3 81%, #DDF4FA 100%)'
-  footer: '#043C72'
-  heading: '#043C72'
+  bodyBackground: 'linear-gradient(180deg, #043C72 0%, #00B3E4 25%, #BDE8F3 81%, #DDF4FA 100%)'
+  footerBackground: '#043C72'
+  headingColor: '#043C72'
+  footerColor: '#ffffff'
 ---
 

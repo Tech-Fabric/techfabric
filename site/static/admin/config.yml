@@ -148,16 +148,20 @@ collections:
         required: false
         fields:
 
-        - label: "Background"
-          name: "background"
+        - label: "Body background"
+          name: "bodyBackground"
           widget: "string"
 
         - label: "Heading color (HEX Code)"
-          name: "heading"
+          name: "headingColor"
           widget: "string"
 
-        - label: "Footer color (HEX Code)"
-          name: "footer"
+        - label: "Footer background"
+          name: "footerBackground"
+          widget: "string"
+
+        - label: "Footer color"
+          name: "footerColor"
           widget: "string"
 
   - name: "technology"

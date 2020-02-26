@@ -1,8 +1,8 @@
 <div class="col-md-6 col-lg-4 case-study-wrapper">
     <div class="case-study brand-block entity-card clearfix">
-        {{ if .Params.logo }}
+        {{ if .Params.preview.logo }}
         <div class="case-study__image">
-            {{ printf `<img src="%s" alt="%s">` .Params.logo .Title | safeHTML }}
+            {{ printf `<img src="%s" alt="%s">` .Params.preview.logo .Title | safeHTML }}
         </div>
         {{end}}
 
