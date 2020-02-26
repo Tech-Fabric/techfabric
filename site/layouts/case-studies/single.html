@@ -1,21 +1,37 @@
 {{ define "main" }} {{ $section := .Site.GetPage "section" .Section }}
+
+<style>
+    .case-study-page__body {
+        background: {{ .Params.colors.background | safeCSS}};
+    }
+
+    .case-study-page__footer {
+        background: {{ .Params.colors.footer}};
+    }
+
+    .case-study-page__body h5,
+    .case-study-page__footer h5 {
+        color: {{ .Params.colors.heading | safeCSS }};
+    }
+</style>
+
 <article>
     <div class="case-study-page">
         <div class="case-study-page__header">
             <a href="/case-studies" class="btn btn-outline-gradient case-study-page__back-button">
                 <span class="btn-outline-gradient__inner">
-                    <img class="brand-list__icon rotate_180" src="./svg/outline-arrow_right_alt-24px.svg">
+                    <img class="brand-list__icon" src="./svg/arrow.svg">
                     <span class="btn-outline-gradient__text">Back To Case Studies</span>
                 </span>
             </a>
 
             <div class="container">
                 <h5 class="text-uppercase">Client - {{ .Params.preview.category }}</h5>
-                <h5>{{ .Params.preview.title }}</h5>
+                <h2>{{ .Title }}</h2>
             </div>
         </div>
 
-        <div class="case-study-page__body" style="background: {{ .Params.colors.background }}">
+        <div class="case-study-page__body">
             <h2 class="case-study-page__description">{{ .Params.preview.description }}</h2>
 
             <div class="case-study-page__screens">
@@ -24,13 +40,15 @@
                 {{end}}
             </div>
 
-            <div class="markdown container">
-                <h5 style="color: {{ .Params.colors.heading }}">The Client</h5>
+            <div class="container">
+                <div class="markdown">
+                    <h5>The Client</h5>
 
-                <p>{{.Params.detailed.client}}</p>
+                    <p>{{.Params.detailed.client}}</p>
 
-                <h5 style="color: {{ .Params.colors.heading }}">The Challenge</h5>
-                <p>{{.Params.detailed.challenge}}</p>
+                    <h5>The Challenge</h5>
+                    <p>{{.Params.detailed.challenge}}</p>
+                </div>
             </div>
 
             <div class="case-study-page__fullwidth">
@@ -40,18 +58,20 @@
             </div>
         </div>
 
-        <div class="case-study-page__footer" style="background: {{ .Params.colors.footer}}">
-            <div class="markdown container">
-                <h5 style="color: {{ .Params.colors.heading }}">The Solution</h5>
-                <p>{{.Params.detailed.solution}}</p>
+        <div class="case-study-page__footer">
+            <div class="container">
+                <div class="markdown">
+                    <h5>The Solution</h5>
+                    <p>{{.Params.detailed.solution}}</p>
 
-                <h5 style="color: {{ .Params.colors.heading }}">The Result</h5>
-                <p>{{.Params.detailed.result}}</p>
+                    <h5>The Result</h5>
+                    <p>{{.Params.detailed.result}}</p>
+                </div>
             </div>
 
             <div class="brand-block">
                 <div class="container">
-                    <h3 class="text-center text-brand-secondary text-light">Let’s Make Something Amazing Together</h3>
+                    <h1 class="text-center text-brand-secondary text-light">Let’s Make Something Amazing Together</h1>
                 </div>
             </div>
 
