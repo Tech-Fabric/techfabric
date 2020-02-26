@@ -42,7 +42,7 @@ detailed:
     nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
     diam voluptua. At vero eos et accusam et justo duo dolores
   fullwidthImage: /images/uploads/cuauctions-screens@2x.png
-  heroImage: /images/uploads/acuauctions-hero@2x.png
+  heroImage: /images/uploads/cuauctions-hero@2x.png
   result: >-
     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
     eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
