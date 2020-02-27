@@ -2,6 +2,7 @@
 order: '2'
 title: Auto Approve
 menu: none
+menuDescription: ''
 preview:
   category: Automotive
   description: Vehicle Refinancing & Aftermarket Products
@@ -88,8 +89,8 @@ detailed:
 colors:
   bodyBackground: 'linear-gradient(180deg, #043C72 0%, #00B3E4 15%, #BDE8F3 30%, #DDF4FA 100%)'
   footerBackground: '#043C72'
-  headingColor: '#043C72'
   footerColor: '#ffffff'
   footerHeadingColor: '#00B3E4'
+  headingColor: '#043C72'
 ---
 
