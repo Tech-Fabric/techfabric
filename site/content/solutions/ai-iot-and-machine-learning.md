@@ -1,6 +1,6 @@
 ---
 order: '4'
-category: 'AI, IoT, & Machine Learning'
+category: 'Machine Learning & AI, IoT'
 title: Computers never sleep or take breaks
 subtitle: >-
   Get continuous performance and automation through the use of new intelligent

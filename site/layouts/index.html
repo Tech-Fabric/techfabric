@@ -17,7 +17,7 @@
                 <h3>Our Solutions Include</h3>
 
                 <ul class="brand-list">
-                    {{ range where .Site.Pages "Params.menu" "solutions" }}
+                    {{ range where (.Site.Pages.ByParam "order") "Params.menu" "solutions" }}
                         <li>
                             <a class="brand-list__item" href="/solutions/#{{ .Params.title }}">
                                 <span class="text-brand-secondary">{{ .Params.category }}</span>
