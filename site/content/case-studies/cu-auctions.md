@@ -2,6 +2,7 @@
 order: '3'
 title: CU Auctions
 menu: none
+menuDescription: ' '
 preview:
   category: Automotive
   description: Indirect Auto Auctioning
