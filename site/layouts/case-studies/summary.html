@@ -1,12 +1,13 @@
 <div class="col-md-6 col-lg-4 case-study-wrapper">
     <div class="case-study brand-block entity-card clearfix">
-        {{ if .Params.thumbnailImage }}
+        {{ if .Params.preview.logo }}
         <div class="case-study__image">
-            {{ printf `<img src="%s" alt="%s">` .Params.thumbnailImage .Title | safeHTML }}
+            {{ printf `<img src="%s" alt="%s">` .Params.preview.logo .Title | safeHTML }}
         </div>
         {{end}}
 
         <h5 class="text-uppercase">{{.Params.category}}</h5>
+
         <h3 class="mb-1">{{.Title}}</h3>
 
         <div class="entity-card__description">

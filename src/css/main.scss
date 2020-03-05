@@ -1,3 +1,4 @@
+@import "../fonts/stylesheet.css";
 @import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 @import 'variables';
 @import 'mixins';
@@ -197,4 +198,8 @@ blockquote {
   @include breakpoints-up-md {
     padding: 0 100px;
   }
+}
+
+.capitalize {
+  text-transform: capitalize;
 }
